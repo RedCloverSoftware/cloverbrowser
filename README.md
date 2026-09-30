@@ -2,6 +2,9 @@
 
 Browse, edit, upload and restore your site's files from the WordPress admin, with per-role access rules and a two-level trash.
 
+<img width="1718" height="861" alt="cloverbrowser2" src="https://github.com/user-attachments/assets/f84af5b8-24d7-428e-8598-4649086147db" />
+<img width="1703" height="1777" alt="cloverbrowser_settings3" src="https://github.com/user-attachments/assets/7495eed0-2205-4c37-adda-1e768c7f170a" />
+
 ---
 
 ## Description
