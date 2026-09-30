@@ -1,0 +1,2343 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Cloverbrowser\n"
+"PO-Revision-Date: 2026-09-30 10:51+0000\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? 2 : ((n % 100 >= 3 && n % 100 <= 10) ? 3 : ((n % 100 >= 11 && n % 100 <= 99) ? 4 : 5))));\n"
+"X-Domain: cloverbrowser\n"
+
+#: cloverbrowser.php:38
+msgid "Cloverbrowser requires PHP 8.0 or newer."
+msgstr "يتطلب Cloverbrowser الإصدار PHP 8.0 أو أحدث."
+
+#: cloverbrowser.php:94
+msgid "Browse files"
+msgstr "استعراض الملفات"
+
+#: cloverbrowser.php:97 cloverbrowser.php:98 cloverbrowser.php:112 cloverbrowser.php:256 assets/js/access-rules.js:302 assets/js/access-rules.js:303 assets/js/file-browser.js:164
+msgid "Settings"
+msgstr "الإعدادات"
+
+#: cloverbrowser.php:214
+msgid "You do not have permission to access the file browser."
+msgstr "ليست لديك صلاحية الوصول إلى مستعرض الملفات."
+
+#. translators: %s: absolute server path of the sandbox root
+#: cloverbrowser.php:227
+msgid "Full file access for this server, sandboxed to %s."
+msgstr "وصول كامل إلى ملفات هذا الخادم، مقيَّد بالمسار %s."
+
+#: cloverbrowser.php:233
+msgid "Admin-only; every request is capability- and nonce-checked."
+msgstr "للمديرين فقط؛ يُتحقَّق من الصلاحيات ورمز nonce في كل طلب."
+
+#: cloverbrowser.php:235 assets/js/file-browser.js:161
+msgid "Your access is limited by rules set by an administrator."
+msgstr "وصولك مقيَّد بقواعد حدّدها أحد المديرين."
+
+#: cloverbrowser.php:240
+msgid "Read-only mode."
+msgstr "وضع القراءة فقط."
+
+#: cloverbrowser.php:243
+msgid "Loading file browser…"
+msgstr "جارٍ تحميل مستعرض الملفات…"
+
+#: cloverbrowser.php:244 cloverbrowser.php:259
+msgid "The file browser requires JavaScript."
+msgstr "يتطلب مستعرض الملفات تفعيل JavaScript."
+
+#: cloverbrowser.php:252 includes/class-cloverbrowser-ajax.php:120
+msgid "Only administrators can manage access rules."
+msgstr "يمكن للمديرين فقط إدارة قواعد الوصول."
+
+#: cloverbrowser.php:258
+msgid "Loading settings…"
+msgstr "جارٍ تحميل الإعدادات…"
+
+#: assets/js/access-rules.js:76 assets/js/file-browser.js:375
+msgid "Network error — the server may be busy or unreachable."
+msgstr "خطأ في الشبكة — قد يكون الخادم مشغولًا أو يتعذر الوصول إليه."
+
+#. translators: %d: HTTP status code
+#: assets/js/access-rules.js:83 assets/js/file-browser.js:382
+msgid "Unexpected server response (HTTP %d)."
+msgstr "استجابة غير متوقعة من الخادم (HTTP %d)."
+
+#: assets/js/access-rules.js:85 assets/js/file-browser.js:385
+msgid "Request failed."
+msgstr "فشل الطلب."
+
+#: assets/js/access-rules.js:139
+msgid "Open files"
+msgstr "فتح الملفات"
+
+#: assets/js/access-rules.js:139
+msgid "Read file contents in the viewer. Folders can always be browsed once access is enabled."
+msgstr "قراءة محتوى الملفات في العارض. يمكن دائمًا استعراض المجلدات بعد تفعيل الوصول."
+
+#: assets/js/access-rules.js:140
+msgid "Download files"
+msgstr "تنزيل الملفات"
+
+#: assets/js/access-rules.js:140
+msgid "Save copies of files to their computer."
+msgstr "حفظ نسخ من الملفات على أجهزتهم."
+
+#: assets/js/access-rules.js:141
+msgid "Edit & save files"
+msgstr "تحرير الملفات وحفظها"
+
+#: assets/js/access-rules.js:141
+msgid "Change file contents in the editor (includes autosaved drafts and line-ending conversion)."
+msgstr "تغيير محتوى الملفات في المحرر (يشمل المسودات المحفوظة تلقائيًا وتحويل نهايات الأسطر)."
+
+#: assets/js/access-rules.js:142
+msgid "Create files & folders"
+msgstr "إنشاء الملفات والمجلدات"
+
+#: assets/js/access-rules.js:142
+msgid "Make new empty files and folders."
+msgstr "إنشاء ملفات ومجلدات جديدة فارغة."
+
+#: assets/js/access-rules.js:143
+msgid "Upload files"
+msgstr "رفع الملفات"
+
+#: assets/js/access-rules.js:143
+msgid "Add files from their computer, and replace existing ones they may edit."
+msgstr "إضافة ملفات من أجهزتهم، واستبدال الملفات الموجودة التي يمكنهم تحريرها."
+
+#: assets/js/access-rules.js:144 assets/js/access-rules.js:578
+msgid "Rename & move"
+msgstr "إعادة التسمية والنقل"
+
+#: assets/js/access-rules.js:144
+msgid "Rename files and folders within the folders they can access."
+msgstr "إعادة تسمية الملفات والمجلدات داخل المجلدات التي يمكنهم الوصول إليها."
+
+#: assets/js/access-rules.js:145 assets/js/access-rules.js:578 assets/js/file-browser.js:767 assets/js/file-browser.js:1628
+msgid "Delete"
+msgstr "حذف"
+
+#: assets/js/access-rules.js:145
+msgid "Remove files and folders, including everything inside a folder."
+msgstr "حذف الملفات والمجلدات، بما في ذلك كل ما بداخل المجلد."
+
+#: assets/js/access-rules.js:146 assets/js/access-rules.js:578 assets/js/file-browser.js:765
+msgid "Change permissions"
+msgstr "تغيير الصلاحيات"
+
+#: assets/js/access-rules.js:146
+msgid "Change Unix file modes (chmod). Rarely needed — keep off unless required."
+msgstr "تغيير أوضاع ملفات Unix (chmod). نادرًا ما يلزم — اتركه معطَّلًا ما لم يكن ضروريًا."
+
+#: assets/js/access-rules.js:149
+msgid "PHP files and any file containing PHP tags — even hidden inside an image. Anyone who can write PHP can take over the site."
+msgstr "ملفات PHP وأي ملف يحتوي على وسوم PHP — حتى لو كانت مخفية داخل صورة. من يستطيع كتابة PHP يستطيع السيطرة على الموقع."
+
+#: assets/js/access-rules.js:150
+msgid ".htaccess, .user.ini, php.ini, web.config and .env files — they change how the server runs code or hold secrets."
+msgstr "ملفات .htaccess و.user.ini وphp.ini وweb.config و.env — فهي تغيّر طريقة تشغيل الخادم للشيفرة أو تحتوي على بيانات سرية."
+
+#: assets/js/access-rules.js:151
+msgid "Programs and scripts: binary executables, shell/Python/Perl scripts and anything starting with “#!”."
+msgstr "البرامج والنصوص البرمجية: الملفات التنفيذية الثنائية، ونصوص shell/Python/Perl، وكل ما يبدأ بـ «#!»."
+
+#: assets/js/access-rules.js:152
+msgid "HTML, SVG, JavaScript and XML — they can run scripts in visitors’ browsers."
+msgstr "HTML وSVG وJavaScript وXML — يمكنها تشغيل نصوص برمجية في متصفحات الزوار."
+
+#: assets/js/access-rules.js:153
+msgid "ZIP, GZIP, TAR, 7-Zip, RAR and similar archives."
+msgstr "ZIP وGZIP وTAR و7-Zip وRAR والأرشيفات المماثلة."
+
+#: assets/js/access-rules.js:154
+msgid "JPEG, PNG, GIF, WebP, AVIF, TIFF and other images."
+msgstr "JPEG وPNG وGIF وWebP وAVIF وTIFF وغيرها من الصور."
+
+#: assets/js/access-rules.js:155
+msgid "MP3, MP4, WebM, WAV, OGG and other audio and video."
+msgstr "MP3 وMP4 وWebM وWAV وOGG وغيرها من ملفات الصوت والفيديو."
+
+#: assets/js/access-rules.js:156
+msgid "PDF, Word, Excel, PowerPoint, OpenDocument and RTF."
+msgstr "PDF وWord وExcel وPowerPoint وOpenDocument وRTF."
+
+#: assets/js/access-rules.js:157
+msgid "SQLite databases, SQL dumps and .bak backups — they often contain passwords."
+msgstr "قواعد بيانات SQLite وتفريغات SQL والنسخ الاحتياطية .bak — غالبًا ما تحتوي على كلمات مرور."
+
+#: assets/js/access-rules.js:158
+msgid "Anything that is not plain text and not covered above."
+msgstr "أي ملف ليس نصًا عاديًا ولا يندرج ضمن ما سبق."
+
+#: assets/js/access-rules.js:161
+msgid "Name contains"
+msgstr "الاسم يحتوي على"
+
+#: assets/js/access-rules.js:161
+msgid "secret"
+msgstr "secret"
+
+#: assets/js/access-rules.js:161
+msgid "Any file or folder whose name contains this text, in any folder. Not case-sensitive."
+msgstr "أي ملف أو مجلد يحتوي اسمه على هذا النص، في أي مجلد. لا يميّز بين الأحرف الكبيرة والصغيرة."
+
+#: assets/js/access-rules.js:162
+msgid "Name matches"
+msgstr "الاسم يطابق"
+
+#: assets/js/access-rules.js:162
+msgid "A name pattern: * matches any characters, ? matches one. Example: *.bak or wp-config*."
+msgstr "نمط اسم: * يطابق أي محارف، و? يطابق محرفًا واحدًا. مثال: *.bak أو wp-config*."
+
+#: assets/js/access-rules.js:163
+msgid "Exact path"
+msgstr "مسار محدد"
+
+#: assets/js/access-rules.js:163
+msgid "One specific file or folder, relative to the site root."
+msgstr "ملف أو مجلد واحد محدد، نسبةً إلى جذر الموقع."
+
+#: assets/js/access-rules.js:164
+msgid "Folder and contents"
+msgstr "المجلد ومحتوياته"
+
+#: assets/js/access-rules.js:164
+msgid "A folder and everything inside it, relative to the site root."
+msgstr "مجلد وكل ما بداخله، نسبةً إلى جذر الموقع."
+
+#: assets/js/access-rules.js:167
+msgid "Hidden & blocked"
+msgstr "مخفي ومحظور"
+
+#: assets/js/access-rules.js:168 assets/js/access-rules.js:331 assets/js/file-browser.js:162
+msgid "Read-only"
+msgstr "قراءة فقط"
+
+#: assets/js/access-rules.js:223
+msgid "Folders"
+msgstr "المجلدات"
+
+#: assets/js/access-rules.js:226 assets/js/file-browser.js:1949
+msgid "Loading…"
+msgstr "جارٍ التحميل…"
+
+#: assets/js/access-rules.js:249
+msgid "No subfolders."
+msgstr "لا توجد مجلدات فرعية."
+
+#: assets/js/access-rules.js:255
+msgid "Selected folder:"
+msgstr "المجلد المحدد:"
+
+#: assets/js/access-rules.js:256
+msgid "Choose a folder"
+msgstr "اختر مجلدًا"
+
+#: assets/js/access-rules.js:257 assets/js/access-rules.js:771 assets/js/file-browser.js:527 assets/js/file-browser.js:552 assets/js/file-browser.js:933 assets/js/file-browser.js:1342 assets/js/file-browser.js:1481 assets/js/file-browser.js:1627 assets/js/file-browser.js:2291
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: assets/js/access-rules.js:258
+msgid "Use this folder"
+msgstr "استخدام هذا المجلد"
+
+#: assets/js/access-rules.js:268
+msgid "Save changes"
+msgstr "حفظ التغييرات"
+
+#: assets/js/access-rules.js:269 assets/js/access-rules.js:772
+msgid "Discard"
+msgstr "تجاهل"
+
+#: assets/js/access-rules.js:270 assets/js/file-browser.js:926
+msgid "Unsaved changes"
+msgstr "تغييرات غير محفوظة"
+
+#: assets/js/access-rules.js:271 assets/js/access-rules.js:344
+msgid "Roles"
+msgstr "الأدوار"
+
+#: assets/js/access-rules.js:290
+msgid "Access rules"
+msgstr "قواعد الوصول"
+
+#: assets/js/access-rules.js:290 assets/js/access-rules.js:648 assets/js/file-browser.js:163 assets/js/file-browser.js:212 assets/js/file-browser.js:1915 assets/js/file-browser.js:1971
+msgid "Trash"
+msgstr "سلة المهملات"
+
+#: assets/js/access-rules.js:293
+msgid "Administrators always have full access and are not affected by these rules. Every other role has no access until you enable it."
+msgstr "يتمتع المديرون دائمًا بوصول كامل ولا تؤثر فيهم هذه القواعد. لا يملك أي دور آخر وصولًا حتى تفعّله."
+
+#: assets/js/access-rules.js:294
+msgid "The “All roles” rules apply to every enabled role. A role’s own rules can only add restrictions on top of them."
+msgstr "تنطبق قواعد «جميع الأدوار» على كل دور مفعَّل. ولا يمكن لقواعد الدور الخاصة إلا أن تضيف قيودًا فوقها."
+
+#: assets/js/access-rules.js:295
+msgid "File editing is disabled for this site (DISALLOW_FILE_EDIT / CLOVERBROWSER_READ_ONLY), so every role is read-only whatever you allow here."
+msgstr "تحرير الملفات معطَّل في هذا الموقع (DISALLOW_FILE_EDIT / CLOVERBROWSER_READ_ONLY)، لذا تكون كل الأدوار للقراءة فقط مهما سمحت به هنا."
+
+#: assets/js/access-rules.js:326
+msgid "No access"
+msgstr "بلا وصول"
+
+#: assets/js/access-rules.js:330
+msgid "Browse only"
+msgstr "استعراض فقط"
+
+#: assets/js/access-rules.js:332
+msgid "Full"
+msgstr "كامل"
+
+#: assets/js/access-rules.js:333
+msgid "Custom"
+msgstr "مخصص"
+
+#: assets/js/access-rules.js:343 assets/js/access-rules.js:396 includes/class-cloverbrowser-policy.php:111
+msgid "All roles"
+msgstr "جميع الأدوار"
+
+#: assets/js/access-rules.js:343
+msgid "Applies to every enabled role"
+msgstr "ينطبق على كل دور مفعَّل"
+
+#. translators: %s: number of users
+#: assets/js/access-rules.js:349
+msgid "%s user"
+msgid_plural "%s users"
+msgstr[0] "%s مستخدم"
+msgstr[1] "مستخدم واحد"
+msgstr[2] "مستخدمان"
+msgstr[3] "%s مستخدمين"
+msgstr[4] "%s مستخدمًا"
+msgstr[5] "%s مستخدم"
+
+#: assets/js/access-rules.js:351
+msgid "Administrators are not listed: they always have full access."
+msgstr "لا يظهر المديرون في القائمة: فهم يتمتعون دائمًا بوصول كامل."
+
+#. translators: %s: role name
+#: assets/js/access-rules.js:367 includes/class-cloverbrowser-policy.php:134
+msgid "%s can create or modify PHP code. Anyone who can write PHP can take over the whole site — block the “PHP code” type unless that is intended."
+msgstr "يستطيع %s إنشاء شيفرة PHP أو تعديلها. من يستطيع كتابة PHP يستطيع السيطرة على الموقع بأكمله — احظر نوع «شيفرة PHP» ما لم يكن ذلك مقصودًا."
+
+#. translators: %s: role name
+#: assets/js/access-rules.js:372 includes/class-cloverbrowser-policy.php:127
+msgid "%s is normally given to untrusted accounts. Make sure you really want it to reach server files."
+msgstr "يُمنح %s عادةً لحسابات غير موثوقة. تأكد من أنك تريد فعلًا أن يصل إلى ملفات الخادم."
+
+#: assets/js/access-rules.js:398
+msgid "Baseline rules for every non-administrator role that has access. Roles can be restricted further on their own pages."
+msgstr "قواعد أساسية لكل دور غير المدير يملك وصولًا. يمكن تقييد الأدوار أكثر في صفحاتها الخاصة."
+
+#: assets/js/access-rules.js:399
+msgid "Rules for this role. They add to the “All roles” rules — they can never grant more than those allow."
+msgstr "قواعد هذا الدور. تُضاف إلى قواعد «جميع الأدوار» — ولا يمكنها أبدًا منح أكثر مما تسمح به تلك."
+
+#: assets/js/access-rules.js:403
+msgid "Access"
+msgstr "الوصول"
+
+#. translators: %s: role name
+#: assets/js/access-rules.js:407
+msgid "Allow %s users to use Cloverbrowser"
+msgstr "السماح لمستخدمي الدور %s باستخدام Cloverbrowser"
+
+#: assets/js/access-rules.js:408
+msgid "When off, users with this role do not see Cloverbrowser at all."
+msgstr "عند التعطيل، لا يرى المستخدمون ذوو هذا الدور Cloverbrowser إطلاقًا."
+
+#: assets/js/access-rules.js:412
+msgid "Access is off — you can still prepare these rules; they apply once access is enabled."
+msgstr "الوصول معطَّل — لا يزال بإمكانك إعداد هذه القواعد؛ وستُطبَّق بمجرد تفعيل الوصول."
+
+#: assets/js/access-rules.js:417
+msgid "View only"
+msgstr "عرض فقط"
+
+#: assets/js/access-rules.js:418
+msgid "View & download"
+msgstr "عرض وتنزيل"
+
+#: assets/js/access-rules.js:419
+msgid "Edit files"
+msgstr "تحرير الملفات"
+
+#: assets/js/access-rules.js:420
+msgid "Everything"
+msgstr "كل شيء"
+
+#: assets/js/access-rules.js:422
+msgid "Presets"
+msgstr "إعدادات مسبقة"
+
+#: assets/js/access-rules.js:423
+msgid "Presets:"
+msgstr "إعدادات مسبقة:"
+
+#: assets/js/access-rules.js:432
+msgid "Not allowed for any role (All roles)"
+msgstr "غير مسموح لأي دور (جميع الأدوار)"
+
+#: assets/js/access-rules.js:434
+msgid "What they can do"
+msgstr "ما يمكنهم فعله"
+
+#: assets/js/access-rules.js:442 assets/js/access-rules.js:443
+msgid "No folder limit: the whole site folder is reachable (minus protected items)."
+msgstr "بلا حد للمجلدات: يمكن الوصول إلى مجلد الموقع بأكمله (باستثناء العناصر المحمية)."
+
+#: assets/js/access-rules.js:443
+msgid "No extra limit: the “All roles” folders apply."
+msgstr "بلا حد إضافي: تُطبَّق مجلدات «جميع الأدوار»."
+
+#: assets/js/access-rules.js:447 assets/js/access-rules.js:529 assets/js/file-browser.js:2292
+msgid "Remove"
+msgstr "إزالة"
+
+#. translators: %s: folder path
+#: assets/js/access-rules.js:449
+msgid "Remove %s"
+msgstr "إزالة %s"
+
+#: assets/js/access-rules.js:452
+msgid "Folder path"
+msgstr "مسار المجلد"
+
+#: assets/js/access-rules.js:455
+msgid "Enter a folder path relative to the site root."
+msgstr "أدخل مسار مجلد نسبةً إلى جذر الموقع."
+
+#: assets/js/access-rules.js:462
+msgid "Where they can go"
+msgstr "أين يمكنهم الوصول"
+
+#: assets/js/access-rules.js:463
+msgid "Limit every role to these folders and everything inside them. Leave empty for no limit."
+msgstr "قصر كل الأدوار على هذه المجلدات وكل ما بداخلها. اتركه فارغًا لعدم وضع حد."
+
+#: assets/js/access-rules.js:464
+msgid "Limit this role to these folders. When “All roles” also has folders, only the overlap is reachable."
+msgstr "قصر هذا الدور على هذه المجلدات. عندما تحتوي «جميع الأدوار» أيضًا على مجلدات، لا يمكن الوصول إلا إلى الجزء المشترك."
+
+#: assets/js/access-rules.js:467 assets/js/access-rules.js:615 assets/js/access-rules.js:615
+msgid "Choose folder…"
+msgstr "اختيار مجلد…"
+
+#: assets/js/access-rules.js:469
+msgid "Add"
+msgstr "إضافة"
+
+#: assets/js/access-rules.js:482
+msgid "Blocked for all roles"
+msgstr "محظور لجميع الأدوار"
+
+#: assets/js/access-rules.js:485
+msgid "Blocked file types"
+msgstr "أنواع الملفات المحظورة"
+
+#: assets/js/access-rules.js:486
+msgid "Blocked files cannot be opened, downloaded, edited, uploaded or created. Types are recognised by their content (file headers and embedded code), not just by the name."
+msgstr "لا يمكن فتح الملفات المحظورة أو تنزيلها أو تحريرها أو رفعها أو إنشاؤها. تُتعرَّف الأنواع من محتواها (ترويسات الملفات والشيفرة المضمَّنة)، لا من الاسم فقط."
+
+#: assets/js/access-rules.js:495 assets/js/access-rules.js:523
+msgid "Match"
+msgstr "المطابقة"
+
+#: assets/js/access-rules.js:496 assets/js/access-rules.js:511
+msgid "Pattern or path"
+msgstr "النمط أو المسار"
+
+#: assets/js/access-rules.js:497 assets/js/access-rules.js:525
+msgid "Effect"
+msgstr "التأثير"
+
+#: assets/js/access-rules.js:502
+msgid "Built in: always protected from non-administrators."
+msgstr "مدمج: محمي دائمًا من غير المديرين."
+
+#: assets/js/access-rules.js:502
+msgid "Always"
+msgstr "دائمًا"
+
+#. translators: %s: number of rules
+#: assets/js/access-rules.js:506
+msgid "Plus %s rule from “All roles” and the built-in protections."
+msgid_plural "Plus %s rules from “All roles” and the built-in protections."
+msgstr[0] "بالإضافة إلى %s قاعدة من «جميع الأدوار» والحمايات المدمجة."
+msgstr[1] "بالإضافة إلى قاعدة واحدة من «جميع الأدوار» والحمايات المدمجة."
+msgstr[2] "بالإضافة إلى قاعدتين من «جميع الأدوار» والحمايات المدمجة."
+msgstr[3] "بالإضافة إلى %s قواعد من «جميع الأدوار» والحمايات المدمجة."
+msgstr[4] "بالإضافة إلى %s قاعدة من «جميع الأدوار» والحمايات المدمجة."
+msgstr[5] "بالإضافة إلى %s قاعدة من «جميع الأدوار» والحمايات المدمجة."
+
+#: assets/js/access-rules.js:507
+msgid "Plus the built-in protections."
+msgstr "بالإضافة إلى الحمايات المدمجة."
+
+#: assets/js/access-rules.js:516
+msgid "Required."
+msgstr "مطلوب."
+
+#: assets/js/access-rules.js:517
+msgid "Name rules match a single name — use “Exact path” or “Folder and contents” for paths."
+msgstr "قواعد الاسم تطابق اسمًا واحدًا — استخدم «مسار محدد» أو «المجلد ومحتوياته» للمسارات."
+
+#: assets/js/access-rules.js:529
+msgid "Remove rule"
+msgstr "إزالة القاعدة"
+
+#: assets/js/access-rules.js:531
+msgid "No rules yet."
+msgstr "لا توجد قواعد بعد."
+
+#: assets/js/access-rules.js:538
+msgid "Add rule"
+msgstr "إضافة قاعدة"
+
+#: assets/js/access-rules.js:541
+msgid "Protected files & folders"
+msgstr "الملفات والمجلدات المحمية"
+
+#: assets/js/access-rules.js:542
+msgid "“Hidden & blocked” items are not listed and cannot be opened. “Read-only” items are visible but cannot be changed. A rule that matches a folder also covers everything inside it."
+msgstr "لا تظهر عناصر «مخفي ومحظور» في القائمة ولا يمكن فتحها. أما عناصر «قراءة فقط» فمرئية لكن لا يمكن تغييرها. القاعدة التي تطابق مجلدًا تشمل أيضًا كل ما بداخله."
+
+#: assets/js/access-rules.js:551
+msgid "Unit"
+msgstr "الوحدة"
+
+#: assets/js/access-rules.js:561
+msgid "Size limits"
+msgstr "حدود الحجم"
+
+#: assets/js/access-rules.js:562
+msgid "Leave empty or 0 for no limit (the server’s own upload limit still applies)."
+msgstr "اتركه فارغًا أو 0 لعدم وضع حد (يظل حد الرفع الخاص بالخادم ساريًا)."
+
+#: assets/js/access-rules.js:563
+msgid "Leave empty or 0 for no extra limit. When both are set, the smaller one applies."
+msgstr "اتركه فارغًا أو 0 لعدم وضع حد إضافي. عند تعيين كليهما، يُطبَّق الأصغر."
+
+#: assets/js/access-rules.js:564
+msgid "Largest upload"
+msgstr "أكبر حجم للرفع"
+
+#: assets/js/access-rules.js:564
+msgid "Maximum size of each uploaded file."
+msgstr "الحجم الأقصى لكل ملف مرفوع."
+
+#: assets/js/access-rules.js:565
+msgid "Largest growth per save"
+msgstr "أقصى زيادة في كل حفظ"
+
+#: assets/js/access-rules.js:565
+msgid "How much bigger a file may become in one editor save."
+msgstr "مقدار ما يمكن أن يزيده حجم الملف في عملية حفظ واحدة في المحرر."
+
+#: assets/js/access-rules.js:576
+msgid "Browse folder"
+msgstr "استعراض المجلد"
+
+#: assets/js/access-rules.js:576
+msgid "Open"
+msgstr "فتح"
+
+#: assets/js/access-rules.js:576 assets/js/file-browser.js:763
+msgid "Download"
+msgstr "تنزيل"
+
+#: assets/js/access-rules.js:577
+msgid "Edit & save"
+msgstr "تحرير وحفظ"
+
+#: assets/js/access-rules.js:577
+msgid "Create inside"
+msgstr "إنشاء بداخله"
+
+#: assets/js/access-rules.js:577
+msgid "Upload into"
+msgstr "رفع إليه"
+
+#: assets/js/access-rules.js:581
+msgid "Role"
+msgstr "الدور"
+
+#: assets/js/access-rules.js:582
+msgid "Path to test"
+msgstr "المسار المراد اختباره"
+
+#: assets/js/access-rules.js:587
+msgid "Checking…"
+msgstr "جارٍ التحقق…"
+
+#: assets/js/access-rules.js:592
+msgid "This role has no access at all (access is switched off)."
+msgstr "لا يملك هذا الدور أي وصول على الإطلاق (الوصول معطَّل)."
+
+#: assets/js/access-rules.js:595
+msgid "file"
+msgstr "ملف"
+
+#: assets/js/access-rules.js:595
+msgid "folder"
+msgstr "مجلد"
+
+#. translators: %s: detected file types
+#: assets/js/access-rules.js:598
+msgid "detected as: %s"
+msgstr "اكتُشف على أنه: %s"
+
+#: assets/js/access-rules.js:602
+msgid "Allowed"
+msgstr "مسموح"
+
+#: assets/js/access-rules.js:611
+msgid "Test access"
+msgstr "اختبار الوصول"
+
+#: assets/js/access-rules.js:612
+msgid "Check what a role could do with a file or folder — using the rules on this screen, even before you save them."
+msgstr "تحقق مما يمكن لدور ما فعله بملف أو مجلد — باستخدام القواعد الموجودة في هذه الشاشة، حتى قبل حفظها."
+
+#: assets/js/access-rules.js:616
+msgid "Test"
+msgstr "اختبار"
+
+#: assets/js/access-rules.js:631
+msgid "Enter a number of days between 1 and 3650."
+msgstr "أدخل عددًا من الأيام بين 1 و3650."
+
+#: assets/js/access-rules.js:638
+msgid "days"
+msgstr "يوم"
+
+#: assets/js/access-rules.js:649
+msgid "Deleted files and folders can be kept for a while so they can be restored. There are two levels, and each can be switched on separately."
+msgstr "يمكن الاحتفاظ بالملفات والمجلدات المحذوفة لفترة بحيث يمكن استعادتها. هناك مستويان، ويمكن تفعيل كل منهما على حدة."
+
+#: assets/js/access-rules.js:653
+msgid "Personal trash"
+msgstr "سلة المهملات الشخصية"
+
+#: assets/js/access-rules.js:655
+msgid "Give every user their own trash"
+msgstr "تخصيص سلة مهملات خاصة لكل مستخدم"
+
+#: assets/js/access-rules.js:656
+msgid "Each user’s deletions go to their own Trash, where they can restore them, remove them or empty it. They only ever see their own items."
+msgstr "تنتقل العناصر التي يحذفها كل مستخدم إلى سلة المهملات الخاصة به، حيث يمكنه استعادتها أو إزالتها أو إفراغ السلة. ولا يرى إلا عناصره فقط."
+
+#: assets/js/access-rules.js:657
+msgid "Keep items in a user’s trash for"
+msgstr "الاحتفاظ بالعناصر في سلة مهملات المستخدم لمدة"
+
+#: assets/js/access-rules.js:659 assets/js/file-browser.js:214 assets/js/file-browser.js:1971
+msgid "Site trash"
+msgstr "سلة مهملات الموقع"
+
+#: assets/js/access-rules.js:661
+msgid "Keep every deletion in the site trash"
+msgstr "الاحتفاظ بكل المحذوفات في سلة مهملات الموقع"
+
+#: assets/js/access-rules.js:662
+msgid "A safety net for administrators: everything any user deletes is kept here, even after they empty their own trash. Only administrators can see it, restore from it or empty it."
+msgstr "شبكة أمان للمديرين: يُحتفظ هنا بكل ما يحذفه أي مستخدم، حتى بعد أن يُفرغ سلة مهملاته. لا يمكن إلا للمديرين رؤيتها أو الاستعادة منها أو إفراغها."
+
+#: assets/js/access-rules.js:663
+msgid "Keep items in the site trash for"
+msgstr "الاحتفاظ بالعناصر في سلة مهملات الموقع لمدة"
+
+#: assets/js/access-rules.js:669
+msgid "Recommended"
+msgstr "موصى به"
+
+#: assets/js/access-rules.js:672 assets/js/access-rules.js:674
+msgid "Permanent deletion"
+msgstr "الحذف النهائي"
+
+#: assets/js/access-rules.js:673
+msgid "Who may delete an item for good before the site trash’s retention period is over."
+msgstr "من يمكنه حذف عنصر نهائيًا قبل انتهاء مدة الاحتفاظ في سلة مهملات الموقع."
+
+#: assets/js/access-rules.js:675
+msgid "Administrators only"
+msgstr "المديرون فقط"
+
+#: assets/js/access-rules.js:676
+msgid "Users can remove items from their own trash, but the site trash keeps its copy until it expires."
+msgstr "يمكن للمستخدمين إزالة العناصر من سلة مهملاتهم، لكن سلة مهملات الموقع تحتفظ بنسختها حتى تنتهي مدتها."
+
+#: assets/js/access-rules.js:677
+msgid "Also the user who deleted the item"
+msgstr "المستخدم الذي حذف العنصر أيضًا"
+
+#: assets/js/access-rules.js:678
+msgid "In their own trash, a user can right-click an item and choose “Permanently delete”, which also removes it from the site trash. They can never empty the site trash."
+msgstr "في سلة مهملاته، يمكن للمستخدم النقر بزر الماوس الأيمن على عنصر واختيار «حذف نهائي»، مما يزيله أيضًا من سلة مهملات الموقع. ولا يمكنه أبدًا إفراغ سلة مهملات الموقع."
+
+#: assets/js/access-rules.js:679
+msgid "Requires the personal trash: users can only reach this option from their own trash."
+msgstr "يتطلب سلة المهملات الشخصية: لا يصل المستخدمون إلى هذا الخيار إلا من سلة مهملاتهم."
+
+#: assets/js/access-rules.js:683
+msgid "Stored in:"
+msgstr "مكان التخزين:"
+
+#: assets/js/access-rules.js:684
+msgid "The trash folder is created on the first deletion."
+msgstr "يُنشأ مجلد سلة المهملات عند أول عملية حذف."
+
+#: assets/js/access-rules.js:686
+msgid "Outside the public web root: the web server cannot serve these files."
+msgstr "خارج جذر الويب العام: لا يمكن لخادم الويب تقديم هذه الملفات."
+
+#: assets/js/access-rules.js:687
+msgid "Inside the web root, protected by deny rules (.htaccess / web.config), a random folder name, random item names and private file permissions. On nginx, add a rule denying access to this folder, or define CLOVERBROWSER_TRASH_DIR in wp-config.php as a folder outside the web root."
+msgstr "داخل جذر الويب، ومحمي بقواعد منع (.htaccess / web.config)، واسم مجلد عشوائي، وأسماء عناصر عشوائية، وصلاحيات ملفات خاصة. على nginx، أضف قاعدة تمنع الوصول إلى هذا المجلد، أو عرِّف CLOVERBROWSER_TRASH_DIR في wp-config.php كمجلد خارج جذر الويب."
+
+#: assets/js/access-rules.js:688
+msgid "Storage"
+msgstr "التخزين"
+
+#. translators: 1: number of items, 2: total size
+#: assets/js/access-rules.js:692
+msgid "The site currently holds %1$s trashed item (%2$s)."
+msgid_plural "The site currently holds %1$s trashed items (%2$s)."
+msgstr[0] "يحتوي الموقع حاليًا على %1$s عنصر محذوف (%2$s)."
+msgstr[1] "يحتوي الموقع حاليًا على %1$s عنصر محذوف (%2$s)."
+msgstr[2] "يحتوي الموقع حاليًا على %1$s عنصرين محذوفين (%2$s)."
+msgstr[3] "يحتوي الموقع حاليًا على %1$s عناصر محذوفة (%2$s)."
+msgstr[4] "يحتوي الموقع حاليًا على %1$s عنصرًا محذوفًا (%2$s)."
+msgstr[5] "يحتوي الموقع حاليًا على %1$s عنصر محذوف (%2$s)."
+
+#: assets/js/access-rules.js:694
+msgid "Retention changes also apply to items already in the trash: items outside the new periods are deleted at the next hourly cleanup."
+msgstr "تنطبق تغييرات مدة الاحتفاظ أيضًا على العناصر الموجودة في سلة المهملات: تُحذف العناصر التي تتجاوز المدد الجديدة عند التنظيف التالي الذي يجري كل ساعة."
+
+#: assets/js/access-rules.js:696
+msgid "Open site trash"
+msgstr "فتح سلة مهملات الموقع"
+
+#: assets/js/access-rules.js:707
+msgid "Both trashes are off: every deletion is permanent and cannot be undone."
+msgstr "سلتا المهملات معطَّلتان: كل عملية حذف نهائية ولا يمكن التراجع عنها."
+
+#: assets/js/access-rules.js:709
+msgid "Without the site trash, an item is gone for good as soon as its owner removes it from their trash."
+msgstr "بدون سلة مهملات الموقع، يُفقد العنصر نهائيًا بمجرد أن يزيله صاحبه من سلة مهملاته."
+
+#: assets/js/access-rules.js:712
+msgid "Users can permanently delete their own items, so the site trash is no longer a complete record of deletions."
+msgstr "يمكن للمستخدمين حذف عناصرهم نهائيًا، لذا لم تعد سلة مهملات الموقع سجلًا كاملًا لعمليات الحذف."
+
+#: assets/js/access-rules.js:735
+msgid "Fix the highlighted field first."
+msgstr "أصلح الحقل المميَّز أولًا."
+
+#: assets/js/access-rules.js:749
+msgid "Access rules saved."
+msgstr "حُفظت قواعد الوصول."
+
+#: assets/js/access-rules.js:757
+msgid "Trash settings saved."
+msgstr "حُفظت إعدادات سلة المهملات."
+
+#: assets/js/access-rules.js:770
+msgid "Discard changes?"
+msgstr "تجاهل التغييرات؟"
+
+#: assets/js/access-rules.js:770
+msgid "Your unsaved changes will be lost."
+msgstr "ستفقد تغييراتك غير المحفوظة."
+
+#: assets/js/file-browser.js:141 assets/js/file-browser.js:1685
+msgid "New folder"
+msgstr "مجلد جديد"
+
+#: assets/js/file-browser.js:142 assets/js/file-browser.js:1704
+msgid "New file"
+msgstr "ملف جديد"
+
+#: assets/js/file-browser.js:144
+msgid "Upload"
+msgstr "رفع"
+
+#: assets/js/file-browser.js:147 assets/js/file-browser.js:1365
+msgid "Revert"
+msgstr "استرجاع"
+
+#: assets/js/file-browser.js:148
+msgid "Save"
+msgstr "حفظ"
+
+#: assets/js/file-browser.js:159 assets/js/file-browser.js:353 assets/js/file-browser.js:892
+msgid "Ready"
+msgstr "جاهز"
+
+#: assets/js/file-browser.js:161
+msgid "Limited access"
+msgstr "وصول محدود"
+
+#: assets/js/file-browser.js:168
+msgid "Current folder"
+msgstr "المجلد الحالي"
+
+#: assets/js/file-browser.js:170 assets/js/file-browser.js:170
+msgid "Parent folder"
+msgstr "المجلد الأعلى"
+
+#: assets/js/file-browser.js:171 assets/js/file-browser.js:171 assets/js/file-browser.js:217 assets/js/file-browser.js:217
+msgid "Refresh"
+msgstr "تحديث"
+
+#: assets/js/file-browser.js:175
+msgid "Folder contents"
+msgstr "محتويات المجلد"
+
+#: assets/js/file-browser.js:177 assets/js/file-browser.js:224
+msgctxt "column header"
+msgid "Name"
+msgstr "الاسم"
+
+#: assets/js/file-browser.js:178 assets/js/file-browser.js:227
+msgctxt "column header"
+msgid "Size"
+msgstr "الحجم"
+
+#: assets/js/file-browser.js:179
+msgctxt "column header: permission mode"
+msgid "Mode"
+msgstr "الصلاحيات"
+
+#: assets/js/file-browser.js:180
+msgctxt "column header: last modified date"
+msgid "Modified"
+msgstr "آخر تعديل"
+
+#: assets/js/file-browser.js:185
+msgid "Drop files to upload to this folder"
+msgstr "أفلت الملفات هنا لرفعها إلى هذا المجلد"
+
+#: assets/js/file-browser.js:187
+msgid "File editor"
+msgstr "محرر الملفات"
+
+#: assets/js/file-browser.js:195 assets/js/file-browser.js:195
+msgid "Close editor"
+msgstr "إغلاق المحرر"
+
+#: assets/js/file-browser.js:201 assets/js/file-browser.js:201
+msgid "Dismiss"
+msgstr "إخفاء"
+
+#: assets/js/file-browser.js:204
+msgid "File contents"
+msgstr "محتوى الملف"
+
+#: assets/js/file-browser.js:210
+msgid "Back to files"
+msgstr "العودة إلى الملفات"
+
+#: assets/js/file-browser.js:213
+msgid "My trash"
+msgstr "سلة مهملاتي"
+
+#: assets/js/file-browser.js:225
+msgid "Deleted"
+msgstr "تاريخ الحذف"
+
+#: assets/js/file-browser.js:226 assets/js/file-browser.js:2105
+msgid "Kept until"
+msgstr "يُحتفظ به حتى"
+
+#: assets/js/file-browser.js:239
+msgid "Download helper"
+msgstr "مساعد التنزيل"
+
+#. translators: %s: file size in bytes
+#: assets/js/file-browser.js:319
+msgid "%s B"
+msgstr "%s بايت"
+
+#. translators: %s: file size in kilobytes
+#: assets/js/file-browser.js:322
+msgid "%s KB"
+msgstr "%s ك.بايت"
+
+#. translators: %s: file size in megabytes
+#: assets/js/file-browser.js:324
+msgid "%s MB"
+msgstr "%s م.بايت"
+
+#. translators: %s: file size in gigabytes
+#: assets/js/file-browser.js:326
+msgid "%s GB"
+msgstr "%s ج.بايت"
+
+#. translators: %s: file size in terabytes
+#: assets/js/file-browser.js:328
+msgid "%s TB"
+msgstr "%s ت.بايت"
+
+#: assets/js/file-browser.js:336
+msgid "Enter a name."
+msgstr "أدخل اسمًا."
+
+#: assets/js/file-browser.js:337 includes/class-cloverbrowser-ajax.php:197
+msgid "Names cannot contain slashes or be “.” / “..”."
+msgstr "لا يمكن أن تحتوي الأسماء على شرطات مائلة أو أن تكون «.» أو «..»."
+
+#: assets/js/file-browser.js:338
+msgid "Names cannot contain control characters."
+msgstr "لا يمكن أن تحتوي الأسماء على محارف تحكم."
+
+#: assets/js/file-browser.js:347 assets/js/file-browser.js:2295 assets/js/file-browser.js:2317 assets/js/file-browser.js:2349
+msgid "Working…"
+msgstr "جارٍ العمل…"
+
+#: assets/js/file-browser.js:490 assets/js/file-browser.js:554
+msgid "OK"
+msgstr "موافق"
+
+#: assets/js/file-browser.js:528
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. translators: %s: folder name
+#: assets/js/file-browser.js:597
+msgid "Loading %s…"
+msgstr "جارٍ تحميل %s…"
+
+#: assets/js/file-browser.js:598
+msgid "Loading root…"
+msgstr "جارٍ تحميل الجذر…"
+
+#: assets/js/file-browser.js:624 assets/js/file-browser.js:1805
+msgid "Open one of the folders you have access to first."
+msgstr "افتح أولًا أحد المجلدات التي يمكنك الوصول إليها."
+
+#: assets/js/file-browser.js:625 assets/js/file-browser.js:1806
+msgid "This folder is protected: your role can only read it."
+msgstr "هذا المجلد محمي: يمكن لدورك قراءته فقط."
+
+#: assets/js/file-browser.js:644
+msgctxt "top-level folder"
+msgid "root"
+msgstr "الجذر"
+
+#. translators: %s: folder name
+#: assets/js/file-browser.js:706
+msgid "Open folder %s"
+msgstr "فتح المجلد %s"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:708
+msgid "Open file %s"
+msgstr "فتح الملف %s"
+
+#: assets/js/file-browser.js:711
+msgid "(broken link)"
+msgstr "(رابط معطَّل)"
+
+#. translators: %s: file type name, e.g. "PHP code"
+#: assets/js/file-browser.js:735 assets/js/file-browser.js:861
+msgid "Blocked file type for your role: %s"
+msgstr "نوع ملف محظور لدورك: %s"
+
+#: assets/js/file-browser.js:737
+msgid "Protected: your role can only read this."
+msgstr "محمي: يمكن لدورك قراءة هذا فقط."
+
+#: assets/js/file-browser.js:749
+msgid "not writable by PHP"
+msgstr "لا يمكن لـ PHP الكتابة فيه"
+
+#: assets/js/file-browser.js:764
+msgid "Open in editor"
+msgstr "فتح في المحرر"
+
+#: assets/js/file-browser.js:764
+msgid "View"
+msgstr "عرض"
+
+#: assets/js/file-browser.js:766 assets/js/file-browser.js:1529
+msgid "Rename"
+msgstr "إعادة تسمية"
+
+#: assets/js/file-browser.js:795
+msgid "This folder is empty."
+msgstr "هذا المجلد فارغ."
+
+#. translators: %s: number of items in a folder / %s: number of items in the folder
+#: assets/js/file-browser.js:807 assets/js/file-browser.js:2064
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s عنصر"
+msgstr[1] "عنصر واحد"
+msgstr[2] "عنصران"
+msgstr[3] "%s عناصر"
+msgstr[4] "%s عنصرًا"
+msgstr[5] "%s عنصر"
+
+#. translators: 1: number of items shown, 2: total number of items
+#: assets/js/file-browser.js:809
+msgid "%1$s of %2$s shown"
+msgid_plural "%1$s of %2$s shown"
+msgstr[0] "يُعرض %1$s من %2$s"
+msgstr[1] "يُعرض %1$s من %2$s"
+msgstr[2] "يُعرض %1$s من %2$s"
+msgstr[3] "يُعرض %1$s من %2$s"
+msgstr[4] "يُعرض %1$s من %2$s"
+msgstr[5] "يُعرض %1$s من %2$s"
+
+#. translators: 1: total number of entries in the folder, 2: number of entries listed
+#: assets/js/file-browser.js:813
+msgid "folder has %1$s entries; only the first %2$s are listed"
+msgid_plural "folder has %1$s entries; only the first %2$s are listed"
+msgstr[0] "يحتوي المجلد على %1$s إدخال؛ تُعرض أول %2$s فقط"
+msgstr[1] "يحتوي المجلد على %1$s إدخال؛ تُعرض أول %2$s فقط"
+msgstr[2] "يحتوي المجلد على %1$s إدخالين؛ تُعرض أول %2$s فقط"
+msgstr[3] "يحتوي المجلد على %1$s إدخالات؛ تُعرض أول %2$s فقط"
+msgstr[4] "يحتوي المجلد على %1$s إدخالًا؛ تُعرض أول %2$s فقط"
+msgstr[5] "يحتوي المجلد على %1$s إدخال؛ تُعرض أول %2$s فقط"
+
+#: assets/js/file-browser.js:823
+msgid "Show more"
+msgstr "عرض المزيد"
+
+#. translators: %s: symbolic link target path
+#: assets/js/file-browser.js:855
+msgid "Broken symbolic link → %s"
+msgstr "رابط رمزي معطَّل ← %s"
+
+#: assets/js/file-browser.js:866 includes/class-cloverbrowser-policy.php:569
+msgid "Your role is not allowed to open files."
+msgstr "لا يُسمح لدورك بفتح الملفات."
+
+#. translators: %s: error message
+#: assets/js/file-browser.js:890
+msgid "Download failed: %s"
+msgstr "فشل التنزيل: %s"
+
+#: assets/js/file-browser.js:891 includes/class-cloverbrowser-files.php:703
+msgid "Download failed."
+msgstr "فشل التنزيل."
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:914
+msgid "Download started — %s"
+msgstr "بدأ التنزيل — %s"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:929
+msgid "“%s” has unsaved changes. Keep them as a draft (restorable next time you open the file) or discard them?"
+msgstr "في «%s» تغييرات غير محفوظة. هل تريد الاحتفاظ بها كمسودة (يمكن استعادتها عند فتح الملف في المرة القادمة) أم تجاهلها؟"
+
+#: assets/js/file-browser.js:934
+msgid "Discard changes"
+msgstr "تجاهل التغييرات"
+
+#: assets/js/file-browser.js:935
+msgid "Keep as draft"
+msgstr "الاحتفاظ كمسودة"
+
+#: assets/js/file-browser.js:948
+msgid "Could not store the draft — your edits are still in the editor."
+msgstr "تعذّر حفظ المسودة — ما زالت تعديلاتك في المحرر."
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:963
+msgid "Opening %s…"
+msgstr "جارٍ فتح %s…"
+
+#: assets/js/file-browser.js:972
+msgid "Cannot open in editor"
+msgstr "لا يمكن الفتح في المحرر"
+
+#: assets/js/file-browser.js:975
+msgid "Close"
+msgstr "إغلاق"
+
+#: assets/js/file-browser.js:976
+msgid "Download instead"
+msgstr "التنزيل بدلًا من ذلك"
+
+#: assets/js/file-browser.js:981
+msgid "File no longer exists — refreshing."
+msgstr "لم يعد الملف موجودًا — جارٍ التحديث."
+
+#. translators: 1: date and time, 2: user display name, 3: draft size
+#: assets/js/file-browser.js:994
+msgid "An autosaved draft exists for this file (saved %1$s by %2$s, %3$s)."
+msgstr "توجد مسودة محفوظة تلقائيًا لهذا الملف (حفظها %2$s في %1$s، %3$s)."
+
+#. translators: 1: date and time, 2: draft size
+#: assets/js/file-browser.js:996
+msgid "An autosaved draft exists for this file (saved %1$s, %2$s)."
+msgstr "توجد مسودة محفوظة تلقائيًا لهذا الملف (حُفظت في %1$s، %2$s)."
+
+#: assets/js/file-browser.js:997
+msgid "Warning: the file has changed on disk since that draft was made."
+msgstr "تحذير: تغيَّر الملف على القرص منذ إنشاء تلك المسودة."
+
+#: assets/js/file-browser.js:998
+msgid "Which version do you want?"
+msgstr "أي نسخة تريد؟"
+
+#: assets/js/file-browser.js:1000
+msgid "Unsaved draft found"
+msgstr "عُثر على مسودة غير محفوظة"
+
+#: assets/js/file-browser.js:1003
+msgid "Open original"
+msgstr "فتح الأصل"
+
+#: assets/js/file-browser.js:1004
+msgid "Delete draft"
+msgstr "حذف المسودة"
+
+#: assets/js/file-browser.js:1005
+msgid "Restore draft"
+msgstr "استعادة المسودة"
+
+#: assets/js/file-browser.js:1012
+msgid "Draft deleted."
+msgstr "حُذفت المسودة."
+
+#. translators: %s: error message
+#: assets/js/file-browser.js:1016
+msgid "Could not delete draft: %s"
+msgstr "تعذّر حذف المسودة: %s"
+
+#: assets/js/file-browser.js:1024
+msgid "Could not read draft — opening the original instead."
+msgstr "تعذّرت قراءة المسودة — سيُفتح الأصل بدلًا منها."
+
+#: assets/js/file-browser.js:1096
+msgid "Draft restored — not saved to disk yet"
+msgstr "استُعيدت المسودة — لم تُحفظ على القرص بعد"
+
+#: assets/js/file-browser.js:1096
+msgid "Draft matches file"
+msgstr "المسودة مطابقة للملف"
+
+#: assets/js/file-browser.js:1117
+msgid "Windows (CRLF)"
+msgstr "Windows (CRLF)"
+
+#: assets/js/file-browser.js:1118
+msgid "classic Mac (CR)"
+msgstr "Mac الكلاسيكي (CR)"
+
+#: assets/js/file-browser.js:1119
+msgid "Unix (LF)"
+msgstr "Unix (LF)"
+
+#: assets/js/file-browser.js:1120 assets/js/file-browser.js:1182
+msgid "mixed"
+msgstr "مختلطة"
+
+#. translators: 1: line-ending style of the file, e.g. "Windows (CRLF)", 2: the server's style, e.g. "Unix (LF)"
+#: assets/js/file-browser.js:1133
+msgid "This file uses %1$s line endings. Saving converts them to %2$s, this server’s format."
+msgstr "يستخدم هذا الملف نهايات أسطر %1$s. سيحوّلها الحفظ إلى %2$s، وهو تنسيق هذا الخادم."
+
+#. translators: %s: line-ending name, e.g. "LF"
+#: assets/js/file-browser.js:1138
+msgid "Convert to %s now"
+msgstr "التحويل إلى %s الآن"
+
+#: assets/js/file-browser.js:1147
+msgid "Save or discard your edits first — saving converts the line endings anyway."
+msgstr "احفظ تعديلاتك أو تجاهلها أولًا — فالحفظ يحوّل نهايات الأسطر على أي حال."
+
+#: assets/js/file-browser.js:1151
+msgid "Converting line endings…"
+msgstr "جارٍ تحويل نهايات الأسطر…"
+
+#. translators: 1: file name, 2: line-ending name, e.g. "LF"
+#: assets/js/file-browser.js:1156
+msgid "%1$s now uses %2$s line endings."
+msgstr "يستخدم %1$s الآن نهايات أسطر %2$s."
+
+#. translators: %s: line-ending style, e.g. "Windows (CRLF)"
+#: assets/js/file-browser.js:1185
+msgid "Line endings: %s"
+msgstr "نهايات الأسطر: %s"
+
+#: assets/js/file-browser.js:1187
+msgid "view only"
+msgstr "عرض فقط"
+
+#: assets/js/file-browser.js:1188
+msgid "read-only for PHP"
+msgstr "قراءة فقط لـ PHP"
+
+#: assets/js/file-browser.js:1214
+msgid "Editing — draft autosave pending…"
+msgstr "جارٍ التحرير — الحفظ التلقائي للمسودة قيد الانتظار…"
+
+#: assets/js/file-browser.js:1231
+msgid "Saving draft…"
+msgstr "جارٍ حفظ المسودة…"
+
+#. translators: %s: time of day
+#: assets/js/file-browser.js:1238
+msgid "Draft saved %s"
+msgstr "حُفظت المسودة في %s"
+
+#: assets/js/file-browser.js:1244
+msgid "Draft save failed"
+msgstr "فشل حفظ المسودة"
+
+#. translators: %s: error message
+#: assets/js/file-browser.js:1247
+msgid "Autosave failed: %s"
+msgstr "فشل الحفظ التلقائي: %s"
+
+#: assets/js/file-browser.js:1268
+msgid "Read-only mode:"
+msgstr "وضع القراءة فقط:"
+
+#: assets/js/file-browser.js:1268
+msgid "saving is disabled."
+msgstr "الحفظ معطَّل."
+
+#. translators: %s: octal permission mode, e.g. 0644
+#: assets/js/file-browser.js:1274
+msgid "The PHP process cannot write this file (mode %s). Adjust permissions first."
+msgstr "لا تستطيع عملية PHP الكتابة في هذا الملف (الصلاحيات %s). عدِّل الصلاحيات أولًا."
+
+#. translators: %s: size limit, e.g. 2 MB
+#: assets/js/file-browser.js:1283
+msgid "Content is larger than the %s editor limit; not saved."
+msgstr "المحتوى أكبر من حد المحرر البالغ %s؛ لم يُحفظ."
+
+#. translators: %s: allowed size increase, e.g. 50 KB
+#: assets/js/file-browser.js:1289
+msgid "This edit makes the file too much larger: your role may grow a file by at most %s per save."
+msgstr "هذا التعديل يزيد حجم الملف أكثر من اللازم: يمكن لدورك زيادة حجم الملف بمقدار %s كحد أقصى في كل حفظ."
+
+#: assets/js/file-browser.js:1295
+msgid "Save empty file?"
+msgstr "حفظ ملف فارغ؟"
+
+#: assets/js/file-browser.js:1296
+msgid "This will replace the file’s current contents with nothing. Continue?"
+msgstr "سيؤدي هذا إلى مسح كل محتوى الملف الحالي. هل تريد المتابعة؟"
+
+#: assets/js/file-browser.js:1297
+msgid "Save empty"
+msgstr "حفظ فارغًا"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1307
+msgid "Saving %s…"
+msgstr "جارٍ حفظ %s…"
+
+#: assets/js/file-browser.js:1324
+msgid "Edited since last save"
+msgstr "عُدِّل منذ آخر حفظ"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1330
+msgid "Saved %s"
+msgstr "حُفظ %s"
+
+#: assets/js/file-browser.js:1335
+msgid "File changed on disk"
+msgstr "تغيَّر الملف على القرص"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1338
+msgid "“%s” was modified by something else after you opened it. Overwriting will discard those changes."
+msgstr "عُدِّل «%s» من جهة أخرى بعد أن فتحته. الكتابة فوقه ستتجاهل تلك التغييرات."
+
+#: assets/js/file-browser.js:1343 assets/js/file-browser.js:1879
+msgid "Overwrite"
+msgstr "الكتابة فوقه"
+
+#. translators: %s: error message
+#: assets/js/file-browser.js:1350
+msgid "Save failed: %s"
+msgstr "فشل الحفظ: %s"
+
+#: assets/js/file-browser.js:1363
+msgid "Revert changes"
+msgstr "استرجاع التغييرات"
+
+#: assets/js/file-browser.js:1364
+msgid "Discard your edits and the autosaved draft, then reload the file from disk?"
+msgstr "تجاهل تعديلاتك والمسودة المحفوظة تلقائيًا، ثم إعادة تحميل الملف من القرص؟"
+
+#. translators: 1: octal permission mode, 2: path
+#: assets/js/file-browser.js:1397
+msgid "Current mode: %1$s — %2$s"
+msgstr "الصلاحيات الحالية: %1$s — %2$s"
+
+#: assets/js/file-browser.js:1404 assets/js/file-browser.js:1413
+msgctxt "permission"
+msgid "Read"
+msgstr "قراءة"
+
+#: assets/js/file-browser.js:1404 assets/js/file-browser.js:1414
+msgctxt "permission"
+msgid "Write"
+msgstr "كتابة"
+
+#: assets/js/file-browser.js:1404 assets/js/file-browser.js:1415
+msgctxt "permission"
+msgid "Execute"
+msgstr "تنفيذ"
+
+#: assets/js/file-browser.js:1408
+msgctxt "permission class"
+msgid "owner"
+msgstr "المالك"
+
+#: assets/js/file-browser.js:1409
+msgctxt "permission class"
+msgid "group"
+msgstr "المجموعة"
+
+#: assets/js/file-browser.js:1410
+msgctxt "permission class"
+msgid "world"
+msgstr "الآخرون"
+
+#: assets/js/file-browser.js:1440
+msgid "Mode (octal, e.g. 0644):"
+msgstr "الصلاحيات (بالنظام الثماني، مثل 0644):"
+
+#: assets/js/file-browser.js:1449
+msgid "Apply recursively to all contents (symlinks skipped; capped server-side)"
+msgstr "تطبيق على جميع المحتويات بشكل متكرر (تُتخطّى الروابط الرمزية؛ مع حد أقصى على الخادم)"
+
+#: assets/js/file-browser.js:1455
+msgid "Note: special bits (setuid/setgid/sticky) are currently set. The leading digit controls them."
+msgstr "ملاحظة: البتات الخاصة (setuid/setgid/sticky) مفعّلة حاليًا، ويتحكم بها الرقم الأول."
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:1478
+msgid "Permissions — %s"
+msgstr "الصلاحيات — %s"
+
+#: assets/js/file-browser.js:1483
+msgid "Apply"
+msgstr "تطبيق"
+
+#: assets/js/file-browser.js:1487
+msgid "Enter a valid octal mode like 0644."
+msgstr "أدخل صلاحيات صحيحة بالنظام الثماني مثل 0644."
+
+#: assets/js/file-browser.js:1497
+msgid "Applying permissions…"
+msgstr "جارٍ تطبيق الصلاحيات…"
+
+#. translators: %s: number of files/folders whose permissions changed
+#: assets/js/file-browser.js:1502
+msgid "Permissions updated — %s item changed"
+msgid_plural "Permissions updated — %s items changed"
+msgstr[0] "حُدِّثت الصلاحيات — لم يتغير أي عنصر (%s)"
+msgstr[1] "حُدِّثت الصلاحيات — تغيَّر عنصر واحد"
+msgstr[2] "حُدِّثت الصلاحيات — تغيَّر عنصران"
+msgstr[3] "حُدِّثت الصلاحيات — تغيَّرت %s عناصر"
+msgstr[4] "حُدِّثت الصلاحيات — تغيَّر %s عنصرًا"
+msgstr[5] "حُدِّثت الصلاحيات — تغيَّر %s عنصر"
+
+#. translators: %s: number of items that failed
+#: assets/js/file-browser.js:1507
+msgid "%s failed"
+msgid_plural "%s failed"
+msgstr[0] "فشل %s"
+msgstr[1] "فشل عنصر واحد"
+msgstr[2] "فشل عنصران"
+msgstr[3] "فشلت %s عناصر"
+msgstr[4] "فشل %s عنصرًا"
+msgstr[5] "فشل %s عنصر"
+
+#. translators: %s: number of symbolic links skipped
+#: assets/js/file-browser.js:1511
+msgid "%s symlink skipped"
+msgid_plural "%s symlinks skipped"
+msgstr[0] "تُخطّي %s رابط رمزي"
+msgstr[1] "تُخطّي رابط رمزي واحد"
+msgstr[2] "تُخطّي رابطان رمزيان"
+msgstr[3] "تُخطّيت %s روابط رمزية"
+msgstr[4] "تُخطّي %s رابطًا رمزيًا"
+msgstr[5] "تُخطّي %s رابط رمزي"
+
+#: assets/js/file-browser.js:1513
+msgctxt "list separator"
+msgid ", "
+msgstr "، "
+
+#: assets/js/file-browser.js:1530
+msgid "New name (kept in the same folder)"
+msgstr "الاسم الجديد (يبقى في المجلد نفسه)"
+
+#: assets/js/file-browser.js:1536
+msgid "Renaming…"
+msgstr "جارٍ إعادة التسمية…"
+
+#. translators: %s: new file or folder name
+#: assets/js/file-browser.js:1549
+msgid "Renamed to %s"
+msgstr "أُعيدت التسمية إلى %s"
+
+#. translators: %s: folder name
+#: assets/js/file-browser.js:1578
+msgid "Move the folder “%s” and everything in it to the trash?"
+msgstr "هل تريد نقل المجلد «%s» وكل ما بداخله إلى سلة المهملات؟"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1580
+msgid "Move “%s” to the trash?"
+msgstr "هل تريد نقل «%s» إلى سلة المهملات؟"
+
+#. translators: %s: number of days
+#: assets/js/file-browser.js:1584
+msgid "You can restore it from your Trash for %s day."
+msgid_plural "You can restore it from your Trash for %s days."
+msgstr[0] "يمكنك استعادته من سلة مهملاتك لمدة %s يوم."
+msgstr[1] "يمكنك استعادته من سلة مهملاتك لمدة يوم واحد."
+msgstr[2] "يمكنك استعادته من سلة مهملاتك لمدة يومين."
+msgstr[3] "يمكنك استعادته من سلة مهملاتك لمدة %s أيام."
+msgstr[4] "يمكنك استعادته من سلة مهملاتك لمدة %s يومًا."
+msgstr[5] "يمكنك استعادته من سلة مهملاتك لمدة %s يوم."
+
+#. translators: %s: number of days
+#: assets/js/file-browser.js:1588
+msgid "It is kept in the site trash for %s day."
+msgid_plural "It is kept in the site trash for %s days."
+msgstr[0] "يُحتفظ به في سلة مهملات الموقع لمدة %s يوم."
+msgstr[1] "يُحتفظ به في سلة مهملات الموقع لمدة يوم واحد."
+msgstr[2] "يُحتفظ به في سلة مهملات الموقع لمدة يومين."
+msgstr[3] "يُحتفظ به في سلة مهملات الموقع لمدة %s أيام."
+msgstr[4] "يُحتفظ به في سلة مهملات الموقع لمدة %s يومًا."
+msgstr[5] "يُحتفظ به في سلة مهملات الموقع لمدة %s يوم."
+
+#. translators: %s: number of days
+#: assets/js/file-browser.js:1592
+msgid "An administrator can restore it for %s day."
+msgid_plural "An administrator can restore it for %s days."
+msgstr[0] "يمكن لأحد المديرين استعادته لمدة %s يوم."
+msgstr[1] "يمكن لأحد المديرين استعادته لمدة يوم واحد."
+msgstr[2] "يمكن لأحد المديرين استعادته لمدة يومين."
+msgstr[3] "يمكن لأحد المديرين استعادته لمدة %s أيام."
+msgstr[4] "يمكن لأحد المديرين استعادته لمدة %s يومًا."
+msgstr[5] "يمكن لأحد المديرين استعادته لمدة %s يوم."
+
+#. translators: %s: folder name
+#: assets/js/file-browser.js:1597
+msgid "Delete folder “%s”? This cannot be undone."
+msgstr "هل تريد حذف المجلد «%s»؟ لا يمكن التراجع عن ذلك."
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1599
+msgid "Delete file “%s”? This cannot be undone."
+msgstr "هل تريد حذف الملف «%s»؟ لا يمكن التراجع عن ذلك."
+
+#: assets/js/file-browser.js:1600
+msgid "It will not go to the trash."
+msgstr "لن يُنقل إلى سلة المهملات."
+
+#: assets/js/file-browser.js:1604 assets/js/file-browser.js:1628
+msgid "Move to trash"
+msgstr "نقل إلى سلة المهملات"
+
+#: assets/js/file-browser.js:1604 assets/js/file-browser.js:2315
+msgid "Delete permanently"
+msgstr "حذف نهائي"
+
+#: assets/js/file-browser.js:1612
+msgid "Delete permanently (skip the trash)"
+msgstr "حذف نهائي (دون المرور بسلة المهملات)"
+
+#: assets/js/file-browser.js:1619
+msgid "Also delete everything inside it (capped server-side)"
+msgstr "حذف كل ما بداخله أيضًا (مع حد أقصى على الخادم)"
+
+#: assets/js/file-browser.js:1624
+msgid "Delete folder"
+msgstr "حذف المجلد"
+
+#: assets/js/file-browser.js:1624
+msgid "Delete file"
+msgstr "حذف الملف"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:1641
+msgid "Deleting %s…"
+msgstr "جارٍ حذف %s…"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:1651
+msgid "Moved %s to the trash"
+msgstr "نُقل %s إلى سلة المهملات"
+
+#: assets/js/file-browser.js:1652
+msgid "Undo"
+msgstr "تراجع"
+
+#. translators: 1: folder name, 2: number of items deleted
+#: assets/js/file-browser.js:1656
+msgid "Deleted %1$s (%2$s item)"
+msgid_plural "Deleted %1$s (%2$s items)"
+msgstr[0] "حُذف %1$s (%2$s عنصر)"
+msgstr[1] "حُذف %1$s (%2$s عنصر)"
+msgstr[2] "حُذف %1$s (%2$s عنصران)"
+msgstr[3] "حُذف %1$s (%2$s عناصر)"
+msgstr[4] "حُذف %1$s (%2$s عنصرًا)"
+msgstr[5] "حُذف %1$s (%2$s عنصر)"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:1658
+msgid "Deleted %s"
+msgstr "حُذف %s"
+
+#: assets/js/file-browser.js:1685
+msgid "Folder name"
+msgstr "اسم المجلد"
+
+#: assets/js/file-browser.js:1687
+msgid "Creating folder…"
+msgstr "جارٍ إنشاء المجلد…"
+
+#. translators: %s: folder name
+#: assets/js/file-browser.js:1692
+msgid "Folder created: %s"
+msgstr "أُنشئ المجلد: %s"
+
+#: assets/js/file-browser.js:1704
+msgid "File name"
+msgstr "اسم الملف"
+
+#: assets/js/file-browser.js:1706
+msgid "Creating file…"
+msgstr "جارٍ إنشاء الملف…"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1711
+msgid "File created: %s"
+msgstr "أُنشئ الملف: %s"
+
+#: assets/js/file-browser.js:1788
+msgid "File is larger than the web server accepts."
+msgstr "الملف أكبر مما يقبله خادم الويب."
+
+#. translators: %d: HTTP status code
+#: assets/js/file-browser.js:1790
+msgid "Upload failed (HTTP %d)."
+msgstr "فشل الرفع (HTTP %d)."
+
+#: assets/js/file-browser.js:1794
+msgid "Network error during upload."
+msgstr "خطأ في الشبكة أثناء الرفع."
+
+#: assets/js/file-browser.js:1809
+msgid "An upload is already in progress."
+msgstr "توجد عملية رفع جارية بالفعل."
+
+#. translators: 1: file name, 2: maximum upload size
+#: assets/js/file-browser.js:1815
+msgid "%1$s is larger than the %2$s your role may upload."
+msgstr "%1$s أكبر من %2$s المسموح لدورك برفعه."
+
+#. translators: %s: number of further files
+#: assets/js/file-browser.js:1832
+msgid "…and %s more"
+msgid_plural "…and %s more"
+msgstr[0] "…و%s عنصر آخر"
+msgstr[1] "…وعنصر آخر"
+msgstr[2] "…وعنصران آخران"
+msgstr[3] "…و%s عناصر أخرى"
+msgstr[4] "…و%s عنصرًا آخر"
+msgstr[5] "…و%s عنصر آخر"
+
+#. translators: 1: number of files, 2: the server's line-ending style, e.g. "Unix (LF)"
+#: assets/js/file-browser.js:1838
+msgid "%1$s file uses line endings that differ from this server’s %2$s format:"
+msgid_plural "%1$s files use line endings that differ from this server’s %2$s format:"
+msgstr[0] "%1$s ملف يستخدم نهايات أسطر تختلف عن تنسيق هذا الخادم %2$s:"
+msgstr[1] "%1$s ملف يستخدم نهايات أسطر تختلف عن تنسيق هذا الخادم %2$s:"
+msgstr[2] "%1$s ملفان يستخدمان نهايات أسطر تختلف عن تنسيق هذا الخادم %2$s:"
+msgstr[3] "%1$s ملفات تستخدم نهايات أسطر تختلف عن تنسيق هذا الخادم %2$s:"
+msgstr[4] "%1$s ملفًا يستخدم نهايات أسطر تختلف عن تنسيق هذا الخادم %2$s:"
+msgstr[5] "%1$s ملف يستخدم نهايات أسطر تختلف عن تنسيق هذا الخادم %2$s:"
+
+#: assets/js/file-browser.js:1845
+msgid "Convert line endings?"
+msgstr "تحويل نهايات الأسطر؟"
+
+#: assets/js/file-browser.js:1848
+msgid "Cancel upload"
+msgstr "إلغاء الرفع"
+
+#: assets/js/file-browser.js:1849
+msgid "Keep as they are"
+msgstr "إبقاؤها كما هي"
+
+#. translators: %s: line-ending name, e.g. "LF"
+#: assets/js/file-browser.js:1853
+msgid "Convert to %s"
+msgstr "التحويل إلى %s"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1870
+msgid "Uploaded %s"
+msgstr "رُفع %s"
+
+#: assets/js/file-browser.js:1875
+msgid "File exists"
+msgstr "الملف موجود"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1878
+msgid "“%s” already exists in this folder. Overwrite it?"
+msgstr "«%s» موجود بالفعل في هذا المجلد. هل تريد الكتابة فوقه؟"
+
+#. translators: 1: file name, 2: error message
+#: assets/js/file-browser.js:1886
+msgid "Upload failed (%1$s): %2$s"
+msgstr "فشل الرفع (%1$s): %2$s"
+
+#. translators: %s: number of items
+#: assets/js/file-browser.js:1914
+msgid "Trash, %s item"
+msgid_plural "Trash, %s items"
+msgstr[0] "سلة المهملات، %s عنصر"
+msgstr[1] "سلة المهملات، عنصر واحد"
+msgstr[2] "سلة المهملات، عنصران"
+msgstr[3] "سلة المهملات، %s عناصر"
+msgstr[4] "سلة المهملات، %s عنصرًا"
+msgstr[5] "سلة المهملات، %s عنصر"
+
+#: assets/js/file-browser.js:1945
+msgid "Loading trash…"
+msgstr "جارٍ تحميل سلة المهملات…"
+
+#: assets/js/file-browser.js:1978 assets/js/file-browser.js:2346
+msgid "Empty site trash"
+msgstr "إفراغ سلة مهملات الموقع"
+
+#: assets/js/file-browser.js:1978 assets/js/file-browser.js:2346 assets/js/file-browser.js:2347
+msgid "Empty trash"
+msgstr "إفراغ سلة المهملات"
+
+#. translators: %s: number of days
+#: assets/js/file-browser.js:1985
+msgid "Every deletion on this site is kept here for %s day, even after users empty their own trash. Only administrators can see this trash."
+msgid_plural "Every deletion on this site is kept here for %s days, even after users empty their own trash. Only administrators can see this trash."
+msgstr[0] "يُحتفظ هنا بكل عملية حذف على هذا الموقع لمدة %s يوم، حتى بعد أن يُفرغ المستخدمون سلال مهملاتهم. لا يمكن إلا للمديرين رؤية سلة المهملات هذه."
+msgstr[1] "يُحتفظ هنا بكل عملية حذف على هذا الموقع لمدة يوم واحد، حتى بعد أن يُفرغ المستخدمون سلال مهملاتهم. لا يمكن إلا للمديرين رؤية سلة المهملات هذه."
+msgstr[2] "يُحتفظ هنا بكل عملية حذف على هذا الموقع لمدة يومين، حتى بعد أن يُفرغ المستخدمون سلال مهملاتهم. لا يمكن إلا للمديرين رؤية سلة المهملات هذه."
+msgstr[3] "يُحتفظ هنا بكل عملية حذف على هذا الموقع لمدة %s أيام، حتى بعد أن يُفرغ المستخدمون سلال مهملاتهم. لا يمكن إلا للمديرين رؤية سلة المهملات هذه."
+msgstr[4] "يُحتفظ هنا بكل عملية حذف على هذا الموقع لمدة %s يومًا، حتى بعد أن يُفرغ المستخدمون سلال مهملاتهم. لا يمكن إلا للمديرين رؤية سلة المهملات هذه."
+msgstr[5] "يُحتفظ هنا بكل عملية حذف على هذا الموقع لمدة %s يوم، حتى بعد أن يُفرغ المستخدمون سلال مهملاتهم. لا يمكن إلا للمديرين رؤية سلة المهملات هذه."
+
+#. translators: %s: number of days
+#: assets/js/file-browser.js:1991
+msgid "Items you delete are kept here for %s day, then deleted automatically."
+msgid_plural "Items you delete are kept here for %s days, then deleted automatically."
+msgstr[0] "يُحتفظ هنا بالعناصر التي تحذفها لمدة %s يوم، ثم تُحذف تلقائيًا."
+msgstr[1] "يُحتفظ هنا بالعناصر التي تحذفها لمدة يوم واحد، ثم تُحذف تلقائيًا."
+msgstr[2] "يُحتفظ هنا بالعناصر التي تحذفها لمدة يومين، ثم تُحذف تلقائيًا."
+msgstr[3] "يُحتفظ هنا بالعناصر التي تحذفها لمدة %s أيام، ثم تُحذف تلقائيًا."
+msgstr[4] "يُحتفظ هنا بالعناصر التي تحذفها لمدة %s يومًا، ثم تُحذف تلقائيًا."
+msgstr[5] "يُحتفظ هنا بالعناصر التي تحذفها لمدة %s يوم، ثم تُحذف تلقائيًا."
+
+#. translators: %s: number of days
+#: assets/js/file-browser.js:1996
+msgid "Administrators also keep a copy of every deletion for %s day."
+msgid_plural "Administrators also keep a copy of every deletion for %s days."
+msgstr[0] "يحتفظ المديرون أيضًا بنسخة من كل عملية حذف لمدة %s يوم."
+msgstr[1] "يحتفظ المديرون أيضًا بنسخة من كل عملية حذف لمدة يوم واحد."
+msgstr[2] "يحتفظ المديرون أيضًا بنسخة من كل عملية حذف لمدة يومين."
+msgstr[3] "يحتفظ المديرون أيضًا بنسخة من كل عملية حذف لمدة %s أيام."
+msgstr[4] "يحتفظ المديرون أيضًا بنسخة من كل عملية حذف لمدة %s يومًا."
+msgstr[5] "يحتفظ المديرون أيضًا بنسخة من كل عملية حذف لمدة %s يوم."
+
+#: assets/js/file-browser.js:1999
+msgid "Right-click an item for more options."
+msgstr "انقر بزر الماوس الأيمن على عنصر لمزيد من الخيارات."
+
+#. translators: %s: folder path the item was deleted from / %s: name of the site's top folder
+#: assets/js/file-browser.js:2046 assets/js/file-browser.js:2049
+msgid "in %s"
+msgstr "في %s"
+
+#. translators: %s: user display name
+#: assets/js/file-browser.js:2057
+msgid "by %s"
+msgstr "بواسطة %s"
+
+#: assets/js/file-browser.js:2059
+msgid "Also in their own trash"
+msgstr "موجود أيضًا في سلة مهملات صاحبه"
+
+#: assets/js/file-browser.js:2059
+msgid "Site trash only"
+msgstr "في سلة مهملات الموقع فقط"
+
+#: assets/js/file-browser.js:2077 assets/js/file-browser.js:2222
+msgid "Restore"
+msgstr "استعادة"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2081
+msgid "Restore %s"
+msgstr "استعادة %s"
+
+#: assets/js/file-browser.js:2089
+msgid "More actions"
+msgstr "مزيد من الإجراءات"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2092
+msgid "More actions for %s"
+msgstr "مزيد من الإجراءات لـ %s"
+
+#: assets/js/file-browser.js:2105
+msgid "Deletes on"
+msgstr "يُحذف تلقائيًا في"
+
+#: assets/js/file-browser.js:2112 assets/js/file-browser.js:2352
+msgid "The site trash is empty."
+msgstr "سلة مهملات الموقع فارغة."
+
+#: assets/js/file-browser.js:2112 assets/js/file-browser.js:2352
+msgid "Your trash is empty."
+msgstr "سلة مهملاتك فارغة."
+
+#. translators: 1: number of items, 2: total size
+#: assets/js/file-browser.js:2129
+msgid "%1$s item · %2$s"
+msgid_plural "%1$s items · %2$s"
+msgstr[0] "%1$s عنصر · %2$s"
+msgstr[1] "%1$s عنصر · %2$s"
+msgstr[2] "%1$s عنصران · %2$s"
+msgstr[3] "%1$s عناصر · %2$s"
+msgstr[4] "%1$s عنصرًا · %2$s"
+msgstr[5] "%1$s عنصر · %2$s"
+
+#: assets/js/file-browser.js:2223 includes/class-cloverbrowser-ajax.php:143 includes/class-cloverbrowser-policy.php:578 includes/class-cloverbrowser-trash.php:672
+msgid "Your role is not allowed to do that."
+msgstr "لا يُسمح لدورك بفعل ذلك."
+
+#: assets/js/file-browser.js:2225 assets/js/file-browser.js:2290
+msgid "Remove from my trash"
+msgstr "إزالة من سلة مهملاتي"
+
+#: assets/js/file-browser.js:2229 assets/js/file-browser.js:2310
+msgid "Permanently delete"
+msgstr "حذف نهائي"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2258
+msgid "Restoring %s…"
+msgstr "جارٍ استعادة %s…"
+
+#. translators: 1: original name, 2: new name (the original name was taken)
+#: assets/js/file-browser.js:2264
+msgid "Restored %1$s as %2$s (the original name is in use)"
+msgstr "استُعيد %1$s باسم %2$s (الاسم الأصلي مستخدم)"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2267
+msgid "Restored %s"
+msgstr "استُعيد %s"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2283
+msgid "Remove “%s” from your trash?"
+msgstr "هل تريد إزالة «%s» من سلة مهملاتك؟"
+
+#: assets/js/file-browser.js:2287
+msgid "It stays in the site trash for the rest of its retention period, where an administrator can still restore it."
+msgstr "يبقى في سلة مهملات الموقع طوال ما تبقى من مدة الاحتفاظ، حيث يظل بإمكان أحد المديرين استعادته."
+
+#: assets/js/file-browser.js:2288
+msgid "It will be deleted permanently. This cannot be undone."
+msgstr "سيُحذف نهائيًا. لا يمكن التراجع عن ذلك."
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2300
+msgid "Removed %s from your trash"
+msgstr "أُزيل %s من سلة مهملاتك"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2312
+msgid "Permanently delete “%s”? It is removed from the site trash and from its owner’s trash. This cannot be undone."
+msgstr "هل تريد حذف «%s» نهائيًا؟ ستتم إزالته من سلة مهملات الموقع ومن سلة مهملات صاحبه. لا يمكن التراجع عن ذلك."
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2314
+msgid "Permanently delete “%s”? It is removed from your trash and from the site trash. This cannot be undone."
+msgstr "هل تريد حذف «%s» نهائيًا؟ ستتم إزالته من سلة مهملاتك ومن سلة مهملات الموقع. لا يمكن التراجع عن ذلك."
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2322
+msgid "Permanently deleted %s"
+msgstr "حُذف %s نهائيًا"
+
+#. translators: %s: number of items
+#: assets/js/file-browser.js:2338
+msgid "Permanently delete the %s item in the site trash, including items still in users’ own trash? This cannot be undone."
+msgid_plural "Permanently delete all %s items in the site trash, including items still in users’ own trash? This cannot be undone."
+msgstr[0] "هل تريد حذف كل العناصر في سلة مهملات الموقع نهائيًا (%s عنصر)، بما في ذلك العناصر التي لا تزال في سلال مهملات المستخدمين؟ لا يمكن التراجع عن ذلك."
+msgstr[1] "هل تريد حذف العنصر الوحيد في سلة مهملات الموقع نهائيًا، بما في ذلك العناصر التي لا تزال في سلال مهملات المستخدمين؟ لا يمكن التراجع عن ذلك."
+msgstr[2] "هل تريد حذف العنصرين في سلة مهملات الموقع نهائيًا، بما في ذلك العناصر التي لا تزال في سلال مهملات المستخدمين؟ لا يمكن التراجع عن ذلك."
+msgstr[3] "هل تريد حذف كل العناصر في سلة مهملات الموقع نهائيًا (%s عناصر)، بما في ذلك العناصر التي لا تزال في سلال مهملات المستخدمين؟ لا يمكن التراجع عن ذلك."
+msgstr[4] "هل تريد حذف كل العناصر في سلة مهملات الموقع نهائيًا (%s عنصرًا)، بما في ذلك العناصر التي لا تزال في سلال مهملات المستخدمين؟ لا يمكن التراجع عن ذلك."
+msgstr[5] "هل تريد حذف كل العناصر في سلة مهملات الموقع نهائيًا (%s عنصر)، بما في ذلك العناصر التي لا تزال في سلال مهملات المستخدمين؟ لا يمكن التراجع عن ذلك."
+
+#. translators: %s: number of items
+#: assets/js/file-browser.js:2342
+msgid "Remove the %s item from your trash?"
+msgid_plural "Remove all %s items from your trash?"
+msgstr[0] "هل تريد إزالة كل العناصر من سلة مهملاتك (%s عنصر)؟"
+msgstr[1] "هل تريد إزالة العنصر الوحيد من سلة مهملاتك؟"
+msgstr[2] "هل تريد إزالة العنصرين من سلة مهملاتك؟"
+msgstr[3] "هل تريد إزالة كل العناصر من سلة مهملاتك (%s عناصر)؟"
+msgstr[4] "هل تريد إزالة كل العناصر من سلة مهملاتك (%s عنصرًا)؟"
+msgstr[5] "هل تريد إزالة كل العناصر من سلة مهملاتك (%s عنصر)؟"
+
+#: assets/js/file-browser.js:2344
+msgid "Administrators can still restore them from the site trash for the rest of its retention period."
+msgstr "لا يزال بإمكان المديرين استعادتها من سلة مهملات الموقع طوال ما تبقى من مدة الاحتفاظ."
+
+#: assets/js/file-browser.js:2345
+msgid "They will be deleted permanently. This cannot be undone."
+msgstr "ستُحذف نهائيًا. لا يمكن التراجع عن ذلك."
+
+#: assets/js/file-browser.js:2347
+msgid "Delete everything"
+msgstr "حذف الكل"
+
+#: assets/js/file-browser.js:2353
+msgid "Some items could not be deleted (check permissions)."
+msgstr "تعذّر حذف بعض العناصر (تحقق من الصلاحيات)."
+
+#: includes/class-cloverbrowser-ajax.php:89
+msgid "Too many requests — wait a minute and try again."
+msgstr "طلبات كثيرة جدًا — انتظر دقيقة ثم أعد المحاولة."
+
+#: includes/class-cloverbrowser-ajax.php:95 includes/class-cloverbrowser-policy.php:539
+msgid "You do not have permission to use the file browser."
+msgstr "ليست لديك صلاحية استخدام مستعرض الملفات."
+
+#: includes/class-cloverbrowser-ajax.php:98
+msgid "Bad request method."
+msgstr "طريقة الطلب غير صالحة."
+
+#: includes/class-cloverbrowser-ajax.php:101
+msgid "Cross-site request refused."
+msgstr "رُفض طلب عبر المواقع."
+
+#: includes/class-cloverbrowser-ajax.php:105 includes/class-cloverbrowser-ajax.php:586
+msgid "Security check failed — reload the page and try again."
+msgstr "فشل التحقق الأمني — أعد تحميل الصفحة وحاول مرة أخرى."
+
+#. translators: %s: reason why the file browser is read-only
+#: includes/class-cloverbrowser-ajax.php:111
+msgid "The file browser is in read-only mode: %s"
+msgstr "مستعرض الملفات في وضع القراءة فقط: %s"
+
+#: includes/class-cloverbrowser-ajax.php:176 includes/class-cloverbrowser-ajax.php:185 includes/class-cloverbrowser-ajax.php:607 includes/class-cloverbrowser-ajax.php:611 includes/class-cloverbrowser-ajax.php:666 includes/class-cloverbrowser-ajax.php:788
+msgid "Bad request."
+msgstr "طلب غير صالح."
+
+#: includes/class-cloverbrowser-ajax.php:194 includes/class-cloverbrowser-sandbox.php:238
+msgid "A name is required."
+msgstr "الاسم مطلوب."
+
+#: includes/class-cloverbrowser-ajax.php:200
+msgid "Names cannot contain control characters or exceed 255 bytes."
+msgstr "لا يمكن أن تحتوي الأسماء على محارف تحكم أو أن تتجاوز 255 بايت."
+
+#: includes/class-cloverbrowser-ajax.php:203
+msgid "That name contains characters that are not allowed on this server."
+msgstr "يحتوي هذا الاسم على محارف غير مسموح بها على هذا الخادم."
+
+#: includes/class-cloverbrowser-ajax.php:216
+msgid "This folder contains Cloverbrowser’s trash storage, so it cannot be moved, deleted or changed recursively."
+msgstr "يحتوي هذا المجلد على مساحة تخزين سلة مهملات Cloverbrowser، لذا لا يمكن نقله أو حذفه أو تغييره بشكل متكرر."
+
+#: includes/class-cloverbrowser-ajax.php:273
+msgid "That path is a folder."
+msgstr "هذا المسار مجلد."
+
+#: includes/class-cloverbrowser-ajax.php:297
+msgid "Content missing from the request (it may exceed PHP post limits)."
+msgstr "المحتوى غير موجود في الطلب (قد يتجاوز حدود POST في PHP)."
+
+#. translators: 1: size increase, 2: allowed size increase
+#: includes/class-cloverbrowser-ajax.php:315
+msgid "This edit would make the file %1$s larger; your role may grow a file by at most %2$s per save."
+msgstr "سيزيد هذا التعديل حجم الملف بمقدار %1$s؛ يمكن لدورك زيادة حجم الملف بمقدار %2$s كحد أقصى في كل حفظ."
+
+#: includes/class-cloverbrowser-ajax.php:366
+msgid "Original file is missing; draft not saved."
+msgstr "الملف الأصلي غير موجود؛ لم تُحفظ المسودة."
+
+#: includes/class-cloverbrowser-ajax.php:370
+msgid "Content missing from the request."
+msgstr "المحتوى غير موجود في الطلب."
+
+#: includes/class-cloverbrowser-ajax.php:398
+msgid "Invalid permission mode (use octal, e.g. 0644)."
+msgstr "صلاحيات غير صالحة (استخدم النظام الثماني، مثل 0644)."
+
+#: includes/class-cloverbrowser-ajax.php:489
+msgid "Only administrators can delete items without using the trash."
+msgstr "يمكن للمديرين فقط حذف العناصر دون المرور بسلة المهملات."
+
+#: includes/class-cloverbrowser-ajax.php:528
+msgid "Upload target is not a folder."
+msgstr "وجهة الرفع ليست مجلدًا."
+
+#: includes/class-cloverbrowser-ajax.php:533
+msgid "No file was uploaded."
+msgstr "لم يُرفع أي ملف."
+
+#. translators: 1: file size, 2: maximum upload size
+#: includes/class-cloverbrowser-ajax.php:552
+msgid "This file is %1$s; your role may upload at most %2$s per file."
+msgstr "حجم هذا الملف %1$s؛ يمكن لدورك رفع %2$s كحد أقصى لكل ملف."
+
+#: includes/class-cloverbrowser-ajax.php:561
+msgid "This file is too large to be checked for blocked content."
+msgstr "هذا الملف أكبر من أن يُفحص بحثًا عن محتوى محظور."
+
+#: includes/class-cloverbrowser-ajax.php:582
+msgid "Forbidden."
+msgstr "ممنوع."
+
+#: includes/class-cloverbrowser-ajax.php:658
+msgid "Only administrators can open the site trash."
+msgstr "يمكن للمديرين فقط فتح سلة مهملات الموقع."
+
+#: includes/class-cloverbrowser-ajax.php:725 includes/class-cloverbrowser-policy.php:604
+msgid "This folder contains protected items, so your role cannot do that to it."
+msgstr "يحتوي هذا المجلد على عناصر محمية، لذا لا يمكن لدورك فعل ذلك به."
+
+#: includes/class-cloverbrowser-ajax.php:729 includes/class-cloverbrowser-files.php:59
+msgid "Could not read the folder."
+msgstr "تعذّرت قراءة المجلد."
+
+#: includes/class-cloverbrowser-ajax.php:760
+msgid "Only administrators can permanently delete items from the trash."
+msgstr "يمكن للمديرين فقط حذف العناصر نهائيًا من سلة المهملات."
+
+#: includes/class-cloverbrowser-drafts.php:83
+msgid "No draft exists for this file."
+msgstr "لا توجد مسودة لهذا الملف."
+
+#: includes/class-cloverbrowser-drafts.php:90
+msgid "Draft is larger than the editor limit; not saved."
+msgstr "المسودة أكبر من حد المحرر؛ لم تُحفظ."
+
+#: includes/class-cloverbrowser-drafts.php:100
+msgid "Could not store the draft in the database."
+msgstr "تعذّر حفظ المسودة في قاعدة البيانات."
+
+#: includes/class-cloverbrowser-files.php:52 includes/class-cloverbrowser-files.php:504
+msgid "Not a folder."
+msgstr "ليس مجلدًا."
+
+#: includes/class-cloverbrowser-files.php:55
+msgid "This folder is not readable by the PHP process."
+msgstr "لا تستطيع عملية PHP قراءة هذا المجلد."
+
+#: includes/class-cloverbrowser-files.php:219 includes/class-cloverbrowser-files.php:336
+msgid "Not a file."
+msgstr "ليس ملفًا."
+
+#: includes/class-cloverbrowser-files.php:222
+msgid "This file is not readable by the PHP process."
+msgstr "لا تستطيع عملية PHP قراءة هذا الملف."
+
+#. translators: 1: file size, 2: editor size limit
+#: includes/class-cloverbrowser-files.php:230
+msgid "File is %1$s — above the %2$s editor limit. Use Download instead."
+msgstr "حجم الملف %1$s — وهو أكبر من حد المحرر البالغ %2$s. استخدم التنزيل بدلًا من ذلك."
+
+#: includes/class-cloverbrowser-files.php:237
+msgid "This looks like a binary or non-text file. Editing is disabled — use Download instead."
+msgstr "يبدو أن هذا ملف ثنائي أو غير نصي. التحرير معطَّل — استخدم التنزيل بدلًا من ذلك."
+
+#: includes/class-cloverbrowser-files.php:241 includes/class-cloverbrowser-files.php:346
+msgid "Could not read the file."
+msgstr "تعذّرت قراءة الملف."
+
+#: includes/class-cloverbrowser-files.php:244
+msgid "File contains non-UTF-8 bytes; the editor only handles UTF-8 text. Use Download instead."
+msgstr "يحتوي الملف على بايتات ليست بترميز UTF-8؛ المحرر يدعم نصوص UTF-8 فقط. استخدم التنزيل بدلًا من ذلك."
+
+#: includes/class-cloverbrowser-files.php:268
+msgid "Target is not a file."
+msgstr "الهدف ليس ملفًا."
+
+#: includes/class-cloverbrowser-files.php:271 includes/class-cloverbrowser-files.php:339
+msgid "This file is not writable by the PHP process (check its permissions)."
+msgstr "لا تستطيع عملية PHP الكتابة في هذا الملف (تحقق من صلاحياته)."
+
+#: includes/class-cloverbrowser-files.php:274
+msgid "Content exceeds the editor size limit."
+msgstr "المحتوى يتجاوز حد الحجم في المحرر."
+
+#: includes/class-cloverbrowser-files.php:277
+msgid "Refusing to overwrite a non-empty file with empty content. Confirm if this is intentional."
+msgstr "لن تتم الكتابة فوق ملف غير فارغ بمحتوى فارغ. أكِّد إن كان ذلك مقصودًا."
+
+#: includes/class-cloverbrowser-files.php:282
+msgid "This file was changed on disk after you opened it."
+msgstr "تغيَّر هذا الملف على القرص بعد أن فتحته."
+
+#: includes/class-cloverbrowser-files.php:310
+msgid "Could not open the file for writing."
+msgstr "تعذّر فتح الملف للكتابة."
+
+#: includes/class-cloverbrowser-files.php:328
+msgid "Write failed or was incomplete (disk full?). The file may be damaged — your content is still in the editor."
+msgstr "فشلت الكتابة أو لم تكتمل (هل القرص ممتلئ؟). قد يكون الملف تالفًا — ما زال المحتوى في المحرر."
+
+#: includes/class-cloverbrowser-files.php:342
+msgid "Line endings can only be converted in text files up to 32 MB."
+msgstr "لا يمكن تحويل نهايات الأسطر إلا في الملفات النصية التي لا يتجاوز حجمها 32 MB."
+
+#: includes/class-cloverbrowser-files.php:362 includes/class-cloverbrowser-files.php:372
+msgid "Something with that name already exists here."
+msgstr "يوجد هنا بالفعل عنصر بهذا الاسم."
+
+#: includes/class-cloverbrowser-files.php:365
+msgid "Could not create the folder (is the parent writable?)."
+msgstr "تعذّر إنشاء المجلد (هل يمكن الكتابة في المجلد الأعلى؟)."
+
+#: includes/class-cloverbrowser-files.php:377
+msgid "Could not create the file (is the folder writable?)."
+msgstr "تعذّر إنشاء الملف (هل يمكن الكتابة في المجلد؟)."
+
+#: includes/class-cloverbrowser-files.php:386
+msgid "Source not found."
+msgstr "لم يُعثر على المصدر."
+
+#: includes/class-cloverbrowser-files.php:389
+msgid "Destination already exists."
+msgstr "الوجهة موجودة بالفعل."
+
+#: includes/class-cloverbrowser-files.php:392
+msgid "A folder cannot be moved inside itself."
+msgstr "لا يمكن نقل مجلد إلى داخل نفسه."
+
+#: includes/class-cloverbrowser-files.php:396
+msgid "Rename failed (check permissions, or cross-device move)."
+msgstr "فشلت إعادة التسمية (تحقق من الصلاحيات، أو إن كان النقل بين أجهزة مختلفة)."
+
+#. translators: %s: maximum number of items
+#: includes/class-cloverbrowser-files.php:421
+msgid "This folder contains more than %s items; recursive operations are refused for performance reasons. Nothing was changed."
+msgstr "يحتوي هذا المجلد على أكثر من %s عنصر؛ تُرفض العمليات المتكررة لأسباب تتعلق بالأداء. لم يُغيَّر أي شيء."
+
+#. translators: %s: system error message
+#: includes/class-cloverbrowser-files.php:430
+msgid "A subfolder could not be read: %s Nothing was changed."
+msgstr "تعذّرت قراءة مجلد فرعي: %s لم يُغيَّر أي شيء."
+
+#. translators: %s: system error message
+#: includes/class-cloverbrowser-files.php:475 includes/class-cloverbrowser-files.php:536 includes/class-cloverbrowser-policy.php:610
+msgid "A subfolder could not be read: %s"
+msgstr "تعذّرت قراءة مجلد فرعي: %s"
+
+#: includes/class-cloverbrowser-files.php:493 includes/class-cloverbrowser-trash.php:428
+msgid "Path not found."
+msgstr "لم يُعثر على المسار."
+
+#: includes/class-cloverbrowser-files.php:498 includes/class-cloverbrowser-files.php:512
+msgid "Delete failed (check permissions)."
+msgstr "فشل الحذف (تحقق من الصلاحيات)."
+
+#: includes/class-cloverbrowser-files.php:509
+msgid "Folder is not empty. Tick “Also delete everything inside it” to delete its contents."
+msgstr "المجلد ليس فارغًا. حدِّد «حذف كل ما بداخله أيضًا» لحذف محتوياته."
+
+#. translators: 1: number of items removed, 2: number of items that could not be deleted
+#: includes/class-cloverbrowser-files.php:546
+msgid "Removed %1$s item but %2$s could not be deleted, so the folder itself remains (check permissions)."
+msgid_plural "Removed %1$s items but %2$s could not be deleted, so the folder itself remains (check permissions)."
+msgstr[0] "حُذف %1$s عنصر لكن تعذّر حذف %2$s، لذا بقي المجلد نفسه (تحقق من الصلاحيات)."
+msgstr[1] "حُذف %1$s عنصر لكن تعذّر حذف %2$s، لذا بقي المجلد نفسه (تحقق من الصلاحيات)."
+msgstr[2] "حُذف %1$s عنصران لكن تعذّر حذف %2$s، لذا بقي المجلد نفسه (تحقق من الصلاحيات)."
+msgstr[3] "حُذفت %1$s عناصر لكن تعذّر حذف %2$s، لذا بقي المجلد نفسه (تحقق من الصلاحيات)."
+msgstr[4] "حُذف %1$s عنصرًا لكن تعذّر حذف %2$s، لذا بقي المجلد نفسه (تحقق من الصلاحيات)."
+msgstr[5] "حُذف %1$s عنصر لكن تعذّر حذف %2$s، لذا بقي المجلد نفسه (تحقق من الصلاحيات)."
+
+#: includes/class-cloverbrowser-files.php:568
+msgid "Invalid file name."
+msgstr "اسم ملف غير صالح."
+
+#: includes/class-cloverbrowser-files.php:571
+msgid "File name contains characters that are not allowed on this server."
+msgstr "يحتوي اسم الملف على محارف غير مسموح بها على هذا الخادم."
+
+#: includes/class-cloverbrowser-files.php:583
+msgid "Invalid upload."
+msgstr "رفع غير صالح."
+
+#. translators: %s: file name
+#: includes/class-cloverbrowser-files.php:595
+msgid "“%s” is a symbolic link here; delete it first if you want to replace it."
+msgstr "«%s» رابط رمزي في هذا الموضع؛ احذفه أولًا إن أردت استبداله."
+
+#. translators: %s: folder name
+#: includes/class-cloverbrowser-files.php:602
+msgid "A folder named “%s” already exists here."
+msgstr "يوجد هنا بالفعل مجلد باسم «%s»."
+
+#. translators: %s: file name
+#: includes/class-cloverbrowser-files.php:609
+msgid "A file named “%s” already exists in this folder."
+msgstr "يوجد بالفعل ملف باسم «%s» في هذا المجلد."
+
+#: includes/class-cloverbrowser-files.php:668 includes/class-cloverbrowser-files.php:671
+msgid "Could not move the upload into place (folder writable? name too long?)."
+msgstr "تعذّر نقل الملف المرفوع إلى موضعه (هل يمكن الكتابة في المجلد؟ هل الاسم طويل جدًا؟)."
+
+#: includes/class-cloverbrowser-files.php:678
+msgid "The upload exceeds the server’s size limit (upload_max_filesize / post_max_size)."
+msgstr "الملف المرفوع يتجاوز حد الحجم على الخادم (upload_max_filesize / post_max_size)."
+
+#: includes/class-cloverbrowser-files.php:679
+msgid "The upload was only partially received — retry."
+msgstr "استُلم الملف المرفوع جزئيًا فقط — أعد المحاولة."
+
+#: includes/class-cloverbrowser-files.php:680
+msgid "No file was received."
+msgstr "لم يُستلم أي ملف."
+
+#: includes/class-cloverbrowser-files.php:681
+msgid "The server’s temporary upload storage is misconfigured."
+msgstr "إعداد التخزين المؤقت للرفع على الخادم غير صحيح."
+
+#: includes/class-cloverbrowser-files.php:682
+msgid "A PHP extension blocked the upload."
+msgstr "منعت إحدى إضافات PHP عملية الرفع."
+
+#. translators: %d: PHP upload error code
+#: includes/class-cloverbrowser-files.php:684
+msgid "Upload error (code %d)."
+msgstr "خطأ في الرفع (الرمز %d)."
+
+#: includes/class-cloverbrowser-files.php:710
+msgid "File not found or not readable by the PHP process."
+msgstr "لم يُعثر على الملف أو لا تستطيع عملية PHP قراءته."
+
+#: includes/class-cloverbrowser-files.php:714
+msgid "Could not open the file."
+msgstr "تعذّر فتح الملف."
+
+#. translators: 1: folder path, 2: role name
+#: includes/class-cloverbrowser-policy.php:160
+msgid "The folder “%1$s” (%2$s) does not exist; it grants no access until it is created."
+msgstr "المجلد «%1$s» (%2$s) غير موجود؛ ولا يمنح أي وصول حتى يُنشأ."
+
+#: includes/class-cloverbrowser-policy.php:494
+msgid "PHP code"
+msgstr "شيفرة PHP"
+
+#: includes/class-cloverbrowser-policy.php:495
+msgid "Server configuration"
+msgstr "إعدادات الخادم"
+
+#: includes/class-cloverbrowser-policy.php:496
+msgid "Programs & scripts"
+msgstr "البرامج والنصوص البرمجية"
+
+#: includes/class-cloverbrowser-policy.php:497
+msgid "Web pages, SVG & JavaScript"
+msgstr "صفحات الويب وSVG وJavaScript"
+
+#: includes/class-cloverbrowser-policy.php:498
+msgid "Archives"
+msgstr "الأرشيفات"
+
+#: includes/class-cloverbrowser-policy.php:499
+msgid "Images"
+msgstr "الصور"
+
+#: includes/class-cloverbrowser-policy.php:500
+msgid "Audio & video"
+msgstr "الصوت والفيديو"
+
+#: includes/class-cloverbrowser-policy.php:501
+msgid "Documents & PDFs"
+msgstr "المستندات وملفات PDF"
+
+#: includes/class-cloverbrowser-policy.php:502
+msgid "Databases & dumps"
+msgstr "قواعد البيانات والتفريغات"
+
+#: includes/class-cloverbrowser-policy.php:503
+msgid "Any other binary file"
+msgstr "أي ملف ثنائي آخر"
+
+#. translators: %s: file type name(s), e.g. "PHP code"
+#: includes/class-cloverbrowser-policy.php:515
+msgid "This file type (%s) is blocked for your role."
+msgstr "نوع الملف هذا (%s) محظور لدورك."
+
+#: includes/class-cloverbrowser-policy.php:543
+msgid "This location is outside the folders your role can access."
+msgstr "هذا المكان خارج المجلدات التي يمكن لدورك الوصول إليها."
+
+#. translators: %s: path
+#: includes/class-cloverbrowser-policy.php:550 includes/class-cloverbrowser-sandbox.php:159 includes/class-cloverbrowser-sandbox.php:222
+msgid "Path not found or not accessible: %s"
+msgstr "المسار غير موجود أو لا يمكن الوصول إليه: %s"
+
+#: includes/class-cloverbrowser-policy.php:559
+msgid "This item is protected: your role can only read it."
+msgstr "هذا العنصر محمي: يمكن لدورك قراءته فقط."
+
+#: includes/class-cloverbrowser-policy.php:562
+msgid "The top-level folders your role can access cannot be renamed, deleted or have their permissions changed."
+msgstr "لا يمكن إعادة تسمية المجلدات العليا التي يمكن لدورك الوصول إليها أو حذفها أو تغيير صلاحياتها."
+
+#: includes/class-cloverbrowser-policy.php:570
+msgid "Your role is not allowed to download files."
+msgstr "لا يُسمح لدورك بتنزيل الملفات."
+
+#: includes/class-cloverbrowser-policy.php:571
+msgid "Your role is not allowed to edit files."
+msgstr "لا يُسمح لدورك بتحرير الملفات."
+
+#: includes/class-cloverbrowser-policy.php:572
+msgid "Your role is not allowed to create files or folders."
+msgstr "لا يُسمح لدورك بإنشاء ملفات أو مجلدات."
+
+#: includes/class-cloverbrowser-policy.php:573
+msgid "Your role is not allowed to upload files."
+msgstr "لا يُسمح لدورك برفع الملفات."
+
+#: includes/class-cloverbrowser-policy.php:574
+msgid "Your role is not allowed to rename or move items."
+msgstr "لا يُسمح لدورك بإعادة تسمية العناصر أو نقلها."
+
+#: includes/class-cloverbrowser-policy.php:575
+msgid "Your role is not allowed to delete items."
+msgstr "لا يُسمح لدورك بحذف العناصر."
+
+#: includes/class-cloverbrowser-policy.php:576
+msgid "Your role is not allowed to change permissions."
+msgstr "لا يُسمح لدورك بتغيير الصلاحيات."
+
+#: includes/class-cloverbrowser-sandbox.php:60
+msgid "CLOVERBROWSER_READ_ONLY is set in wp-config.php."
+msgstr "الثابت CLOVERBROWSER_READ_ONLY معرَّف في wp-config.php."
+
+#: includes/class-cloverbrowser-sandbox.php:63
+msgid "DISALLOW_FILE_EDIT / DISALLOW_FILE_MODS is set in wp-config.php. Define CLOVERBROWSER_READ_ONLY as false to override."
+msgstr "الثابت DISALLOW_FILE_EDIT / DISALLOW_FILE_MODS معرَّف في wp-config.php. عرِّف CLOVERBROWSER_READ_ONLY بالقيمة false لتجاوز ذلك."
+
+#: includes/class-cloverbrowser-sandbox.php:66
+msgid "Your role has read-only access."
+msgstr "يملك دورك وصولًا للقراءة فقط."
+
+#: includes/class-cloverbrowser-sandbox.php:68
+msgid "Your account does not have the edit_files capability."
+msgstr "لا يملك حسابك صلاحية edit_files."
+
+#: includes/class-cloverbrowser-sandbox.php:177 includes/class-cloverbrowser-sandbox.php:180 includes/class-cloverbrowser-trash.php:625
+msgid "Invalid path."
+msgstr "مسار غير صالح."
+
+#: includes/class-cloverbrowser-sandbox.php:194
+msgid "Invalid path segment."
+msgstr "جزء مسار غير صالح."
+
+#: includes/class-cloverbrowser-sandbox.php:227 includes/class-cloverbrowser-trash.php:668 includes/class-cloverbrowser-trash.php:683
+msgid "Path resolves outside the sandbox."
+msgstr "يشير المسار إلى خارج البيئة المعزولة."
+
+#: includes/class-cloverbrowser-sandbox.php:241
+msgid "Invalid name."
+msgstr "اسم غير صالح."
+
+#. translators: %s: path
+#: includes/class-cloverbrowser-sandbox.php:248
+msgid "Parent folder not found: %s"
+msgstr "لم يُعثر على المجلد الأعلى: %s"
+
+#: includes/class-cloverbrowser-sandbox.php:253
+msgid "Parent folder resolves outside the sandbox."
+msgstr "يشير المجلد الأعلى إلى خارج البيئة المعزولة."
+
+#: includes/class-cloverbrowser-sandbox.php:276
+msgid "This operation is not allowed on the sandbox root."
+msgstr "هذه العملية غير مسموح بها على جذر البيئة المعزولة."
+
+#. translators: %s: path
+#: includes/class-cloverbrowser-sandbox.php:285
+msgid "Path not found: %s"
+msgstr "لم يُعثر على المسار: %s"
+
+#: includes/class-cloverbrowser-trash.php:166
+msgid "The trash folder could not be created. Check that the uploads folder is writable by PHP."
+msgstr "تعذّر إنشاء مجلد سلة المهملات. تحقّق من أن PHP يستطيع الكتابة في مجلد الرفع."
+
+#: includes/class-cloverbrowser-trash.php:421
+msgid "The trash is turned off."
+msgstr "سلة المهملات معطَّلة."
+
+#: includes/class-cloverbrowser-trash.php:453
+msgid "This item could not be moved to the trash (it may be on another disk, or permissions do not allow it). Nothing was deleted."
+msgstr "تعذّر نقل هذا العنصر إلى سلة المهملات (قد يكون على قرص آخر، أو لا تسمح الصلاحيات بذلك). لم يُحذف أي شيء."
+
+#: includes/class-cloverbrowser-trash.php:464
+msgid "The trash could not record this item, so it was left in place."
+msgstr "تعذّر على سلة المهملات تسجيل هذا العنصر، لذا تُرك في مكانه."
+
+#: includes/class-cloverbrowser-trash.php:574 includes/class-cloverbrowser-trash.php:611 includes/class-cloverbrowser-trash.php:737 includes/class-cloverbrowser-trash.php:785
+msgid "This item is no longer in the trash."
+msgstr "لم يعد هذا العنصر في سلة المهملات."
+
+#: includes/class-cloverbrowser-trash.php:621
+msgid "The stored copy of this item is missing."
+msgstr "النسخة المخزَّنة من هذا العنصر مفقودة."
+
+#. translators: %s: path
+#: includes/class-cloverbrowser-trash.php:646
+msgid "Cannot restore: %s is no longer a folder."
+msgstr "تتعذّر الاستعادة: لم يعد %s مجلدًا."
+
+#: includes/class-cloverbrowser-trash.php:663
+msgid "Could not find a free name to restore this item under."
+msgstr "تعذّر العثور على اسم متاح لاستعادة هذا العنصر به."
+
+#. translators: %s: folder path
+#: includes/class-cloverbrowser-trash.php:678
+msgid "Could not recreate the folder %s."
+msgstr "تعذّرت إعادة إنشاء المجلد %s."
+
+#: includes/class-cloverbrowser-trash.php:686
+msgid "Restore failed (check permissions on the original folder)."
+msgstr "فشلت الاستعادة (تحقق من صلاحيات المجلد الأصلي)."
+
+#: includes/class-cloverbrowser-trash.php:794
+msgid "Some of this item could not be deleted (check permissions)."
+msgstr "تعذّر حذف جزء من هذا العنصر (تحقق من الصلاحيات)."
+
+#. translators: Plugin header
+#: cloverbrowser.php
+msgid "Server file browser & editor for WordPress admins, sandboxed to this site's vhost root, with per-role access rules and a two-level trash. No public exposure."
+msgstr "مستعرض ومحرر لملفات الخادم لمديري WordPress، مقيَّد بجذر المضيف الافتراضي لهذا الموقع، مع قواعد وصول لكل دور وسلة مهملات بمستويين. لا يُتاح للعامة."

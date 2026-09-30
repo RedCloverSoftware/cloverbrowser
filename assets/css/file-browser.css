@@ -1,0 +1,822 @@
+/*
+ * Cloverbrowser — component styles.
+ * Fully scoped: nothing here touches WP admin styles outside #cloverbrowser-root.
+ * Dark "monitoring" theme per brand guide (near-black violet, plum panels,
+ * pink accents, emerald primary, amber warnings, red destructive).
+ */
+
+.cloverbrowser-root,
+.fbx-modal-layer,
+.fbx-menu {
+  --fbx-bg: #100E17;
+  --fbx-panel: #211B29;
+  --fbx-panel-2: #2A2333;
+  --fbx-code-bg: #17141F;
+  --fbx-line: rgba(250, 246, 251, 0.09);
+  --fbx-line-strong: rgba(250, 246, 251, 0.16);
+  --fbx-ink: #FAF6FB;
+  --fbx-muted: #A99FB4;
+  --fbx-pink: #FF78BD;
+  --fbx-magenta: #CF2C82;
+  --fbx-emerald: #54DBA0;
+  --fbx-emerald-ink: #0B3B29;
+  --fbx-amber: #F3B868;
+  --fbx-red: #FF5C7A;
+  --fbx-radius-s: 8px;
+  --fbx-radius-m: 12px;
+  --fbx-radius-l: 18px;
+  --fbx-font: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --fbx-act-w: 176px; /* 5 row buttons: 5 x 32px + 4 x 4px gap */
+  --fbx-mono: ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+}
+
+.cloverbrowser-root { margin-top: 12px; }
+
+/*
+ * The `hidden` attribute only maps to `display: none` in the UA stylesheet,
+ * so ANY author `display:` rule (.fbx-drop, .fbx-busy, .fbx-upload-strip,
+ * .fbx-editor-pane …) silently overrides it. That is what left the
+ * "Drop files" overlay, the spinner and the empty upload bar permanently
+ * on screen. Make `hidden` authoritative inside the component.
+ */
+.fbx [hidden],
+.fbx-modal-layer [hidden],
+.fbx-menu [hidden] { display: none !important; }
+
+/* Download target: must exist (and load) but never be seen. */
+.fbx-dl-frame {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0;
+  visibility: hidden;
+}
+
+.fbx {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(1100px 380px at 85% -10%, rgba(207, 44, 130, 0.13), transparent 60%), var(--fbx-bg);
+  color: var(--fbx-ink);
+  font-family: var(--fbx-font);
+  font-size: 13px;
+  border: 1px solid var(--fbx-line);
+  border-radius: var(--fbx-radius-l);
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(12, 8, 18, 0.35);
+}
+
+.fbx-boot {
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--fbx-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ---------- status bar / spinner ---------- */
+
+.fbx-statusbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 40px;
+  padding: 0 14px;
+  background: var(--fbx-panel);
+  border-bottom: 1px solid var(--fbx-line);
+  font-size: 12.5px;
+  color: var(--fbx-muted);
+}
+.fbx-status-end { margin-inline-start: auto; display: inline-flex; align-items: center; gap: 8px; }
+.fbx-chip--info { color: var(--fbx-pink); border-color: rgba(255, 120, 189, 0.4); }
+.fbx-btn--sm { min-height: 30px; padding: 0 10px; font-size: 12px; gap: 6px; }
+.fbx-btn--icon.fbx-btn--sm { min-width: 30px; padding: 0 7px; }
+a.fbx-btn { text-decoration: none; }
+a.fbx-btn:focus { box-shadow: none; }
+.fbx-status-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.fbx-busy { display: inline-flex; align-items: center; }
+
+/* Cloverbrowser wordmark (left of the status label; mirrored side in RTL). */
+.fbx-logo {
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  line-height: 0;
+  color: var(--fbx-ink);            /* wordmark text uses currentColor */
+  padding-inline-end: 12px;
+  margin-inline-end: 2px;
+  border-inline-end: 1px solid var(--fbx-line-strong);
+}
+.fbx-logo svg { display: block; height: 20px; width: auto; direction: ltr; }
+@media (max-width: 600px) { .fbx-logo svg { height: 16px; } }
+.fbx-spinner {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--fbx-line-strong);
+  border-top-color: var(--fbx-pink);
+  animation: fbx-spin 0.7s linear infinite;
+}
+@keyframes fbx-spin { to { transform: rotate(1turn); } }
+
+/* ---------- toolbar + breadcrumb ---------- */
+
+.fbx-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: var(--fbx-panel);
+  border-bottom: 1px solid var(--fbx-line);
+}
+.fbx-crumb { display: flex; align-items: center; flex-wrap: wrap; gap: 2px; min-height: 40px; }
+.fbx-crumb button {
+  appearance: none;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--fbx-muted);
+  font: 600 12.5px/1 var(--fbx-font);
+  padding: 7px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+  min-height: 34px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.fbx-crumb button:hover { color: var(--fbx-ink); background: var(--fbx-panel-2); }
+.fbx-crumb button:last-of-type {
+  color: var(--fbx-ink);
+  background: var(--fbx-panel-2);
+  border-color: var(--fbx-line);
+}
+.fbx-crumb-sep { color: var(--fbx-muted); opacity: 0.5; margin: 0 2px; }
+.fbx-tools { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.fbx-vsep { width: 1px; height: 24px; background: var(--fbx-line-strong); margin: 0 4px; }
+
+/* ---------- buttons ---------- */
+
+.fbx-btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: var(--fbx-radius-s);
+  border: 1px solid var(--fbx-line-strong);
+  background: var(--fbx-panel-2);
+  color: var(--fbx-ink);
+  font: 600 13px/1 var(--fbx-font);
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.fbx-btn:hover { transform: translateY(-1px); border-color: var(--fbx-pink); }
+.fbx-btn:disabled { opacity: 0.55; cursor: default; transform: none; }
+.fbx-btn--primary { background: var(--fbx-emerald); border-color: transparent; color: var(--fbx-emerald-ink); }
+.fbx-btn--primary:hover { box-shadow: 0 6px 18px rgba(84, 219, 160, 0.35); border-color: transparent; }
+.fbx-btn--danger { background: var(--fbx-red); border-color: transparent; color: #2B0710; }
+.fbx-btn--danger:hover { box-shadow: 0 6px 18px rgba(255, 92, 122, 0.3); border-color: transparent; }
+.fbx-btn--ghost { background: transparent; border-color: transparent; color: var(--fbx-muted); }
+.fbx-btn--ghost:hover { color: var(--fbx-ink); background: var(--fbx-panel-2); }
+.fbx-btn--icon { min-width: 40px; padding: 0 11px; }
+
+/* ---------- main split layout ---------- */
+
+.fbx-main {
+  display: flex;
+  gap: 14px;
+  padding: 14px;
+  align-items: stretch;
+  min-height: 0;
+  height: min(72vh, 760px);
+}
+
+/* ---------- list pane ---------- */
+
+.fbx-list-pane {
+  flex: 1 1 44%;
+  min-width: 320px;
+  container-type: inline-size;
+  container-name: fbx-list;
+  display: flex;
+  flex-direction: column;
+  background: var(--fbx-panel);
+  border: 1px solid var(--fbx-line);
+  border-radius: var(--fbx-radius-m);
+  overflow: hidden;
+  position: relative;
+}
+.fbx-list-head {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 76px 60px 118px var(--fbx-act-w);
+  gap: 8px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--fbx-line);
+  background: rgba(0, 0, 0, 0.22);
+}
+.fbx-col {
+  appearance: none;
+  background: none;
+  border: none;
+  padding: 4px 0;
+  text-align: start;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font: 700 10.5px/1.2 var(--fbx-font);
+  color: var(--fbx-muted);
+}
+.fbx-col:hover { color: var(--fbx-ink); }
+.fbx-col.is-sorted { color: var(--fbx-ink); }
+.fbx-col.is-sorted::after { content: '\25B2'; font-size: 8px; margin-inline-start: 4px; color: var(--fbx-pink); }
+.fbx-col.is-sorted.is-desc::after { content: '\25BC'; }
+.fbx-col--act { text-align: end; cursor: default; }
+
+.fbx-rows { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 4px 0 10px; }
+.fbx-row {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 76px 60px 118px var(--fbx-act-w);
+  gap: 8px;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 12px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(250, 246, 251, 0.045);
+  transition: background 0.12s ease;
+}
+.fbx-row:hover { background: rgba(255, 120, 189, 0.07); }
+.fbx-row:focus-visible { outline-offset: -2px; background: rgba(255, 120, 189, 0.07); }
+.fbx-badge { display: inline-flex; color: var(--fbx-amber); flex: none; }
+.fbx-row--locked .fbx-name { color: var(--fbx-muted); }
+.fbx-row--locked .fbx-badge { color: var(--fbx-red); }
+.fbx-row--nav .fbx-name { color: var(--fbx-muted); font-weight: 500; }
+.fbx-row--nav .fbx-ico { opacity: 0.6; }
+.fbx-btn:disabled:hover { border-color: var(--fbx-line-strong); }
+.fbx-row--broken .fbx-name { color: var(--fbx-red); text-decoration: line-through; text-decoration-color: rgba(255, 92, 122, 0.5); }
+.fbx-cell { font-size: 12px; color: var(--fbx-muted); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-variant-numeric: tabular-nums; }
+.fbx-name { display: flex; align-items: center; gap: 8px; min-width: 0; color: var(--fbx-ink); font-weight: 600; }
+.fbx-name span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fbx-ico { display: inline-flex; color: var(--fbx-muted); flex: none; }
+.fbx-row--dir .fbx-ico { color: var(--fbx-pink); }
+.fbx-cell--perms { font-family: var(--fbx-mono); color: var(--fbx-amber); }
+.fbx-row-act { display: flex; gap: 4px; justify-content: flex-end; }
+.fbx-row-btn {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--fbx-radius-s);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--fbx-muted);
+  cursor: pointer;
+  transition: background 0.12s ease, color 0.12s ease, border-color 0.12s ease;
+}
+.fbx-row-slot { width: 32px; flex: none; }
+@container fbx-list (max-width: 500px) { .fbx-row-slot { width: 28px; } }
+.fbx-row-btn:hover { background: var(--fbx-panel-2); color: var(--fbx-ink); border-color: var(--fbx-line-strong); }
+.fbx-row-btn.fbx-act--danger:hover { color: var(--fbx-red); border-color: rgba(255, 92, 122, 0.4); }
+.fbx-empty { padding: 44px 20px; text-align: center; color: var(--fbx-muted); }
+.fbx-list-foot {
+  padding: 6px 12px;
+  border-top: 1px solid var(--fbx-line);
+  color: var(--fbx-muted);
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+}
+.fbx-drop {
+  position: absolute;
+  inset: 8px;
+  z-index: 5;
+  border: 2px dashed var(--fbx-pink);
+  border-radius: var(--fbx-radius-m);
+  background: rgba(16, 14, 23, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--fbx-pink);
+  font-weight: 600;
+  pointer-events: none;
+}
+
+/* ---------- editor pane ---------- */
+
+.fbx-editor-pane {
+  flex: 1 1 56%;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--fbx-panel);
+  border: 1px solid var(--fbx-line);
+  border-radius: var(--fbx-radius-m);
+  overflow: hidden;
+}
+.fbx-editor-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--fbx-line);
+  background: rgba(0, 0, 0, 0.22);
+}
+.fbx-editor-title { display: flex; align-items: center; gap: 10px; min-width: 0; flex-wrap: wrap; }
+.fbx-filename { font-size: 14px; font-weight: 700; letter-spacing: -0.01em; max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fbx-chips { display: inline-flex; gap: 6px; flex-wrap: wrap; }
+.fbx-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--fbx-line);
+  background: var(--fbx-panel-2);
+  color: var(--fbx-muted);
+  font-size: 11px;
+  font-weight: 600;
+}
+.fbx-chip--warn { color: var(--fbx-amber); border-color: rgba(243, 184, 104, 0.4); }
+.fbx-draft-ind { font-size: 11.5px; color: var(--fbx-muted); }
+.fbx-draft-ind.is-ok { color: var(--fbx-emerald); }
+.fbx-draft-ind.is-busy { color: var(--fbx-amber); }
+.fbx-draft-ind.is-err { color: var(--fbx-red); }
+.fbx-editor-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.fbx-editor-body { flex: 1; min-height: 0; display: flex; }
+
+/* Line-ending banner */
+.fbx-eol {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 8px 12px;
+  background: rgba(243, 184, 104, 0.1);
+  border-bottom: 1px solid rgba(243, 184, 104, 0.3);
+  color: var(--fbx-amber);
+  font-size: 12.5px;
+}
+.fbx-eol-text { flex: 1 1 260px; }
+.fbx-modal-list { white-space: pre-line; font-family: var(--fbx-mono); font-size: 12px; color: var(--fbx-ink); }
+
+/* Textarea fallback (when CodeMirror is unavailable) */
+.fbx .fbx-code {
+  display: block;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  background: var(--fbx-code-bg);
+  color: #E9E2EE;
+  font: 13px/1.6 var(--fbx-mono);
+  padding: 12px 14px;
+  box-sizing: border-box;
+}
+
+/*
+ * Focus: core's code editor uses inputStyle "contenteditable", so the
+ * focused element is .CodeMirror-code — only as tall as the text. The
+ * generic :focus-visible ring below drew a pink box around just the
+ * lines (screenshot bug). Suppress it inside CodeMirror and show focus
+ * on the whole editor pane instead.
+ */
+.fbx .CodeMirror :focus,
+.fbx .CodeMirror :focus-visible { outline: none !important; box-shadow: none !important; }
+.fbx-editor-pane { transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+.fbx-editor-pane:focus-within { border-color: rgba(255, 120, 189, 0.55); box-shadow: 0 0 0 1px rgba(255, 120, 189, 0.25); }
+.fbx .fbx-code:focus-visible { outline: none; }
+
+/* CodeMirror dark integration (core-bundled) */
+.fbx .CodeMirror { flex: 1; height: 100%; background: var(--fbx-code-bg); color: #E9E2EE; font: 13px/1.6 var(--fbx-mono); }
+.fbx .CodeMirror-gutters { background: #141119; border-right: 1px solid var(--fbx-line); }
+.fbx .CodeMirror-linenumber { color: #6A5F76; }
+.fbx .CodeMirror-cursor { border-left: 2px solid var(--fbx-pink); }
+.fbx .CodeMirror-selected { background: rgba(255, 120, 189, 0.22) !important; }
+.fbx .CodeMirror-focused .CodeMirror-selected { background: rgba(255, 120, 189, 0.28) !important; }
+.fbx .CodeMirror-activeline-background { background: rgba(250, 246, 251, 0.04); }
+.fbx .CodeMirror-matchingbracket { color: var(--fbx-emerald) !important; border-bottom: 1px solid var(--fbx-emerald); }
+.fbx .CodeMirror-nonmatchingbracket { color: var(--fbx-red) !important; }
+.fbx .CodeMirror-readonly .CodeMirror-cursor { display: none; }
+
+/* Syntax colours: core's default theme is tuned for a white background and is unreadable here. */
+.fbx .cm-s-default .cm-keyword { color: #FF8FCB; }
+.fbx .cm-s-default .cm-atom,
+.fbx .cm-s-default .cm-number { color: #F3B868; }
+.fbx .cm-s-default .cm-def { color: #7FD4FF; }
+.fbx .cm-s-default .cm-variable { color: #E9E2EE; }
+.fbx .cm-s-default .cm-variable-2 { color: #B8A6FF; }
+.fbx .cm-s-default .cm-variable-3,
+.fbx .cm-s-default .cm-type { color: #6FE3C1; }
+.fbx .cm-s-default .cm-property { color: #9CCBFF; }
+.fbx .cm-s-default .cm-operator { color: #D6CCE0; }
+.fbx .cm-s-default .cm-comment { color: #847A90; font-style: italic; }
+.fbx .cm-s-default .cm-string { color: #8FE3A8; }
+.fbx .cm-s-default .cm-string-2 { color: #F7A56F; }
+.fbx .cm-s-default .cm-meta,
+.fbx .cm-s-default .cm-qualifier { color: #A99FB4; }
+.fbx .cm-s-default .cm-builtin { color: #C9A2FF; }
+.fbx .cm-s-default .cm-bracket { color: #A99FB4; }
+.fbx .cm-s-default .cm-tag { color: #FF78BD; }
+.fbx .cm-s-default .cm-attribute { color: #F3B868; }
+.fbx .cm-s-default .cm-header { color: #7FD4FF; }
+.fbx .cm-s-default .cm-link { color: #9CCBFF; }
+.fbx .cm-s-default .cm-error { color: var(--fbx-red); }
+.fbx .cm-tab { background: none; }
+
+/* ---------- upload strip ---------- */
+
+.fbx-upload-strip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 14px;
+  background: rgba(84, 219, 160, 0.08);
+  border-top: 1px solid var(--fbx-line);
+  font-size: 12.5px;
+}
+.fbx-upload-name { max-width: 40%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.fbx-progress { flex: 1; height: 6px; border-radius: 999px; background: var(--fbx-panel-2); overflow: hidden; }
+.fbx-progress-bar {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--fbx-emerald), var(--fbx-pink));
+  border-radius: 999px;
+  transition: width 0.2s ease;
+}
+
+/* ---------- toasts ---------- */
+
+.fbx-toasts {
+  position: absolute;
+  bottom: 12px;           /* bottom: never covers the toolbar (Upload, New file…) */
+  inset-inline-end: 12px;
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 380px;
+}
+.fbx-toast {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 11px 14px;
+  border-radius: var(--fbx-radius-m);
+  border: 1px solid var(--fbx-line-strong);
+  background: rgba(33, 27, 41, 0.97);
+  color: var(--fbx-ink);
+  font-size: 12.5px;
+  line-height: 1.45;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  animation: fbx-in 0.18s ease;
+  cursor: pointer;
+}
+.fbx-toast--success { border-color: rgba(84, 219, 160, 0.5); }
+.fbx-toast--error { border-color: rgba(255, 92, 122, 0.55); }
+.fbx-toast--warn { border-color: rgba(243, 184, 104, 0.5); }
+@keyframes fbx-in { from { opacity: 0; transform: translateY(6px); } }
+
+/* ---------- modals (rendered on body, own scope) ---------- */
+
+.fbx-modal-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 6, 12, 0.62);
+  padding: 20px;
+}
+.fbx-modal-layer.is-open { display: flex; }
+.fbx-modal {
+  width: min(520px, 92vw);
+  max-height: 86vh;
+  overflow: auto;
+  background: var(--fbx-panel);
+  border: 1px solid var(--fbx-line-strong);
+  border-radius: var(--fbx-radius-l);
+  padding: 18px 20px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  font-family: var(--fbx-font);
+  color: var(--fbx-ink);
+  animation: fbx-pop 0.16s ease;
+}
+@keyframes fbx-pop { from { opacity: 0; transform: translateY(8px) scale(0.98); } }
+.fbx-modal h3 { margin: 0 0 8px; font-size: 15px; letter-spacing: -0.01em; }
+.fbx-modal-body { color: var(--fbx-muted); font-size: 13px; line-height: 1.55; }
+.fbx-modal-body p { margin: 0 0 8px; word-break: break-word; }
+.fbx-modal-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+
+.fbx-field { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
+.fbx-field > span {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fbx-muted);
+  font-weight: 700;
+}
+.fbx-field input {
+  min-height: 44px;
+  border-radius: var(--fbx-radius-s);
+  border: 1px solid var(--fbx-line-strong);
+  background: var(--fbx-code-bg);
+  color: var(--fbx-ink);
+  padding: 8px 12px;
+  font: 13px var(--fbx-mono);
+  box-sizing: border-box;
+  width: 100%;
+}
+.fbx-field input:focus { border-color: var(--fbx-pink); outline: none; }
+.fbx-field-err { color: var(--fbx-red); font-size: 12px; min-height: 15px; }
+.fbx-checkline { display: flex; gap: 8px; align-items: center; font-size: 12.5px; margin: 8px 0; cursor: pointer; }
+.fbx-checkline input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--fbx-emerald); }
+.fbx-inline-note { font-size: 12px; color: var(--fbx-amber); margin: 8px 0 0; }
+
+.fbx-chmod { display: flex; flex-direction: column; gap: 10px; }
+.fbx-chmod-grid {
+  display: grid;
+  grid-template-columns: 72px repeat(3, 1fr);
+  gap: 6px 10px;
+  align-items: center;
+}
+.fbx-chmod-h {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fbx-muted);
+  font-weight: 700;
+  text-align: center;
+}
+.fbx-chmod-grid .fbx-chmod-h:first-child { text-align: start; }
+.fbx-chmod-grid input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--fbx-emerald); justify-self: center; }
+.fbx-chmod input[type="text"] {
+  width: 120px;
+  min-height: 40px;
+  border-radius: var(--fbx-radius-s);
+  border: 1px solid var(--fbx-line-strong);
+  background: var(--fbx-code-bg);
+  color: var(--fbx-ink);
+  padding: 6px 10px;
+  font: 13px var(--fbx-mono);
+}
+
+/* ---------- focus, scrollbars, motion, responsive ---------- */
+
+.fbx :focus-visible,
+.fbx-modal-layer :focus-visible {
+  outline: 2px solid var(--fbx-pink);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+.fbx ::-webkit-scrollbar { width: 10px; height: 10px; }
+.fbx ::-webkit-scrollbar-thumb { background: var(--fbx-line-strong); border-radius: 999px; }
+.fbx ::-webkit-scrollbar-track { background: transparent; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fbx *,
+  .fbx-modal-layer *,
+  .fbx-modal-layer {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .fbx-main { flex-direction: column; height: auto; }
+  .fbx-list-pane { max-height: 52vh; }
+  .fbx-editor-pane { min-height: 52vh; }
+}
+/* Column collapsing follows the LIST PANE width (it shrinks when the editor opens), not the viewport. */
+@container fbx-list (max-width: 640px) {
+  .fbx-col--mtime, .fbx-cell--mtime { display: none; }
+  .fbx-list-head, .fbx-row { grid-template-columns: minmax(120px, 1fr) 72px 60px var(--fbx-act-w); }
+}
+@container fbx-list (max-width: 500px) {
+  .fbx-col--perms, .fbx-cell--perms { display: none; }
+  .fbx-list-head, .fbx-row { grid-template-columns: minmax(100px, 1fr) 64px var(--fbx-act-w); }
+  .fbx-list-head, .fbx-row { --fbx-act-w: var(--fbx-act-w-narrow); }
+  .fbx-row-btn { width: 28px; }
+}
+/* ---------- trash ---------- */
+
+.fbx-trash-btn { position: relative; }
+.fbx-trash-btn[aria-pressed="true"] { color: var(--fbx-ink); background: var(--fbx-panel-2); }
+.fbx-count {
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--fbx-pink);
+  color: #2B0718;
+  font: 700 10.5px/18px var(--fbx-font);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.fbx-trash {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  height: min(78vh, 820px);
+  min-height: 0;
+}
+.fbx-trash-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.fbx-trash-title { margin: 0; font: 700 16px/1.2 var(--fbx-font); color: var(--fbx-ink); }
+.fbx-trash-end { margin-inline-start: auto; display: inline-flex; gap: 8px; align-items: center; }
+.fbx-tabs {
+  display: inline-flex;
+  padding: 3px;
+  gap: 2px;
+  border-radius: 10px;
+  background: var(--fbx-panel);
+  border: 1px solid var(--fbx-line);
+}
+.fbx-tab {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--fbx-muted);
+  font: 600 12px/1 var(--fbx-font);
+  padding: 8px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.fbx-tab:hover { color: var(--fbx-ink); }
+.fbx-tab.is-active { background: var(--fbx-panel-2); color: var(--fbx-ink); box-shadow: inset 0 0 0 1px var(--fbx-line-strong); }
+.fbx-btn--danger-outline { background: transparent; color: var(--fbx-red); border-color: rgba(255, 92, 122, 0.45); }
+.fbx-btn--danger-outline:hover { border-color: var(--fbx-red); background: rgba(255, 92, 122, 0.08); }
+.fbx-trash-note { margin: 0; color: var(--fbx-muted); font-size: 12.5px; line-height: 1.5; max-width: 80ch; }
+.fbx-trash.is-site .fbx-trash-note { color: var(--fbx-amber); }
+.fbx-trash-list {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--fbx-panel);
+  border: 1px solid var(--fbx-line);
+  border-radius: var(--fbx-radius-m);
+  overflow: hidden;
+  container-type: inline-size;
+  container-name: fbx-trash;
+}
+.fbx-trash-cols,
+.fbx-trow {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 190px 190px 90px 150px;
+  gap: 10px;
+  align-items: center;
+  padding: 0 12px;
+}
+.fbx-trash-cols {
+  padding-block: 10px;
+  border-bottom: 1px solid var(--fbx-line);
+  background: rgba(0, 0, 0, 0.22);
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font: 700 10.5px/1.2 var(--fbx-font);
+  color: var(--fbx-muted);
+}
+.fbx-trash-rows { flex: 1; overflow-y: auto; overflow-x: hidden; padding: 4px 0 10px; }
+.fbx-trow {
+  min-height: 54px;
+  padding-block: 6px;
+  border-bottom: 1px solid rgba(250, 246, 251, 0.045);
+  cursor: context-menu;
+  transition: background 0.12s ease;
+}
+.fbx-trow:hover,
+.fbx-trow.is-menu { background: rgba(255, 120, 189, 0.07); }
+.fbx-trow:focus-visible { outline-offset: -2px; background: rgba(255, 120, 189, 0.07); }
+.fbx-tcell { min-width: 0; display: flex; flex-direction: column; gap: 2px; font-size: 12px; color: var(--fbx-muted); font-variant-numeric: tabular-nums; }
+.fbx-tcell > *,
+.fbx-tname-text > * { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.fbx-tcell small,
+.fbx-tname-text small { font-size: 11px; color: var(--fbx-muted); opacity: 0.85; }
+.fbx-tname { flex-direction: row; align-items: center; gap: 10px; }
+.fbx-tname-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.fbx-tname .fbx-tmain { color: var(--fbx-ink); font-weight: 600; font-size: 12.5px; }
+.fbx-trow--dir .fbx-ico { color: var(--fbx-pink); }
+.fbx-tact { flex-direction: row; justify-content: flex-end; align-items: center; gap: 4px; }
+.fbx-tcell.fbx-tact > * { overflow: visible; flex: none; }
+.fbx-trash-empty { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.fbx-trash-empty svg { width: 34px; height: 34px; opacity: 0.5; }
+.fbx-trash-empty p { margin: 0; }
+.fbx-trash-foot { color: var(--fbx-muted); font-size: 12px; min-height: 16px; }
+
+@container fbx-trash (max-width: 760px) {
+  .fbx-trash-cols, .fbx-trow { grid-template-columns: minmax(150px, 1fr) 180px 84px 150px; }
+  .fbx-tcol--deleted, .fbx-tcell--deleted { display: none; }
+}
+@container fbx-trash (max-width: 540px) {
+  .fbx-trash-cols, .fbx-trow { grid-template-columns: minmax(120px, 1fr) 80px; }
+  .fbx-tcol--until, .fbx-tcell--until, .fbx-tcol--size, .fbx-tcell--size { display: none; }
+  .fbx-tact .fbx-btn span { display: none; }
+  .fbx-tact .fbx-btn { min-width: 32px; padding: 0 7px; }
+}
+
+/* ---------- context menu (rendered on body) ---------- */
+
+.fbx-menu {
+  position: fixed;
+  z-index: 100001;
+  min-width: 220px;
+  max-width: 320px;
+  padding: 5px;
+  border-radius: var(--fbx-radius-m);
+  border: 1px solid var(--fbx-line-strong);
+  background: #231C2C;
+  color: var(--fbx-ink);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5);
+  font-family: var(--fbx-font);
+  animation: fbx-in 0.12s ease;
+}
+.fbx-menu-item {
+  appearance: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 9px 11px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--fbx-ink);
+  font: 600 13px/1.2 var(--fbx-font);
+  text-align: start;
+  cursor: pointer;
+}
+.fbx-menu-item svg { flex: none; color: var(--fbx-muted); }
+.fbx-menu-item:hover:not(:disabled),
+.fbx-menu-item:focus-visible { background: var(--fbx-panel-2); outline: none; }
+.fbx-menu-item:focus-visible { box-shadow: inset 0 0 0 1px var(--fbx-pink); }
+.fbx-menu-item.is-danger { color: var(--fbx-red); }
+.fbx-menu-item.is-danger svg { color: var(--fbx-red); }
+.fbx-menu-item:disabled { opacity: 0.45; cursor: default; }
+.fbx-menu-sep { height: 1px; margin: 5px 6px; background: var(--fbx-line-strong); }
+
+/* toast with an action (e.g. Undo) */
+.fbx-toast-text { flex: 1; }
+.fbx-toast-act {
+  appearance: none;
+  flex: none;
+  border: 1px solid var(--fbx-line-strong);
+  background: var(--fbx-panel-2);
+  color: var(--fbx-ink);
+  font: 700 12px/1 var(--fbx-font);
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.fbx-toast-act:hover { border-color: var(--fbx-pink); }
+.fbx-modal .fbx-muted { color: var(--fbx-muted); font-size: 12.5px; }
+
+/* ---------- right-to-left locales (Arabic, Urdu …) ---------- */
+
+/* Source code is always left-to-right, whatever the admin language. */
+.fbx .CodeMirror,
+.fbx .fbx-code,
+.fbx-chmod input[type="text"] { direction: ltr; text-align: left; }
+
+/* File names and paths: direction from their own first strong character,
+   so ".htaccess" never renders as "htaccess." inside an RTL admin. */
+.fbx-name span,
+.fbx-tname-text > *,
+.fbx-filename,
+.fbx-crumb button,
+.fbx-upload-name,
+.fbx-field input { unicode-bidi: plaintext; }
+
+/* Pure numeric values (modes, timestamps) keep their LTR order. */
+.fbx-cell--perms,
+.fbx-cell--mtime,
+.fbx-chip { unicode-bidi: isolate; }
+.fbx-cell--perms,
+.fbx-cell--mtime,
+.fbx-chip--ltr { direction: ltr; }
+[dir="rtl"] .fbx-cell--perms,
+[dir="rtl"] .fbx-cell--mtime { text-align: right; }
+
+/* Letter-spacing breaks Arabic/Urdu cursive joining and Indic conjuncts,
+   and uppercase has no meaning in these scripts. */
+:is(:lang(ar), :lang(ur), :lang(hi), :lang(bn), :lang(zh)) :is(.fbx-col, .fbx-field > span, .fbx-chmod-h, .fbx-btn, .fbx-trash-cols) {
+  letter-spacing: normal;
+  text-transform: none;
+}
+[dir="rtl"] .fbx [data-act="trashback"] svg { transform: scaleX(-1); }

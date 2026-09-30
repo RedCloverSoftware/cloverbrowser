@@ -1,0 +1,2251 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Cloverbrowser\n"
+"PO-Revision-Date: 2026-09-30 10:51+0000\n"
+"Language-Team: Bengali (Bangladesh)\n"
+"Language: bn_BD\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: cloverbrowser\n"
+
+#: cloverbrowser.php:38
+msgid "Cloverbrowser requires PHP 8.0 or newer."
+msgstr "Cloverbrowser-এর জন্য PHP 8.0 বা নতুন সংস্করণ প্রয়োজন।"
+
+#: cloverbrowser.php:94
+msgid "Browse files"
+msgstr "ফাইল ব্রাউজ করুন"
+
+#: cloverbrowser.php:97 cloverbrowser.php:98 cloverbrowser.php:112 cloverbrowser.php:256 assets/js/access-rules.js:302 assets/js/access-rules.js:303 assets/js/file-browser.js:164
+msgid "Settings"
+msgstr "সেটিংস"
+
+#: cloverbrowser.php:214
+msgid "You do not have permission to access the file browser."
+msgstr "ফাইল ব্রাউজারে প্রবেশের অনুমতি আপনার নেই।"
+
+#. translators: %s: absolute server path of the sandbox root
+#: cloverbrowser.php:227
+msgid "Full file access for this server, sandboxed to %s."
+msgstr "এই সার্ভারের ফাইলে পূর্ণ প্রবেশাধিকার, %s-এর মধ্যে সীমাবদ্ধ।"
+
+#: cloverbrowser.php:233
+msgid "Admin-only; every request is capability- and nonce-checked."
+msgstr "শুধু অ্যাডমিনদের জন্য; প্রতিটি অনুরোধে অনুমতি ও nonce যাচাই করা হয়।"
+
+#: cloverbrowser.php:235 assets/js/file-browser.js:161
+msgid "Your access is limited by rules set by an administrator."
+msgstr "আপনার প্রবেশাধিকার একজন অ্যাডমিনিস্ট্রেটরের নির্ধারিত নিয়মে সীমাবদ্ধ।"
+
+#: cloverbrowser.php:240
+msgid "Read-only mode."
+msgstr "শুধু-পঠন মোড।"
+
+#: cloverbrowser.php:243
+msgid "Loading file browser…"
+msgstr "ফাইল ব্রাউজার লোড হচ্ছে…"
+
+#: cloverbrowser.php:244 cloverbrowser.php:259
+msgid "The file browser requires JavaScript."
+msgstr "ফাইল ব্রাউজারের জন্য JavaScript প্রয়োজন।"
+
+#: cloverbrowser.php:252 includes/class-cloverbrowser-ajax.php:120
+msgid "Only administrators can manage access rules."
+msgstr "শুধু অ্যাডমিনিস্ট্রেটররাই প্রবেশাধিকারের নিয়ম পরিচালনা করতে পারেন।"
+
+#: cloverbrowser.php:258
+msgid "Loading settings…"
+msgstr "সেটিংস লোড হচ্ছে…"
+
+#: assets/js/access-rules.js:76 assets/js/file-browser.js:375
+msgid "Network error — the server may be busy or unreachable."
+msgstr "নেটওয়ার্ক ত্রুটি — সার্ভার ব্যস্ত বা নাগালের বাইরে থাকতে পারে।"
+
+#. translators: %d: HTTP status code
+#: assets/js/access-rules.js:83 assets/js/file-browser.js:382
+msgid "Unexpected server response (HTTP %d)."
+msgstr "সার্ভারের অপ্রত্যাশিত প্রতিক্রিয়া (HTTP %d)।"
+
+#: assets/js/access-rules.js:85 assets/js/file-browser.js:385
+msgid "Request failed."
+msgstr "অনুরোধ ব্যর্থ হয়েছে।"
+
+#: assets/js/access-rules.js:139
+msgid "Open files"
+msgstr "ফাইল খোলা"
+
+#: assets/js/access-rules.js:139
+msgid "Read file contents in the viewer. Folders can always be browsed once access is enabled."
+msgstr "ভিউয়ারে ফাইলের বিষয়বস্তু পড়া। প্রবেশাধিকার চালু থাকলে ফোল্ডার সবসময় ব্রাউজ করা যায়।"
+
+#: assets/js/access-rules.js:140
+msgid "Download files"
+msgstr "ফাইল ডাউনলোড"
+
+#: assets/js/access-rules.js:140
+msgid "Save copies of files to their computer."
+msgstr "ফাইলের কপি নিজের কম্পিউটারে সংরক্ষণ করা।"
+
+#: assets/js/access-rules.js:141
+msgid "Edit & save files"
+msgstr "ফাইল সম্পাদনা ও সংরক্ষণ"
+
+#: assets/js/access-rules.js:141
+msgid "Change file contents in the editor (includes autosaved drafts and line-ending conversion)."
+msgstr "এডিটরে ফাইলের বিষয়বস্তু পরিবর্তন করা (স্বয়ংক্রিয়ভাবে সংরক্ষিত খসড়া ও লাইন এন্ডিং রূপান্তরসহ)।"
+
+#: assets/js/access-rules.js:142
+msgid "Create files & folders"
+msgstr "ফাইল ও ফোল্ডার তৈরি"
+
+#: assets/js/access-rules.js:142
+msgid "Make new empty files and folders."
+msgstr "নতুন খালি ফাইল ও ফোল্ডার তৈরি করা।"
+
+#: assets/js/access-rules.js:143
+msgid "Upload files"
+msgstr "ফাইল আপলোড"
+
+#: assets/js/access-rules.js:143
+msgid "Add files from their computer, and replace existing ones they may edit."
+msgstr "নিজের কম্পিউটার থেকে ফাইল যোগ করা এবং সম্পাদনার অনুমতি আছে এমন বিদ্যমান ফাইল প্রতিস্থাপন করা।"
+
+#: assets/js/access-rules.js:144 assets/js/access-rules.js:578
+msgid "Rename & move"
+msgstr "নাম পরিবর্তন ও সরানো"
+
+#: assets/js/access-rules.js:144
+msgid "Rename files and folders within the folders they can access."
+msgstr "প্রবেশাধিকার আছে এমন ফোল্ডারের মধ্যে ফাইল ও ফোল্ডারের নাম পরিবর্তন করা।"
+
+#: assets/js/access-rules.js:145 assets/js/access-rules.js:578 assets/js/file-browser.js:767 assets/js/file-browser.js:1628
+msgid "Delete"
+msgstr "মুছুন"
+
+#: assets/js/access-rules.js:145
+msgid "Remove files and folders, including everything inside a folder."
+msgstr "ফাইল ও ফোল্ডার মুছে ফেলা, ফোল্ডারের ভেতরের সবকিছুসহ।"
+
+#: assets/js/access-rules.js:146 assets/js/access-rules.js:578 assets/js/file-browser.js:765
+msgid "Change permissions"
+msgstr "অনুমতি পরিবর্তন করুন"
+
+#: assets/js/access-rules.js:146
+msgid "Change Unix file modes (chmod). Rarely needed — keep off unless required."
+msgstr "ফাইলের Unix মোড পরিবর্তন করা (chmod)। কদাচিৎ দরকার হয় — প্রয়োজন না হলে বন্ধ রাখুন।"
+
+#: assets/js/access-rules.js:149
+msgid "PHP files and any file containing PHP tags — even hidden inside an image. Anyone who can write PHP can take over the site."
+msgstr "PHP ফাইল এবং PHP ট্যাগ আছে এমন যেকোনো ফাইল — এমনকি ছবির ভেতরে লুকানো থাকলেও। যে PHP লিখতে পারে, সে সাইটের নিয়ন্ত্রণ নিতে পারে।"
+
+#: assets/js/access-rules.js:150
+msgid ".htaccess, .user.ini, php.ini, web.config and .env files — they change how the server runs code or hold secrets."
+msgstr ".htaccess, .user.ini, php.ini, web.config ও .env ফাইল — এগুলো সার্ভার কীভাবে কোড চালায় তা বদলায় বা গোপন তথ্য ধারণ করে।"
+
+#: assets/js/access-rules.js:151
+msgid "Programs and scripts: binary executables, shell/Python/Perl scripts and anything starting with “#!”."
+msgstr "প্রোগ্রাম ও স্ক্রিপ্ট: বাইনারি এক্সিকিউটেবল, shell/Python/Perl স্ক্রিপ্ট এবং “#!” দিয়ে শুরু হওয়া যেকোনো কিছু।"
+
+#: assets/js/access-rules.js:152
+msgid "HTML, SVG, JavaScript and XML — they can run scripts in visitors’ browsers."
+msgstr "HTML, SVG, JavaScript ও XML — এগুলো দর্শকদের ব্রাউজারে স্ক্রিপ্ট চালাতে পারে।"
+
+#: assets/js/access-rules.js:153
+msgid "ZIP, GZIP, TAR, 7-Zip, RAR and similar archives."
+msgstr "ZIP, GZIP, TAR, 7-Zip, RAR ও অনুরূপ আর্কাইভ।"
+
+#: assets/js/access-rules.js:154
+msgid "JPEG, PNG, GIF, WebP, AVIF, TIFF and other images."
+msgstr "JPEG, PNG, GIF, WebP, AVIF, TIFF ও অন্যান্য ছবি।"
+
+#: assets/js/access-rules.js:155
+msgid "MP3, MP4, WebM, WAV, OGG and other audio and video."
+msgstr "MP3, MP4, WebM, WAV, OGG ও অন্যান্য অডিও ও ভিডিও।"
+
+#: assets/js/access-rules.js:156
+msgid "PDF, Word, Excel, PowerPoint, OpenDocument and RTF."
+msgstr "PDF, Word, Excel, PowerPoint, OpenDocument ও RTF।"
+
+#: assets/js/access-rules.js:157
+msgid "SQLite databases, SQL dumps and .bak backups — they often contain passwords."
+msgstr "SQLite ডেটাবেস, SQL ডাম্প ও .bak ব্যাকআপ — এগুলোতে প্রায়ই পাসওয়ার্ড থাকে।"
+
+#: assets/js/access-rules.js:158
+msgid "Anything that is not plain text and not covered above."
+msgstr "সাধারণ টেক্সট নয় এবং উপরে উল্লেখ নেই এমন যেকোনো কিছু।"
+
+#: assets/js/access-rules.js:161
+msgid "Name contains"
+msgstr "নামে আছে"
+
+#: assets/js/access-rules.js:161
+msgid "secret"
+msgstr "secret"
+
+#: assets/js/access-rules.js:161
+msgid "Any file or folder whose name contains this text, in any folder. Not case-sensitive."
+msgstr "যেকোনো ফোল্ডারে থাকা যেকোনো ফাইল বা ফোল্ডার, যার নামে এই লেখা আছে। বড়/ছোট হাতের অক্ষরে পার্থক্য করে না।"
+
+#: assets/js/access-rules.js:162
+msgid "Name matches"
+msgstr "নাম মেলে"
+
+#: assets/js/access-rules.js:162
+msgid "A name pattern: * matches any characters, ? matches one. Example: *.bak or wp-config*."
+msgstr "নামের প্যাটার্ন: * যেকোনো অক্ষরের সঙ্গে মেলে, ? একটি অক্ষরের সঙ্গে। উদাহরণ: *.bak বা wp-config*।"
+
+#: assets/js/access-rules.js:163
+msgid "Exact path"
+msgstr "নির্দিষ্ট পাথ"
+
+#: assets/js/access-rules.js:163
+msgid "One specific file or folder, relative to the site root."
+msgstr "সাইটের রুট থেকে আপেক্ষিক একটি নির্দিষ্ট ফাইল বা ফোল্ডার।"
+
+#: assets/js/access-rules.js:164
+msgid "Folder and contents"
+msgstr "ফোল্ডার ও বিষয়বস্তু"
+
+#: assets/js/access-rules.js:164
+msgid "A folder and everything inside it, relative to the site root."
+msgstr "সাইটের রুট থেকে আপেক্ষিক একটি ফোল্ডার ও তার ভেতরের সবকিছু।"
+
+#: assets/js/access-rules.js:167
+msgid "Hidden & blocked"
+msgstr "লুকানো ও ব্লক করা"
+
+#: assets/js/access-rules.js:168 assets/js/access-rules.js:331 assets/js/file-browser.js:162
+msgid "Read-only"
+msgstr "শুধু-পঠন"
+
+#: assets/js/access-rules.js:223
+msgid "Folders"
+msgstr "ফোল্ডার"
+
+#: assets/js/access-rules.js:226 assets/js/file-browser.js:1949
+msgid "Loading…"
+msgstr "লোড হচ্ছে…"
+
+#: assets/js/access-rules.js:249
+msgid "No subfolders."
+msgstr "কোনো সাবফোল্ডার নেই।"
+
+#: assets/js/access-rules.js:255
+msgid "Selected folder:"
+msgstr "নির্বাচিত ফোল্ডার:"
+
+#: assets/js/access-rules.js:256
+msgid "Choose a folder"
+msgstr "একটি ফোল্ডার বেছে নিন"
+
+#: assets/js/access-rules.js:257 assets/js/access-rules.js:771 assets/js/file-browser.js:527 assets/js/file-browser.js:552 assets/js/file-browser.js:933 assets/js/file-browser.js:1342 assets/js/file-browser.js:1481 assets/js/file-browser.js:1627 assets/js/file-browser.js:2291
+msgid "Cancel"
+msgstr "বাতিল"
+
+#: assets/js/access-rules.js:258
+msgid "Use this folder"
+msgstr "এই ফোল্ডারটি ব্যবহার করুন"
+
+#: assets/js/access-rules.js:268
+msgid "Save changes"
+msgstr "পরিবর্তন সংরক্ষণ করুন"
+
+#: assets/js/access-rules.js:269 assets/js/access-rules.js:772
+msgid "Discard"
+msgstr "বাদ দিন"
+
+#: assets/js/access-rules.js:270 assets/js/file-browser.js:926
+msgid "Unsaved changes"
+msgstr "অসংরক্ষিত পরিবর্তন"
+
+#: assets/js/access-rules.js:271 assets/js/access-rules.js:344
+msgid "Roles"
+msgstr "ভূমিকা"
+
+#: assets/js/access-rules.js:290
+msgid "Access rules"
+msgstr "প্রবেশাধিকারের নিয়ম"
+
+#: assets/js/access-rules.js:290 assets/js/access-rules.js:648 assets/js/file-browser.js:163 assets/js/file-browser.js:212 assets/js/file-browser.js:1915 assets/js/file-browser.js:1971
+msgid "Trash"
+msgstr "ট্র্যাশ"
+
+#: assets/js/access-rules.js:293
+msgid "Administrators always have full access and are not affected by these rules. Every other role has no access until you enable it."
+msgstr "অ্যাডমিনিস্ট্রেটরদের সবসময় পূর্ণ প্রবেশাধিকার থাকে এবং এই নিয়ম তাঁদের ওপর প্রযোজ্য নয়। অন্য কোনো ভূমিকার প্রবেশাধিকার থাকে না, যতক্ষণ না আপনি তা চালু করেন।"
+
+#: assets/js/access-rules.js:294
+msgid "The “All roles” rules apply to every enabled role. A role’s own rules can only add restrictions on top of them."
+msgstr "“সব ভূমিকা”-র নিয়ম প্রতিটি চালু করা ভূমিকায় প্রযোজ্য। কোনো ভূমিকার নিজস্ব নিয়ম এর ওপর কেবল আরও বিধিনিষেধ যোগ করতে পারে।"
+
+#: assets/js/access-rules.js:295
+msgid "File editing is disabled for this site (DISALLOW_FILE_EDIT / CLOVERBROWSER_READ_ONLY), so every role is read-only whatever you allow here."
+msgstr "এই সাইটে ফাইল সম্পাদনা নিষ্ক্রিয় (DISALLOW_FILE_EDIT / CLOVERBROWSER_READ_ONLY), তাই এখানে যা-ই অনুমতি দিন, প্রতিটি ভূমিকা শুধু-পঠন থাকবে।"
+
+#: assets/js/access-rules.js:326
+msgid "No access"
+msgstr "প্রবেশাধিকার নেই"
+
+#: assets/js/access-rules.js:330
+msgid "Browse only"
+msgstr "শুধু ব্রাউজ"
+
+#: assets/js/access-rules.js:332
+msgid "Full"
+msgstr "পূর্ণ"
+
+#: assets/js/access-rules.js:333
+msgid "Custom"
+msgstr "কাস্টম"
+
+#: assets/js/access-rules.js:343 assets/js/access-rules.js:396 includes/class-cloverbrowser-policy.php:111
+msgid "All roles"
+msgstr "সব ভূমিকা"
+
+#: assets/js/access-rules.js:343
+msgid "Applies to every enabled role"
+msgstr "প্রতিটি চালু করা ভূমিকায় প্রযোজ্য"
+
+#. translators: %s: number of users
+#: assets/js/access-rules.js:349
+msgid "%s user"
+msgid_plural "%s users"
+msgstr[0] "%s জন ব্যবহারকারী"
+msgstr[1] "%s জন ব্যবহারকারী"
+
+#: assets/js/access-rules.js:351
+msgid "Administrators are not listed: they always have full access."
+msgstr "অ্যাডমিনিস্ট্রেটরদের তালিকায় দেখানো হয় না: তাঁদের সবসময় পূর্ণ প্রবেশাধিকার থাকে।"
+
+#. translators: %s: role name
+#: assets/js/access-rules.js:367 includes/class-cloverbrowser-policy.php:134
+msgid "%s can create or modify PHP code. Anyone who can write PHP can take over the whole site — block the “PHP code” type unless that is intended."
+msgstr "%s PHP কোড তৈরি বা পরিবর্তন করতে পারে। যে PHP লিখতে পারে, সে পুরো সাইটের নিয়ন্ত্রণ নিতে পারে — ইচ্ছাকৃত না হলে “PHP কোড” ধরনটি ব্লক করুন।"
+
+#. translators: %s: role name
+#: assets/js/access-rules.js:372 includes/class-cloverbrowser-policy.php:127
+msgid "%s is normally given to untrusted accounts. Make sure you really want it to reach server files."
+msgstr "%s সাধারণত অবিশ্বস্ত অ্যাকাউন্টকে দেওয়া হয়। নিশ্চিত হোন যে আপনি সত্যিই এটিকে সার্ভারের ফাইলে প্রবেশাধিকার দিতে চান।"
+
+#: assets/js/access-rules.js:398
+msgid "Baseline rules for every non-administrator role that has access. Roles can be restricted further on their own pages."
+msgstr "প্রবেশাধিকার আছে এমন প্রতিটি অ্যাডমিনিস্ট্রেটর নয় এমন ভূমিকার মৌলিক নিয়ম। প্রতিটি ভূমিকার নিজস্ব পাতায় আরও সীমাবদ্ধ করা যায়।"
+
+#: assets/js/access-rules.js:399
+msgid "Rules for this role. They add to the “All roles” rules — they can never grant more than those allow."
+msgstr "এই ভূমিকার নিয়ম। এগুলো “সব ভূমিকা”-র নিয়মের সঙ্গে যুক্ত হয় — সেগুলো যতটা অনুমতি দেয়, তার বেশি কখনো দিতে পারে না।"
+
+#: assets/js/access-rules.js:403
+msgid "Access"
+msgstr "প্রবেশাধিকার"
+
+#. translators: %s: role name
+#: assets/js/access-rules.js:407
+msgid "Allow %s users to use Cloverbrowser"
+msgstr "%s ব্যবহারকারীদের Cloverbrowser ব্যবহার করতে দিন"
+
+#: assets/js/access-rules.js:408
+msgid "When off, users with this role do not see Cloverbrowser at all."
+msgstr "বন্ধ থাকলে এই ভূমিকার ব্যবহারকারীরা Cloverbrowser একেবারেই দেখতে পান না।"
+
+#: assets/js/access-rules.js:412
+msgid "Access is off — you can still prepare these rules; they apply once access is enabled."
+msgstr "প্রবেশাধিকার বন্ধ — তবুও আপনি এই নিয়মগুলো প্রস্তুত করতে পারেন; প্রবেশাধিকার চালু হলে এগুলো কার্যকর হবে।"
+
+#: assets/js/access-rules.js:417
+msgid "View only"
+msgstr "শুধু দেখা"
+
+#: assets/js/access-rules.js:418
+msgid "View & download"
+msgstr "দেখা ও ডাউনলোড"
+
+#: assets/js/access-rules.js:419
+msgid "Edit files"
+msgstr "ফাইল সম্পাদনা"
+
+#: assets/js/access-rules.js:420
+msgid "Everything"
+msgstr "সবকিছু"
+
+#: assets/js/access-rules.js:422
+msgid "Presets"
+msgstr "প্রিসেট"
+
+#: assets/js/access-rules.js:423
+msgid "Presets:"
+msgstr "প্রিসেট:"
+
+#: assets/js/access-rules.js:432
+msgid "Not allowed for any role (All roles)"
+msgstr "কোনো ভূমিকার জন্য অনুমোদিত নয় (সব ভূমিকা)"
+
+#: assets/js/access-rules.js:434
+msgid "What they can do"
+msgstr "তাঁরা যা করতে পারেন"
+
+#: assets/js/access-rules.js:442 assets/js/access-rules.js:443
+msgid "No folder limit: the whole site folder is reachable (minus protected items)."
+msgstr "ফোল্ডারের কোনো সীমা নেই: পুরো সাইট ফোল্ডারে প্রবেশ করা যায় (সুরক্ষিত আইটেম বাদে)।"
+
+#: assets/js/access-rules.js:443
+msgid "No extra limit: the “All roles” folders apply."
+msgstr "অতিরিক্ত কোনো সীমা নেই: “সব ভূমিকা”-র ফোল্ডারগুলো প্রযোজ্য।"
+
+#: assets/js/access-rules.js:447 assets/js/access-rules.js:529 assets/js/file-browser.js:2292
+msgid "Remove"
+msgstr "সরান"
+
+#. translators: %s: folder path
+#: assets/js/access-rules.js:449
+msgid "Remove %s"
+msgstr "%s সরান"
+
+#: assets/js/access-rules.js:452
+msgid "Folder path"
+msgstr "ফোল্ডারের পাথ"
+
+#: assets/js/access-rules.js:455
+msgid "Enter a folder path relative to the site root."
+msgstr "সাইটের রুট থেকে আপেক্ষিক একটি ফোল্ডারের পাথ লিখুন।"
+
+#: assets/js/access-rules.js:462
+msgid "Where they can go"
+msgstr "তাঁরা যেখানে যেতে পারেন"
+
+#: assets/js/access-rules.js:463
+msgid "Limit every role to these folders and everything inside them. Leave empty for no limit."
+msgstr "প্রতিটি ভূমিকাকে এই ফোল্ডারগুলো ও এদের ভেতরের সবকিছুতে সীমাবদ্ধ করুন। কোনো সীমা না চাইলে খালি রাখুন।"
+
+#: assets/js/access-rules.js:464
+msgid "Limit this role to these folders. When “All roles” also has folders, only the overlap is reachable."
+msgstr "এই ভূমিকাকে এই ফোল্ডারগুলোতে সীমাবদ্ধ করুন। “সব ভূমিকা”-তেও ফোল্ডার থাকলে শুধু দুটির মিলে যাওয়া অংশে প্রবেশ করা যায়।"
+
+#: assets/js/access-rules.js:467 assets/js/access-rules.js:615 assets/js/access-rules.js:615
+msgid "Choose folder…"
+msgstr "ফোল্ডার বেছে নিন…"
+
+#: assets/js/access-rules.js:469
+msgid "Add"
+msgstr "যোগ করুন"
+
+#: assets/js/access-rules.js:482
+msgid "Blocked for all roles"
+msgstr "সব ভূমিকার জন্য ব্লক করা"
+
+#: assets/js/access-rules.js:485
+msgid "Blocked file types"
+msgstr "ব্লক করা ফাইলের ধরন"
+
+#: assets/js/access-rules.js:486
+msgid "Blocked files cannot be opened, downloaded, edited, uploaded or created. Types are recognised by their content (file headers and embedded code), not just by the name."
+msgstr "ব্লক করা ফাইল খোলা, ডাউনলোড, সম্পাদনা, আপলোড বা তৈরি করা যায় না। ধরন শুধু নাম দিয়ে নয়, বিষয়বস্তু (ফাইল হেডার ও ভেতরে থাকা কোড) দিয়ে চেনা হয়।"
+
+#: assets/js/access-rules.js:495 assets/js/access-rules.js:523
+msgid "Match"
+msgstr "মিল"
+
+#: assets/js/access-rules.js:496 assets/js/access-rules.js:511
+msgid "Pattern or path"
+msgstr "প্যাটার্ন বা পাথ"
+
+#: assets/js/access-rules.js:497 assets/js/access-rules.js:525
+msgid "Effect"
+msgstr "প্রভাব"
+
+#: assets/js/access-rules.js:502
+msgid "Built in: always protected from non-administrators."
+msgstr "অন্তর্নির্মিত: অ্যাডমিনিস্ট্রেটর নন এমন সবার কাছ থেকে সবসময় সুরক্ষিত।"
+
+#: assets/js/access-rules.js:502
+msgid "Always"
+msgstr "সবসময়"
+
+#. translators: %s: number of rules
+#: assets/js/access-rules.js:506
+msgid "Plus %s rule from “All roles” and the built-in protections."
+msgid_plural "Plus %s rules from “All roles” and the built-in protections."
+msgstr[0] "এছাড়াও “সব ভূমিকা” থেকে %sটি নিয়ম এবং অন্তর্নির্মিত সুরক্ষা।"
+msgstr[1] "এছাড়াও “সব ভূমিকা” থেকে %sটি নিয়ম এবং অন্তর্নির্মিত সুরক্ষা।"
+
+#: assets/js/access-rules.js:507
+msgid "Plus the built-in protections."
+msgstr "এছাড়াও অন্তর্নির্মিত সুরক্ষা।"
+
+#: assets/js/access-rules.js:516
+msgid "Required."
+msgstr "আবশ্যক।"
+
+#: assets/js/access-rules.js:517
+msgid "Name rules match a single name — use “Exact path” or “Folder and contents” for paths."
+msgstr "নামের নিয়ম একটি মাত্র নামের সঙ্গে মেলে — পাথের জন্য “নির্দিষ্ট পাথ” বা “ফোল্ডার ও বিষয়বস্তু” ব্যবহার করুন।"
+
+#: assets/js/access-rules.js:529
+msgid "Remove rule"
+msgstr "নিয়ম সরান"
+
+#: assets/js/access-rules.js:531
+msgid "No rules yet."
+msgstr "এখনও কোনো নিয়ম নেই।"
+
+#: assets/js/access-rules.js:538
+msgid "Add rule"
+msgstr "নিয়ম যোগ করুন"
+
+#: assets/js/access-rules.js:541
+msgid "Protected files & folders"
+msgstr "সুরক্ষিত ফাইল ও ফোল্ডার"
+
+#: assets/js/access-rules.js:542
+msgid "“Hidden & blocked” items are not listed and cannot be opened. “Read-only” items are visible but cannot be changed. A rule that matches a folder also covers everything inside it."
+msgstr "“লুকানো ও ব্লক করা” আইটেম তালিকায় দেখানো হয় না এবং খোলা যায় না। “শুধু-পঠন” আইটেম দেখা যায় কিন্তু পরিবর্তন করা যায় না। কোনো ফোল্ডারের সঙ্গে মেলা নিয়ম তার ভেতরের সবকিছুতেও প্রযোজ্য।"
+
+#: assets/js/access-rules.js:551
+msgid "Unit"
+msgstr "একক"
+
+#: assets/js/access-rules.js:561
+msgid "Size limits"
+msgstr "আকারের সীমা"
+
+#: assets/js/access-rules.js:562
+msgid "Leave empty or 0 for no limit (the server’s own upload limit still applies)."
+msgstr "কোনো সীমা না চাইলে খালি রাখুন বা 0 দিন (সার্ভারের নিজস্ব আপলোড সীমা তবুও প্রযোজ্য)।"
+
+#: assets/js/access-rules.js:563
+msgid "Leave empty or 0 for no extra limit. When both are set, the smaller one applies."
+msgstr "অতিরিক্ত কোনো সীমা না চাইলে খালি রাখুন বা 0 দিন। দুটিই নির্ধারিত থাকলে ছোটটি প্রযোজ্য হয়।"
+
+#: assets/js/access-rules.js:564
+msgid "Largest upload"
+msgstr "সর্বোচ্চ আপলোড"
+
+#: assets/js/access-rules.js:564
+msgid "Maximum size of each uploaded file."
+msgstr "প্রতিটি আপলোড করা ফাইলের সর্বোচ্চ আকার।"
+
+#: assets/js/access-rules.js:565
+msgid "Largest growth per save"
+msgstr "প্রতি সংরক্ষণে সর্বোচ্চ বৃদ্ধি"
+
+#: assets/js/access-rules.js:565
+msgid "How much bigger a file may become in one editor save."
+msgstr "এডিটরে একবার সংরক্ষণে একটি ফাইল কতটা বড় হতে পারে।"
+
+#: assets/js/access-rules.js:576
+msgid "Browse folder"
+msgstr "ফোল্ডার ব্রাউজ"
+
+#: assets/js/access-rules.js:576
+msgid "Open"
+msgstr "খুলুন"
+
+#: assets/js/access-rules.js:576 assets/js/file-browser.js:763
+msgid "Download"
+msgstr "ডাউনলোড"
+
+#: assets/js/access-rules.js:577
+msgid "Edit & save"
+msgstr "সম্পাদনা ও সংরক্ষণ"
+
+#: assets/js/access-rules.js:577
+msgid "Create inside"
+msgstr "ভেতরে তৈরি"
+
+#: assets/js/access-rules.js:577
+msgid "Upload into"
+msgstr "এতে আপলোড"
+
+#: assets/js/access-rules.js:581
+msgid "Role"
+msgstr "ভূমিকা"
+
+#: assets/js/access-rules.js:582
+msgid "Path to test"
+msgstr "পরীক্ষার পাথ"
+
+#: assets/js/access-rules.js:587
+msgid "Checking…"
+msgstr "পরীক্ষা করা হচ্ছে…"
+
+#: assets/js/access-rules.js:592
+msgid "This role has no access at all (access is switched off)."
+msgstr "এই ভূমিকার কোনো প্রবেশাধিকার নেই (প্রবেশাধিকার বন্ধ)।"
+
+#: assets/js/access-rules.js:595
+msgid "file"
+msgstr "ফাইল"
+
+#: assets/js/access-rules.js:595
+msgid "folder"
+msgstr "ফোল্ডার"
+
+#. translators: %s: detected file types
+#: assets/js/access-rules.js:598
+msgid "detected as: %s"
+msgstr "শনাক্ত হয়েছে: %s"
+
+#: assets/js/access-rules.js:602
+msgid "Allowed"
+msgstr "অনুমোদিত"
+
+#: assets/js/access-rules.js:611
+msgid "Test access"
+msgstr "প্রবেশাধিকার পরীক্ষা"
+
+#: assets/js/access-rules.js:612
+msgid "Check what a role could do with a file or folder — using the rules on this screen, even before you save them."
+msgstr "এই স্ক্রিনের নিয়ম ব্যবহার করে দেখুন কোনো ভূমিকা একটি ফাইল বা ফোল্ডারে কী করতে পারত — নিয়মগুলো সংরক্ষণের আগেই।"
+
+#: assets/js/access-rules.js:616
+msgid "Test"
+msgstr "পরীক্ষা করুন"
+
+#: assets/js/access-rules.js:631
+msgid "Enter a number of days between 1 and 3650."
+msgstr "1 থেকে 3650-এর মধ্যে দিনের সংখ্যা লিখুন।"
+
+#: assets/js/access-rules.js:638
+msgid "days"
+msgstr "দিন"
+
+#: assets/js/access-rules.js:649
+msgid "Deleted files and folders can be kept for a while so they can be restored. There are two levels, and each can be switched on separately."
+msgstr "মুছে ফেলা ফাইল ও ফোল্ডার কিছু সময় রেখে দেওয়া যায়, যাতে সেগুলো ফিরিয়ে আনা যায়। এর দুটি স্তর আছে, এবং প্রতিটি আলাদাভাবে চালু করা যায়।"
+
+#: assets/js/access-rules.js:653
+msgid "Personal trash"
+msgstr "ব্যক্তিগত ট্র্যাশ"
+
+#: assets/js/access-rules.js:655
+msgid "Give every user their own trash"
+msgstr "প্রত্যেক ব্যবহারকারীকে নিজস্ব ট্র্যাশ দিন"
+
+#: assets/js/access-rules.js:656
+msgid "Each user’s deletions go to their own Trash, where they can restore them, remove them or empty it. They only ever see their own items."
+msgstr "প্রত্যেক ব্যবহারকারীর মোছা আইটেম তাঁর নিজস্ব ট্র্যাশে যায়, যেখানে তিনি সেগুলো ফিরিয়ে আনতে, সরাতে বা ট্র্যাশ খালি করতে পারেন। তাঁরা শুধু নিজের আইটেমই দেখতে পান।"
+
+#: assets/js/access-rules.js:657
+msgid "Keep items in a user’s trash for"
+msgstr "ব্যবহারকারীর ট্র্যাশে আইটেম রাখার সময়কাল"
+
+#: assets/js/access-rules.js:659 assets/js/file-browser.js:214 assets/js/file-browser.js:1971
+msgid "Site trash"
+msgstr "সাইট ট্র্যাশ"
+
+#: assets/js/access-rules.js:661
+msgid "Keep every deletion in the site trash"
+msgstr "প্রতিটি মোছা আইটেম সাইট ট্র্যাশে রাখুন"
+
+#: assets/js/access-rules.js:662
+msgid "A safety net for administrators: everything any user deletes is kept here, even after they empty their own trash. Only administrators can see it, restore from it or empty it."
+msgstr "অ্যাডমিনিস্ট্রেটরদের জন্য একটি সুরক্ষা-বলয়: যেকোনো ব্যবহারকারী যা কিছু মোছেন, তা এখানে রাখা হয়, এমনকি তাঁরা নিজের ট্র্যাশ খালি করার পরেও। শুধু অ্যাডমিনিস্ট্রেটররাই এটি দেখতে, এখান থেকে ফিরিয়ে আনতে বা এটি খালি করতে পারেন।"
+
+#: assets/js/access-rules.js:663
+msgid "Keep items in the site trash for"
+msgstr "সাইট ট্র্যাশে আইটেম রাখার সময়কাল"
+
+#: assets/js/access-rules.js:669
+msgid "Recommended"
+msgstr "প্রস্তাবিত"
+
+#: assets/js/access-rules.js:672 assets/js/access-rules.js:674
+msgid "Permanent deletion"
+msgstr "স্থায়ীভাবে মোছা"
+
+#: assets/js/access-rules.js:673
+msgid "Who may delete an item for good before the site trash’s retention period is over."
+msgstr "সাইট ট্র্যাশের সংরক্ষণকাল শেষ হওয়ার আগে কে একটি আইটেম স্থায়ীভাবে মুছতে পারবেন।"
+
+#: assets/js/access-rules.js:675
+msgid "Administrators only"
+msgstr "শুধু অ্যাডমিনিস্ট্রেটর"
+
+#: assets/js/access-rules.js:676
+msgid "Users can remove items from their own trash, but the site trash keeps its copy until it expires."
+msgstr "ব্যবহারকারীরা নিজের ট্র্যাশ থেকে আইটেম সরাতে পারেন, কিন্তু মেয়াদ শেষ না হওয়া পর্যন্ত সাইট ট্র্যাশে এর কপি থেকে যায়।"
+
+#: assets/js/access-rules.js:677
+msgid "Also the user who deleted the item"
+msgstr "যে ব্যবহারকারী আইটেমটি মুছেছেন, তিনিও"
+
+#: assets/js/access-rules.js:678
+msgid "In their own trash, a user can right-click an item and choose “Permanently delete”, which also removes it from the site trash. They can never empty the site trash."
+msgstr "নিজের ট্র্যাশে একজন ব্যবহারকারী কোনো আইটেমে রাইট-ক্লিক করে “স্থায়ীভাবে মুছুন” বেছে নিতে পারেন, যা এটিকে সাইট ট্র্যাশ থেকেও সরিয়ে দেয়। তাঁরা কখনো সাইট ট্র্যাশ খালি করতে পারেন না।"
+
+#: assets/js/access-rules.js:679
+msgid "Requires the personal trash: users can only reach this option from their own trash."
+msgstr "ব্যক্তিগত ট্র্যাশ চালু থাকা প্রয়োজন: ব্যবহারকারীরা শুধু নিজের ট্র্যাশ থেকেই এই বিকল্পে পৌঁছাতে পারেন।"
+
+#: assets/js/access-rules.js:683
+msgid "Stored in:"
+msgstr "সংরক্ষিত আছে:"
+
+#: assets/js/access-rules.js:684
+msgid "The trash folder is created on the first deletion."
+msgstr "প্রথমবার কিছু মোছার সময় ট্র্যাশ ফোল্ডার তৈরি হয়।"
+
+#: assets/js/access-rules.js:686
+msgid "Outside the public web root: the web server cannot serve these files."
+msgstr "পাবলিক ওয়েব রুটের বাইরে: ওয়েব সার্ভার এই ফাইলগুলো পরিবেশন করতে পারে না।"
+
+#: assets/js/access-rules.js:687
+msgid "Inside the web root, protected by deny rules (.htaccess / web.config), a random folder name, random item names and private file permissions. On nginx, add a rule denying access to this folder, or define CLOVERBROWSER_TRASH_DIR in wp-config.php as a folder outside the web root."
+msgstr "ওয়েব রুটের ভেতরে, নিষেধের নিয়ম (.htaccess / web.config), এলোমেলো ফোল্ডারের নাম, এলোমেলো আইটেমের নাম ও ব্যক্তিগত ফাইল অনুমতি দিয়ে সুরক্ষিত। nginx-এ এই ফোল্ডারে প্রবেশ নিষেধ করার একটি নিয়ম যোগ করুন, অথবা wp-config.php-তে CLOVERBROWSER_TRASH_DIR-কে ওয়েব রুটের বাইরের একটি ফোল্ডার হিসেবে নির্ধারণ করুন।"
+
+#: assets/js/access-rules.js:688
+msgid "Storage"
+msgstr "স্টোরেজ"
+
+#. translators: 1: number of items, 2: total size
+#: assets/js/access-rules.js:692
+msgid "The site currently holds %1$s trashed item (%2$s)."
+msgid_plural "The site currently holds %1$s trashed items (%2$s)."
+msgstr[0] "সাইটে বর্তমানে %1$sটি ট্র্যাশ করা আইটেম আছে (%2$s)।"
+msgstr[1] "সাইটে বর্তমানে %1$sটি ট্র্যাশ করা আইটেম আছে (%2$s)।"
+
+#: assets/js/access-rules.js:694
+msgid "Retention changes also apply to items already in the trash: items outside the new periods are deleted at the next hourly cleanup."
+msgstr "সংরক্ষণকালের পরিবর্তন ট্র্যাশে আগে থেকে থাকা আইটেমেও প্রযোজ্য: নতুন সময়সীমার বাইরে পড়া আইটেমগুলো পরবর্তী ঘণ্টাভিত্তিক পরিষ্কারের সময় মুছে ফেলা হয়।"
+
+#: assets/js/access-rules.js:696
+msgid "Open site trash"
+msgstr "সাইট ট্র্যাশ খুলুন"
+
+#: assets/js/access-rules.js:707
+msgid "Both trashes are off: every deletion is permanent and cannot be undone."
+msgstr "দুটি ট্র্যাশই বন্ধ: প্রতিটি মোছা স্থায়ী এবং আর ফেরানো যাবে না।"
+
+#: assets/js/access-rules.js:709
+msgid "Without the site trash, an item is gone for good as soon as its owner removes it from their trash."
+msgstr "সাইট ট্র্যাশ ছাড়া, মালিক নিজের ট্র্যাশ থেকে সরানোর সঙ্গে সঙ্গেই আইটেমটি চিরতরে মুছে যায়।"
+
+#: assets/js/access-rules.js:712
+msgid "Users can permanently delete their own items, so the site trash is no longer a complete record of deletions."
+msgstr "ব্যবহারকারীরা নিজের আইটেম স্থায়ীভাবে মুছতে পারেন, তাই সাইট ট্র্যাশ আর সব মোছার সম্পূর্ণ রেকর্ড নয়।"
+
+#: assets/js/access-rules.js:735
+msgid "Fix the highlighted field first."
+msgstr "আগে চিহ্নিত ঘরটি ঠিক করুন।"
+
+#: assets/js/access-rules.js:749
+msgid "Access rules saved."
+msgstr "প্রবেশাধিকারের নিয়ম সংরক্ষিত হয়েছে।"
+
+#: assets/js/access-rules.js:757
+msgid "Trash settings saved."
+msgstr "ট্র্যাশের সেটিংস সংরক্ষিত হয়েছে।"
+
+#: assets/js/access-rules.js:770
+msgid "Discard changes?"
+msgstr "পরিবর্তন বাদ দেবেন?"
+
+#: assets/js/access-rules.js:770
+msgid "Your unsaved changes will be lost."
+msgstr "আপনার অসংরক্ষিত পরিবর্তন হারিয়ে যাবে।"
+
+#: assets/js/file-browser.js:141 assets/js/file-browser.js:1685
+msgid "New folder"
+msgstr "নতুন ফোল্ডার"
+
+#: assets/js/file-browser.js:142 assets/js/file-browser.js:1704
+msgid "New file"
+msgstr "নতুন ফাইল"
+
+#: assets/js/file-browser.js:144
+msgid "Upload"
+msgstr "আপলোড"
+
+#: assets/js/file-browser.js:147 assets/js/file-browser.js:1365
+msgid "Revert"
+msgstr "আগের অবস্থায় ফেরান"
+
+#: assets/js/file-browser.js:148
+msgid "Save"
+msgstr "সংরক্ষণ"
+
+#: assets/js/file-browser.js:159 assets/js/file-browser.js:353 assets/js/file-browser.js:892
+msgid "Ready"
+msgstr "প্রস্তুত"
+
+#: assets/js/file-browser.js:161
+msgid "Limited access"
+msgstr "সীমিত প্রবেশাধিকার"
+
+#: assets/js/file-browser.js:168
+msgid "Current folder"
+msgstr "বর্তমান ফোল্ডার"
+
+#: assets/js/file-browser.js:170 assets/js/file-browser.js:170
+msgid "Parent folder"
+msgstr "প্যারেন্ট ফোল্ডার"
+
+#: assets/js/file-browser.js:171 assets/js/file-browser.js:171 assets/js/file-browser.js:217 assets/js/file-browser.js:217
+msgid "Refresh"
+msgstr "রিফ্রেশ"
+
+#: assets/js/file-browser.js:175
+msgid "Folder contents"
+msgstr "ফোল্ডারের বিষয়বস্তু"
+
+#: assets/js/file-browser.js:177 assets/js/file-browser.js:224
+msgctxt "column header"
+msgid "Name"
+msgstr "নাম"
+
+#: assets/js/file-browser.js:178 assets/js/file-browser.js:227
+msgctxt "column header"
+msgid "Size"
+msgstr "আকার"
+
+#: assets/js/file-browser.js:179
+msgctxt "column header: permission mode"
+msgid "Mode"
+msgstr "অনুমতি"
+
+#: assets/js/file-browser.js:180
+msgctxt "column header: last modified date"
+msgid "Modified"
+msgstr "পরিবর্তিত"
+
+#: assets/js/file-browser.js:185
+msgid "Drop files to upload to this folder"
+msgstr "এই ফোল্ডারে আপলোড করতে ফাইল এখানে ছাড়ুন"
+
+#: assets/js/file-browser.js:187
+msgid "File editor"
+msgstr "ফাইল এডিটর"
+
+#: assets/js/file-browser.js:195 assets/js/file-browser.js:195
+msgid "Close editor"
+msgstr "এডিটর বন্ধ করুন"
+
+#: assets/js/file-browser.js:201 assets/js/file-browser.js:201
+msgid "Dismiss"
+msgstr "বাতিল করুন"
+
+#: assets/js/file-browser.js:204
+msgid "File contents"
+msgstr "ফাইলের বিষয়বস্তু"
+
+#: assets/js/file-browser.js:210
+msgid "Back to files"
+msgstr "ফাইলে ফিরে যান"
+
+#: assets/js/file-browser.js:213
+msgid "My trash"
+msgstr "আমার ট্র্যাশ"
+
+#: assets/js/file-browser.js:225
+msgid "Deleted"
+msgstr "মোছার সময়"
+
+#: assets/js/file-browser.js:226 assets/js/file-browser.js:2105
+msgid "Kept until"
+msgstr "রাখা হবে যতদিন"
+
+#: assets/js/file-browser.js:239
+msgid "Download helper"
+msgstr "ডাউনলোড সহায়ক"
+
+#. translators: %s: file size in bytes
+#: assets/js/file-browser.js:319
+msgid "%s B"
+msgstr "%s B"
+
+#. translators: %s: file size in kilobytes
+#: assets/js/file-browser.js:322
+msgid "%s KB"
+msgstr "%s KB"
+
+#. translators: %s: file size in megabytes
+#: assets/js/file-browser.js:324
+msgid "%s MB"
+msgstr "%s MB"
+
+#. translators: %s: file size in gigabytes
+#: assets/js/file-browser.js:326
+msgid "%s GB"
+msgstr "%s GB"
+
+#. translators: %s: file size in terabytes
+#: assets/js/file-browser.js:328
+msgid "%s TB"
+msgstr "%s TB"
+
+#: assets/js/file-browser.js:336
+msgid "Enter a name."
+msgstr "একটি নাম লিখুন।"
+
+#: assets/js/file-browser.js:337 includes/class-cloverbrowser-ajax.php:197
+msgid "Names cannot contain slashes or be “.” / “..”."
+msgstr "নামে স্ল্যাশ থাকতে পারবে না এবং নাম “.” বা “..” হতে পারবে না।"
+
+#: assets/js/file-browser.js:338
+msgid "Names cannot contain control characters."
+msgstr "নামে কন্ট্রোল অক্ষর থাকতে পারবে না।"
+
+#: assets/js/file-browser.js:347 assets/js/file-browser.js:2295 assets/js/file-browser.js:2317 assets/js/file-browser.js:2349
+msgid "Working…"
+msgstr "কাজ চলছে…"
+
+#: assets/js/file-browser.js:490 assets/js/file-browser.js:554
+msgid "OK"
+msgstr "ঠিক আছে"
+
+#: assets/js/file-browser.js:528
+msgid "Confirm"
+msgstr "নিশ্চিত করুন"
+
+#. translators: %s: folder name
+#: assets/js/file-browser.js:597
+msgid "Loading %s…"
+msgstr "%s লোড হচ্ছে…"
+
+#: assets/js/file-browser.js:598
+msgid "Loading root…"
+msgstr "রুট লোড হচ্ছে…"
+
+#: assets/js/file-browser.js:624 assets/js/file-browser.js:1805
+msgid "Open one of the folders you have access to first."
+msgstr "আগে আপনার প্রবেশাধিকার আছে এমন একটি ফোল্ডার খুলুন।"
+
+#: assets/js/file-browser.js:625 assets/js/file-browser.js:1806
+msgid "This folder is protected: your role can only read it."
+msgstr "এই ফোল্ডারটি সুরক্ষিত: আপনার ভূমিকা শুধু এটি পড়তে পারে।"
+
+#: assets/js/file-browser.js:644
+msgctxt "top-level folder"
+msgid "root"
+msgstr "রুট"
+
+#. translators: %s: folder name
+#: assets/js/file-browser.js:706
+msgid "Open folder %s"
+msgstr "ফোল্ডার %s খুলুন"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:708
+msgid "Open file %s"
+msgstr "ফাইল %s খুলুন"
+
+#: assets/js/file-browser.js:711
+msgid "(broken link)"
+msgstr "(ভাঙা লিংক)"
+
+#. translators: %s: file type name, e.g. "PHP code"
+#: assets/js/file-browser.js:735 assets/js/file-browser.js:861
+msgid "Blocked file type for your role: %s"
+msgstr "আপনার ভূমিকার জন্য ব্লক করা ফাইলের ধরন: %s"
+
+#: assets/js/file-browser.js:737
+msgid "Protected: your role can only read this."
+msgstr "সুরক্ষিত: আপনার ভূমিকা শুধু এটি পড়তে পারে।"
+
+#: assets/js/file-browser.js:749
+msgid "not writable by PHP"
+msgstr "PHP লিখতে পারে না"
+
+#: assets/js/file-browser.js:764
+msgid "Open in editor"
+msgstr "এডিটরে খুলুন"
+
+#: assets/js/file-browser.js:764
+msgid "View"
+msgstr "দেখুন"
+
+#: assets/js/file-browser.js:766 assets/js/file-browser.js:1529
+msgid "Rename"
+msgstr "নাম পরিবর্তন"
+
+#: assets/js/file-browser.js:795
+msgid "This folder is empty."
+msgstr "এই ফোল্ডারটি খালি।"
+
+#. translators: %s: number of items in a folder / %s: number of items in the folder
+#: assets/js/file-browser.js:807 assets/js/file-browser.js:2064
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%sটি আইটেম"
+msgstr[1] "%sটি আইটেম"
+
+#. translators: 1: number of items shown, 2: total number of items
+#: assets/js/file-browser.js:809
+msgid "%1$s of %2$s shown"
+msgid_plural "%1$s of %2$s shown"
+msgstr[0] "%2$sটির মধ্যে %1$sটি দেখানো হচ্ছে"
+msgstr[1] "%2$sটির মধ্যে %1$sটি দেখানো হচ্ছে"
+
+#. translators: 1: total number of entries in the folder, 2: number of entries listed
+#: assets/js/file-browser.js:813
+msgid "folder has %1$s entries; only the first %2$s are listed"
+msgid_plural "folder has %1$s entries; only the first %2$s are listed"
+msgstr[0] "ফোল্ডারে %1$sটি এন্ট্রি আছে; শুধু প্রথম %2$sটি তালিকাভুক্ত"
+msgstr[1] "ফোল্ডারে %1$sটি এন্ট্রি আছে; শুধু প্রথম %2$sটি তালিকাভুক্ত"
+
+#: assets/js/file-browser.js:823
+msgid "Show more"
+msgstr "আরও দেখান"
+
+#. translators: %s: symbolic link target path
+#: assets/js/file-browser.js:855
+msgid "Broken symbolic link → %s"
+msgstr "ভাঙা সিম্বলিক লিংক → %s"
+
+#: assets/js/file-browser.js:866 includes/class-cloverbrowser-policy.php:569
+msgid "Your role is not allowed to open files."
+msgstr "আপনার ভূমিকার ফাইল খোলার অনুমতি নেই।"
+
+#. translators: %s: error message
+#: assets/js/file-browser.js:890
+msgid "Download failed: %s"
+msgstr "ডাউনলোড ব্যর্থ হয়েছে: %s"
+
+#: assets/js/file-browser.js:891 includes/class-cloverbrowser-files.php:703
+msgid "Download failed."
+msgstr "ডাউনলোড ব্যর্থ হয়েছে।"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:914
+msgid "Download started — %s"
+msgstr "ডাউনলোড শুরু হয়েছে — %s"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:929
+msgid "“%s” has unsaved changes. Keep them as a draft (restorable next time you open the file) or discard them?"
+msgstr "“%s”-এ অসংরক্ষিত পরিবর্তন আছে। এগুলো খসড়া হিসেবে রাখবেন (পরের বার ফাইলটি খুললে ফিরিয়ে আনা যাবে), নাকি বাদ দেবেন?"
+
+#: assets/js/file-browser.js:934
+msgid "Discard changes"
+msgstr "পরিবর্তন বাদ দিন"
+
+#: assets/js/file-browser.js:935
+msgid "Keep as draft"
+msgstr "খসড়া হিসেবে রাখুন"
+
+#: assets/js/file-browser.js:948
+msgid "Could not store the draft — your edits are still in the editor."
+msgstr "খসড়া সংরক্ষণ করা যায়নি — আপনার সম্পাদনা এখনও এডিটরে আছে।"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:963
+msgid "Opening %s…"
+msgstr "%s খোলা হচ্ছে…"
+
+#: assets/js/file-browser.js:972
+msgid "Cannot open in editor"
+msgstr "এডিটরে খোলা যাচ্ছে না"
+
+#: assets/js/file-browser.js:975
+msgid "Close"
+msgstr "বন্ধ করুন"
+
+#: assets/js/file-browser.js:976
+msgid "Download instead"
+msgstr "এর বদলে ডাউনলোড করুন"
+
+#: assets/js/file-browser.js:981
+msgid "File no longer exists — refreshing."
+msgstr "ফাইলটি আর নেই — রিফ্রেশ করা হচ্ছে।"
+
+#. translators: 1: date and time, 2: user display name, 3: draft size
+#: assets/js/file-browser.js:994
+msgid "An autosaved draft exists for this file (saved %1$s by %2$s, %3$s)."
+msgstr "এই ফাইলের একটি স্বয়ংক্রিয়ভাবে সংরক্ষিত খসড়া আছে (%1$s-এ %2$s সংরক্ষণ করেছেন, %3$s)।"
+
+#. translators: 1: date and time, 2: draft size
+#: assets/js/file-browser.js:996
+msgid "An autosaved draft exists for this file (saved %1$s, %2$s)."
+msgstr "এই ফাইলের একটি স্বয়ংক্রিয়ভাবে সংরক্ষিত খসড়া আছে (%1$s-এ সংরক্ষিত, %2$s)।"
+
+#: assets/js/file-browser.js:997
+msgid "Warning: the file has changed on disk since that draft was made."
+msgstr "সতর্কতা: খসড়াটি তৈরির পর ডিস্কে ফাইলটি পরিবর্তিত হয়েছে।"
+
+#: assets/js/file-browser.js:998
+msgid "Which version do you want?"
+msgstr "আপনি কোন সংস্করণটি চান?"
+
+#: assets/js/file-browser.js:1000
+msgid "Unsaved draft found"
+msgstr "অসংরক্ষিত খসড়া পাওয়া গেছে"
+
+#: assets/js/file-browser.js:1003
+msgid "Open original"
+msgstr "মূল ফাইল খুলুন"
+
+#: assets/js/file-browser.js:1004
+msgid "Delete draft"
+msgstr "খসড়া মুছুন"
+
+#: assets/js/file-browser.js:1005
+msgid "Restore draft"
+msgstr "খসড়া ফিরিয়ে আনুন"
+
+#: assets/js/file-browser.js:1012
+msgid "Draft deleted."
+msgstr "খসড়া মুছে ফেলা হয়েছে।"
+
+#. translators: %s: error message
+#: assets/js/file-browser.js:1016
+msgid "Could not delete draft: %s"
+msgstr "খসড়া মোছা যায়নি: %s"
+
+#: assets/js/file-browser.js:1024
+msgid "Could not read draft — opening the original instead."
+msgstr "খসড়া পড়া যায়নি — এর বদলে মূল ফাইল খোলা হচ্ছে।"
+
+#: assets/js/file-browser.js:1096
+msgid "Draft restored — not saved to disk yet"
+msgstr "খসড়া ফিরিয়ে আনা হয়েছে — এখনও ডিস্কে সংরক্ষিত হয়নি"
+
+#: assets/js/file-browser.js:1096
+msgid "Draft matches file"
+msgstr "খসড়া ফাইলের সঙ্গে মিলে যায়"
+
+#: assets/js/file-browser.js:1117
+msgid "Windows (CRLF)"
+msgstr "Windows (CRLF)"
+
+#: assets/js/file-browser.js:1118
+msgid "classic Mac (CR)"
+msgstr "ক্লাসিক Mac (CR)"
+
+#: assets/js/file-browser.js:1119
+msgid "Unix (LF)"
+msgstr "Unix (LF)"
+
+#: assets/js/file-browser.js:1120 assets/js/file-browser.js:1182
+msgid "mixed"
+msgstr "মিশ্র"
+
+#. translators: 1: line-ending style of the file, e.g. "Windows (CRLF)", 2: the server's style, e.g. "Unix (LF)"
+#: assets/js/file-browser.js:1133
+msgid "This file uses %1$s line endings. Saving converts them to %2$s, this server’s format."
+msgstr "এই ফাইলে %1$s লাইন এন্ডিং ব্যবহৃত হয়েছে। সংরক্ষণ করলে এগুলো এই সার্ভারের ফরম্যাট %2$s-এ রূপান্তরিত হবে।"
+
+#. translators: %s: line-ending name, e.g. "LF"
+#: assets/js/file-browser.js:1138
+msgid "Convert to %s now"
+msgstr "এখনই %s-এ রূপান্তর করুন"
+
+#: assets/js/file-browser.js:1147
+msgid "Save or discard your edits first — saving converts the line endings anyway."
+msgstr "আগে আপনার সম্পাদনা সংরক্ষণ করুন বা বাদ দিন — সংরক্ষণ করলে লাইন এন্ডিং এমনিতেই রূপান্তরিত হয়।"
+
+#: assets/js/file-browser.js:1151
+msgid "Converting line endings…"
+msgstr "লাইন এন্ডিং রূপান্তর করা হচ্ছে…"
+
+#. translators: 1: file name, 2: line-ending name, e.g. "LF"
+#: assets/js/file-browser.js:1156
+msgid "%1$s now uses %2$s line endings."
+msgstr "%1$s এখন %2$s লাইন এন্ডিং ব্যবহার করে।"
+
+#. translators: %s: line-ending style, e.g. "Windows (CRLF)"
+#: assets/js/file-browser.js:1185
+msgid "Line endings: %s"
+msgstr "লাইন এন্ডিং: %s"
+
+#: assets/js/file-browser.js:1187
+msgid "view only"
+msgstr "শুধু দেখা"
+
+#: assets/js/file-browser.js:1188
+msgid "read-only for PHP"
+msgstr "PHP-এর জন্য শুধু-পঠন"
+
+#: assets/js/file-browser.js:1214
+msgid "Editing — draft autosave pending…"
+msgstr "সম্পাদনা চলছে — খসড়ার স্বয়ংক্রিয় সংরক্ষণ বাকি…"
+
+#: assets/js/file-browser.js:1231
+msgid "Saving draft…"
+msgstr "খসড়া সংরক্ষণ করা হচ্ছে…"
+
+#. translators: %s: time of day
+#: assets/js/file-browser.js:1238
+msgid "Draft saved %s"
+msgstr "খসড়া %s-এ সংরক্ষিত হয়েছে"
+
+#: assets/js/file-browser.js:1244
+msgid "Draft save failed"
+msgstr "খসড়া সংরক্ষণ ব্যর্থ হয়েছে"
+
+#. translators: %s: error message
+#: assets/js/file-browser.js:1247
+msgid "Autosave failed: %s"
+msgstr "স্বয়ংক্রিয় সংরক্ষণ ব্যর্থ হয়েছে: %s"
+
+#: assets/js/file-browser.js:1268
+msgid "Read-only mode:"
+msgstr "শুধু-পঠন মোড:"
+
+#: assets/js/file-browser.js:1268
+msgid "saving is disabled."
+msgstr "সংরক্ষণ নিষ্ক্রিয় আছে।"
+
+#. translators: %s: octal permission mode, e.g. 0644
+#: assets/js/file-browser.js:1274
+msgid "The PHP process cannot write this file (mode %s). Adjust permissions first."
+msgstr "PHP প্রসেস এই ফাইলে লিখতে পারে না (অনুমতি %s)। আগে অনুমতি ঠিক করুন।"
+
+#. translators: %s: size limit, e.g. 2 MB
+#: assets/js/file-browser.js:1283
+msgid "Content is larger than the %s editor limit; not saved."
+msgstr "বিষয়বস্তু এডিটরের %s সীমার চেয়ে বড়; সংরক্ষণ করা হয়নি।"
+
+#. translators: %s: allowed size increase, e.g. 50 KB
+#: assets/js/file-browser.js:1289
+msgid "This edit makes the file too much larger: your role may grow a file by at most %s per save."
+msgstr "এই সম্পাদনায় ফাইলটি অনেক বেশি বড় হয়ে যাচ্ছে: আপনার ভূমিকা প্রতি সংরক্ষণে একটি ফাইল সর্বোচ্চ %s বাড়াতে পারে।"
+
+#: assets/js/file-browser.js:1295
+msgid "Save empty file?"
+msgstr "খালি ফাইল সংরক্ষণ করবেন?"
+
+#: assets/js/file-browser.js:1296
+msgid "This will replace the file’s current contents with nothing. Continue?"
+msgstr "এতে ফাইলের বর্তমান সব বিষয়বস্তু মুছে যাবে। চালিয়ে যাবেন?"
+
+#: assets/js/file-browser.js:1297
+msgid "Save empty"
+msgstr "খালি সংরক্ষণ করুন"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1307
+msgid "Saving %s…"
+msgstr "%s সংরক্ষণ করা হচ্ছে…"
+
+#: assets/js/file-browser.js:1324
+msgid "Edited since last save"
+msgstr "শেষ সংরক্ষণের পর সম্পাদিত"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1330
+msgid "Saved %s"
+msgstr "%s সংরক্ষিত হয়েছে"
+
+#: assets/js/file-browser.js:1335
+msgid "File changed on disk"
+msgstr "ডিস্কে ফাইলটি পরিবর্তিত হয়েছে"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1338
+msgid "“%s” was modified by something else after you opened it. Overwriting will discard those changes."
+msgstr "আপনি খোলার পর “%s” অন্য কিছু দ্বারা পরিবর্তিত হয়েছে। ওভাররাইট করলে সেই পরিবর্তনগুলো হারিয়ে যাবে।"
+
+#: assets/js/file-browser.js:1343 assets/js/file-browser.js:1879
+msgid "Overwrite"
+msgstr "ওভাররাইট"
+
+#. translators: %s: error message
+#: assets/js/file-browser.js:1350
+msgid "Save failed: %s"
+msgstr "সংরক্ষণ ব্যর্থ হয়েছে: %s"
+
+#: assets/js/file-browser.js:1363
+msgid "Revert changes"
+msgstr "পরিবর্তন ফিরিয়ে নিন"
+
+#: assets/js/file-browser.js:1364
+msgid "Discard your edits and the autosaved draft, then reload the file from disk?"
+msgstr "আপনার সম্পাদনা ও স্বয়ংক্রিয়ভাবে সংরক্ষিত খসড়া বাদ দিয়ে ডিস্ক থেকে ফাইলটি আবার লোড করবেন?"
+
+#. translators: 1: octal permission mode, 2: path
+#: assets/js/file-browser.js:1397
+msgid "Current mode: %1$s — %2$s"
+msgstr "বর্তমান অনুমতি: %1$s — %2$s"
+
+#: assets/js/file-browser.js:1404 assets/js/file-browser.js:1413
+msgctxt "permission"
+msgid "Read"
+msgstr "পড়া"
+
+#: assets/js/file-browser.js:1404 assets/js/file-browser.js:1414
+msgctxt "permission"
+msgid "Write"
+msgstr "লেখা"
+
+#: assets/js/file-browser.js:1404 assets/js/file-browser.js:1415
+msgctxt "permission"
+msgid "Execute"
+msgstr "চালানো"
+
+#: assets/js/file-browser.js:1408
+msgctxt "permission class"
+msgid "owner"
+msgstr "মালিক"
+
+#: assets/js/file-browser.js:1409
+msgctxt "permission class"
+msgid "group"
+msgstr "গ্রুপ"
+
+#: assets/js/file-browser.js:1410
+msgctxt "permission class"
+msgid "world"
+msgstr "অন্যরা"
+
+#: assets/js/file-browser.js:1440
+msgid "Mode (octal, e.g. 0644):"
+msgstr "অনুমতি (অক্টাল, যেমন 0644):"
+
+#: assets/js/file-browser.js:1449
+msgid "Apply recursively to all contents (symlinks skipped; capped server-side)"
+msgstr "সব বিষয়বস্তুতে পুনরাবৃত্তভাবে প্রয়োগ করুন (সিম্বলিক লিংক বাদ; সার্ভারে সীমা প্রযোজ্য)"
+
+#: assets/js/file-browser.js:1455
+msgid "Note: special bits (setuid/setgid/sticky) are currently set. The leading digit controls them."
+msgstr "দ্রষ্টব্য: বিশেষ বিট (setuid/setgid/sticky) বর্তমানে সেট আছে। প্রথম অঙ্কটি এগুলো নিয়ন্ত্রণ করে।"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:1478
+msgid "Permissions — %s"
+msgstr "অনুমতি — %s"
+
+#: assets/js/file-browser.js:1483
+msgid "Apply"
+msgstr "প্রয়োগ করুন"
+
+#: assets/js/file-browser.js:1487
+msgid "Enter a valid octal mode like 0644."
+msgstr "0644-এর মতো একটি বৈধ অক্টাল মোড লিখুন।"
+
+#: assets/js/file-browser.js:1497
+msgid "Applying permissions…"
+msgstr "অনুমতি প্রয়োগ করা হচ্ছে…"
+
+#. translators: %s: number of files/folders whose permissions changed
+#: assets/js/file-browser.js:1502
+msgid "Permissions updated — %s item changed"
+msgid_plural "Permissions updated — %s items changed"
+msgstr[0] "অনুমতি হালনাগাদ হয়েছে — %sটি আইটেম পরিবর্তিত"
+msgstr[1] "অনুমতি হালনাগাদ হয়েছে — %sটি আইটেম পরিবর্তিত"
+
+#. translators: %s: number of items that failed
+#: assets/js/file-browser.js:1507
+msgid "%s failed"
+msgid_plural "%s failed"
+msgstr[0] "%sটি ব্যর্থ"
+msgstr[1] "%sটি ব্যর্থ"
+
+#. translators: %s: number of symbolic links skipped
+#: assets/js/file-browser.js:1511
+msgid "%s symlink skipped"
+msgid_plural "%s symlinks skipped"
+msgstr[0] "%sটি সিম্বলিক লিংক বাদ দেওয়া হয়েছে"
+msgstr[1] "%sটি সিম্বলিক লিংক বাদ দেওয়া হয়েছে"
+
+#: assets/js/file-browser.js:1513
+msgctxt "list separator"
+msgid ", "
+msgstr ", "
+
+#: assets/js/file-browser.js:1530
+msgid "New name (kept in the same folder)"
+msgstr "নতুন নাম (একই ফোল্ডারে থাকবে)"
+
+#: assets/js/file-browser.js:1536
+msgid "Renaming…"
+msgstr "নাম পরিবর্তন করা হচ্ছে…"
+
+#. translators: %s: new file or folder name
+#: assets/js/file-browser.js:1549
+msgid "Renamed to %s"
+msgstr "নাম পরিবর্তন করে %s রাখা হয়েছে"
+
+#. translators: %s: folder name
+#: assets/js/file-browser.js:1578
+msgid "Move the folder “%s” and everything in it to the trash?"
+msgstr "ফোল্ডার “%s” ও এর ভেতরের সবকিছু ট্র্যাশে সরাবেন?"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1580
+msgid "Move “%s” to the trash?"
+msgstr "“%s” ট্র্যাশে সরাবেন?"
+
+#. translators: %s: number of days
+#: assets/js/file-browser.js:1584
+msgid "You can restore it from your Trash for %s day."
+msgid_plural "You can restore it from your Trash for %s days."
+msgstr[0] "আপনি %s দিন পর্যন্ত আপনার ট্র্যাশ থেকে এটি ফিরিয়ে আনতে পারবেন।"
+msgstr[1] "আপনি %s দিন পর্যন্ত আপনার ট্র্যাশ থেকে এটি ফিরিয়ে আনতে পারবেন।"
+
+#. translators: %s: number of days
+#: assets/js/file-browser.js:1588
+msgid "It is kept in the site trash for %s day."
+msgid_plural "It is kept in the site trash for %s days."
+msgstr[0] "এটি %s দিন সাইট ট্র্যাশে রাখা হয়।"
+msgstr[1] "এটি %s দিন সাইট ট্র্যাশে রাখা হয়।"
+
+#. translators: %s: number of days
+#: assets/js/file-browser.js:1592
+msgid "An administrator can restore it for %s day."
+msgid_plural "An administrator can restore it for %s days."
+msgstr[0] "একজন অ্যাডমিনিস্ট্রেটর %s দিন পর্যন্ত এটি ফিরিয়ে আনতে পারবেন।"
+msgstr[1] "একজন অ্যাডমিনিস্ট্রেটর %s দিন পর্যন্ত এটি ফিরিয়ে আনতে পারবেন।"
+
+#. translators: %s: folder name
+#: assets/js/file-browser.js:1597
+msgid "Delete folder “%s”? This cannot be undone."
+msgstr "ফোল্ডার “%s” মুছবেন? এটি আর ফেরানো যাবে না।"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1599
+msgid "Delete file “%s”? This cannot be undone."
+msgstr "ফাইল “%s” মুছবেন? এটি আর ফেরানো যাবে না।"
+
+#: assets/js/file-browser.js:1600
+msgid "It will not go to the trash."
+msgstr "এটি ট্র্যাশে যাবে না।"
+
+#: assets/js/file-browser.js:1604 assets/js/file-browser.js:1628
+msgid "Move to trash"
+msgstr "ট্র্যাশে সরান"
+
+#: assets/js/file-browser.js:1604 assets/js/file-browser.js:2315
+msgid "Delete permanently"
+msgstr "স্থায়ীভাবে মুছুন"
+
+#: assets/js/file-browser.js:1612
+msgid "Delete permanently (skip the trash)"
+msgstr "স্থায়ীভাবে মুছুন (ট্র্যাশ এড়িয়ে)"
+
+#: assets/js/file-browser.js:1619
+msgid "Also delete everything inside it (capped server-side)"
+msgstr "এর ভেতরের সবকিছুও মুছুন (সার্ভারে সীমা প্রযোজ্য)"
+
+#: assets/js/file-browser.js:1624
+msgid "Delete folder"
+msgstr "ফোল্ডার মুছুন"
+
+#: assets/js/file-browser.js:1624
+msgid "Delete file"
+msgstr "ফাইল মুছুন"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:1641
+msgid "Deleting %s…"
+msgstr "%s মোছা হচ্ছে…"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:1651
+msgid "Moved %s to the trash"
+msgstr "%s ট্র্যাশে সরানো হয়েছে"
+
+#: assets/js/file-browser.js:1652
+msgid "Undo"
+msgstr "পূর্বাবস্থায় ফেরান"
+
+#. translators: 1: folder name, 2: number of items deleted
+#: assets/js/file-browser.js:1656
+msgid "Deleted %1$s (%2$s item)"
+msgid_plural "Deleted %1$s (%2$s items)"
+msgstr[0] "%1$s মোছা হয়েছে (%2$sটি আইটেম)"
+msgstr[1] "%1$s মোছা হয়েছে (%2$sটি আইটেম)"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:1658
+msgid "Deleted %s"
+msgstr "%s মোছা হয়েছে"
+
+#: assets/js/file-browser.js:1685
+msgid "Folder name"
+msgstr "ফোল্ডারের নাম"
+
+#: assets/js/file-browser.js:1687
+msgid "Creating folder…"
+msgstr "ফোল্ডার তৈরি হচ্ছে…"
+
+#. translators: %s: folder name
+#: assets/js/file-browser.js:1692
+msgid "Folder created: %s"
+msgstr "ফোল্ডার তৈরি হয়েছে: %s"
+
+#: assets/js/file-browser.js:1704
+msgid "File name"
+msgstr "ফাইলের নাম"
+
+#: assets/js/file-browser.js:1706
+msgid "Creating file…"
+msgstr "ফাইল তৈরি হচ্ছে…"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1711
+msgid "File created: %s"
+msgstr "ফাইল তৈরি হয়েছে: %s"
+
+#: assets/js/file-browser.js:1788
+msgid "File is larger than the web server accepts."
+msgstr "ফাইলটি ওয়েব সার্ভারের গ্রহণযোগ্য আকারের চেয়ে বড়।"
+
+#. translators: %d: HTTP status code
+#: assets/js/file-browser.js:1790
+msgid "Upload failed (HTTP %d)."
+msgstr "আপলোড ব্যর্থ হয়েছে (HTTP %d)।"
+
+#: assets/js/file-browser.js:1794
+msgid "Network error during upload."
+msgstr "আপলোডের সময় নেটওয়ার্ক ত্রুটি।"
+
+#: assets/js/file-browser.js:1809
+msgid "An upload is already in progress."
+msgstr "একটি আপলোড ইতিমধ্যে চলছে।"
+
+#. translators: 1: file name, 2: maximum upload size
+#: assets/js/file-browser.js:1815
+msgid "%1$s is larger than the %2$s your role may upload."
+msgstr "%1$s আপনার ভূমিকার আপলোড সীমা %2$s-এর চেয়ে বড়।"
+
+#. translators: %s: number of further files
+#: assets/js/file-browser.js:1832
+msgid "…and %s more"
+msgid_plural "…and %s more"
+msgstr[0] "…এবং আরও %sটি"
+msgstr[1] "…এবং আরও %sটি"
+
+#. translators: 1: number of files, 2: the server's line-ending style, e.g. "Unix (LF)"
+#: assets/js/file-browser.js:1838
+msgid "%1$s file uses line endings that differ from this server’s %2$s format:"
+msgid_plural "%1$s files use line endings that differ from this server’s %2$s format:"
+msgstr[0] "%1$sটি ফাইলের লাইন এন্ডিং এই সার্ভারের %2$s ফরম্যাট থেকে ভিন্ন:"
+msgstr[1] "%1$sটি ফাইলের লাইন এন্ডিং এই সার্ভারের %2$s ফরম্যাট থেকে ভিন্ন:"
+
+#: assets/js/file-browser.js:1845
+msgid "Convert line endings?"
+msgstr "লাইন এন্ডিং রূপান্তর করবেন?"
+
+#: assets/js/file-browser.js:1848
+msgid "Cancel upload"
+msgstr "আপলোড বাতিল করুন"
+
+#: assets/js/file-browser.js:1849
+msgid "Keep as they are"
+msgstr "যেমন আছে তেমন রাখুন"
+
+#. translators: %s: line-ending name, e.g. "LF"
+#: assets/js/file-browser.js:1853
+msgid "Convert to %s"
+msgstr "%s-এ রূপান্তর করুন"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1870
+msgid "Uploaded %s"
+msgstr "%s আপলোড হয়েছে"
+
+#: assets/js/file-browser.js:1875
+msgid "File exists"
+msgstr "ফাইলটি আগে থেকেই আছে"
+
+#. translators: %s: file name
+#: assets/js/file-browser.js:1878
+msgid "“%s” already exists in this folder. Overwrite it?"
+msgstr "“%s” এই ফোল্ডারে আগে থেকেই আছে। ওভাররাইট করবেন?"
+
+#. translators: 1: file name, 2: error message
+#: assets/js/file-browser.js:1886
+msgid "Upload failed (%1$s): %2$s"
+msgstr "আপলোড ব্যর্থ হয়েছে (%1$s): %2$s"
+
+#. translators: %s: number of items
+#: assets/js/file-browser.js:1914
+msgid "Trash, %s item"
+msgid_plural "Trash, %s items"
+msgstr[0] "ট্র্যাশ, %sটি আইটেম"
+msgstr[1] "ট্র্যাশ, %sটি আইটেম"
+
+#: assets/js/file-browser.js:1945
+msgid "Loading trash…"
+msgstr "ট্র্যাশ লোড হচ্ছে…"
+
+#: assets/js/file-browser.js:1978 assets/js/file-browser.js:2346
+msgid "Empty site trash"
+msgstr "সাইট ট্র্যাশ খালি করুন"
+
+#: assets/js/file-browser.js:1978 assets/js/file-browser.js:2346 assets/js/file-browser.js:2347
+msgid "Empty trash"
+msgstr "ট্র্যাশ খালি করুন"
+
+#. translators: %s: number of days
+#: assets/js/file-browser.js:1985
+msgid "Every deletion on this site is kept here for %s day, even after users empty their own trash. Only administrators can see this trash."
+msgid_plural "Every deletion on this site is kept here for %s days, even after users empty their own trash. Only administrators can see this trash."
+msgstr[0] "এই সাইটে মোছা প্রতিটি আইটেম এখানে %s দিন রাখা হয়, এমনকি ব্যবহারকারীরা নিজের ট্র্যাশ খালি করার পরেও। শুধু অ্যাডমিনিস্ট্রেটররাই এই ট্র্যাশ দেখতে পারেন।"
+msgstr[1] "এই সাইটে মোছা প্রতিটি আইটেম এখানে %s দিন রাখা হয়, এমনকি ব্যবহারকারীরা নিজের ট্র্যাশ খালি করার পরেও। শুধু অ্যাডমিনিস্ট্রেটররাই এই ট্র্যাশ দেখতে পারেন।"
+
+#. translators: %s: number of days
+#: assets/js/file-browser.js:1991
+msgid "Items you delete are kept here for %s day, then deleted automatically."
+msgid_plural "Items you delete are kept here for %s days, then deleted automatically."
+msgstr[0] "আপনার মোছা আইটেম এখানে %s দিন রাখা হয়, তারপর স্বয়ংক্রিয়ভাবে মুছে যায়।"
+msgstr[1] "আপনার মোছা আইটেম এখানে %s দিন রাখা হয়, তারপর স্বয়ংক্রিয়ভাবে মুছে যায়।"
+
+#. translators: %s: number of days
+#: assets/js/file-browser.js:1996
+msgid "Administrators also keep a copy of every deletion for %s day."
+msgid_plural "Administrators also keep a copy of every deletion for %s days."
+msgstr[0] "অ্যাডমিনিস্ট্রেটররাও প্রতিটি মোছা আইটেমের একটি কপি %s দিন রাখেন।"
+msgstr[1] "অ্যাডমিনিস্ট্রেটররাও প্রতিটি মোছা আইটেমের একটি কপি %s দিন রাখেন।"
+
+#: assets/js/file-browser.js:1999
+msgid "Right-click an item for more options."
+msgstr "আরও বিকল্পের জন্য কোনো আইটেমে রাইট-ক্লিক করুন।"
+
+#. translators: %s: folder path the item was deleted from / %s: name of the site's top folder
+#: assets/js/file-browser.js:2046 assets/js/file-browser.js:2049
+msgid "in %s"
+msgstr "%s-এ"
+
+#. translators: %s: user display name
+#: assets/js/file-browser.js:2057
+msgid "by %s"
+msgstr "%s দ্বারা"
+
+#: assets/js/file-browser.js:2059
+msgid "Also in their own trash"
+msgstr "তাঁর নিজের ট্র্যাশেও আছে"
+
+#: assets/js/file-browser.js:2059
+msgid "Site trash only"
+msgstr "শুধু সাইট ট্র্যাশে"
+
+#: assets/js/file-browser.js:2077 assets/js/file-browser.js:2222
+msgid "Restore"
+msgstr "ফিরিয়ে আনুন"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2081
+msgid "Restore %s"
+msgstr "%s ফিরিয়ে আনুন"
+
+#: assets/js/file-browser.js:2089
+msgid "More actions"
+msgstr "আরও কাজ"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2092
+msgid "More actions for %s"
+msgstr "%s-এর জন্য আরও কাজ"
+
+#: assets/js/file-browser.js:2105
+msgid "Deletes on"
+msgstr "মুছে যাবে"
+
+#: assets/js/file-browser.js:2112 assets/js/file-browser.js:2352
+msgid "The site trash is empty."
+msgstr "সাইট ট্র্যাশ খালি।"
+
+#: assets/js/file-browser.js:2112 assets/js/file-browser.js:2352
+msgid "Your trash is empty."
+msgstr "আপনার ট্র্যাশ খালি।"
+
+#. translators: 1: number of items, 2: total size
+#: assets/js/file-browser.js:2129
+msgid "%1$s item · %2$s"
+msgid_plural "%1$s items · %2$s"
+msgstr[0] "%1$sটি আইটেম · %2$s"
+msgstr[1] "%1$sটি আইটেম · %2$s"
+
+#: assets/js/file-browser.js:2223 includes/class-cloverbrowser-ajax.php:143 includes/class-cloverbrowser-policy.php:578 includes/class-cloverbrowser-trash.php:672
+msgid "Your role is not allowed to do that."
+msgstr "আপনার ভূমিকার এটি করার অনুমতি নেই।"
+
+#: assets/js/file-browser.js:2225 assets/js/file-browser.js:2290
+msgid "Remove from my trash"
+msgstr "আমার ট্র্যাশ থেকে সরান"
+
+#: assets/js/file-browser.js:2229 assets/js/file-browser.js:2310
+msgid "Permanently delete"
+msgstr "স্থায়ীভাবে মুছুন"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2258
+msgid "Restoring %s…"
+msgstr "%s ফিরিয়ে আনা হচ্ছে…"
+
+#. translators: 1: original name, 2: new name (the original name was taken)
+#: assets/js/file-browser.js:2264
+msgid "Restored %1$s as %2$s (the original name is in use)"
+msgstr "%1$s ফিরিয়ে আনা হয়েছে %2$s নামে (মূল নামটি ব্যবহৃত হচ্ছে)"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2267
+msgid "Restored %s"
+msgstr "%s ফিরিয়ে আনা হয়েছে"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2283
+msgid "Remove “%s” from your trash?"
+msgstr "“%s” আপনার ট্র্যাশ থেকে সরাবেন?"
+
+#: assets/js/file-browser.js:2287
+msgid "It stays in the site trash for the rest of its retention period, where an administrator can still restore it."
+msgstr "সংরক্ষণকালের বাকি সময় এটি সাইট ট্র্যাশে থাকবে, যেখান থেকে একজন অ্যাডমিনিস্ট্রেটর এখনও এটি ফিরিয়ে আনতে পারবেন।"
+
+#: assets/js/file-browser.js:2288
+msgid "It will be deleted permanently. This cannot be undone."
+msgstr "এটি স্থায়ীভাবে মুছে ফেলা হবে। এটি আর ফেরানো যাবে না।"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2300
+msgid "Removed %s from your trash"
+msgstr "%s আপনার ট্র্যাশ থেকে সরানো হয়েছে"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2312
+msgid "Permanently delete “%s”? It is removed from the site trash and from its owner’s trash. This cannot be undone."
+msgstr "“%s” স্থায়ীভাবে মুছবেন? এটি সাইট ট্র্যাশ ও এর মালিকের ট্র্যাশ থেকে সরিয়ে ফেলা হবে। এটি আর ফেরানো যাবে না।"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2314
+msgid "Permanently delete “%s”? It is removed from your trash and from the site trash. This cannot be undone."
+msgstr "“%s” স্থায়ীভাবে মুছবেন? এটি আপনার ট্র্যাশ ও সাইট ট্র্যাশ থেকে সরিয়ে ফেলা হবে। এটি আর ফেরানো যাবে না।"
+
+#. translators: %s: file or folder name
+#: assets/js/file-browser.js:2322
+msgid "Permanently deleted %s"
+msgstr "%s স্থায়ীভাবে মোছা হয়েছে"
+
+#. translators: %s: number of items
+#: assets/js/file-browser.js:2338
+msgid "Permanently delete the %s item in the site trash, including items still in users’ own trash? This cannot be undone."
+msgid_plural "Permanently delete all %s items in the site trash, including items still in users’ own trash? This cannot be undone."
+msgstr[0] "সাইট ট্র্যাশের %sটি আইটেম স্থায়ীভাবে মুছবেন, ব্যবহারকারীদের নিজস্ব ট্র্যাশে এখনও থাকা আইটেমসহ? এটি আর ফেরানো যাবে না।"
+msgstr[1] "সাইট ট্র্যাশের সব %sটি আইটেম স্থায়ীভাবে মুছবেন, ব্যবহারকারীদের নিজস্ব ট্র্যাশে এখনও থাকা আইটেমসহ? এটি আর ফেরানো যাবে না।"
+
+#. translators: %s: number of items
+#: assets/js/file-browser.js:2342
+msgid "Remove the %s item from your trash?"
+msgid_plural "Remove all %s items from your trash?"
+msgstr[0] "আপনার ট্র্যাশ থেকে %sটি আইটেম সরাবেন?"
+msgstr[1] "আপনার ট্র্যাশ থেকে সব %sটি আইটেম সরাবেন?"
+
+#: assets/js/file-browser.js:2344
+msgid "Administrators can still restore them from the site trash for the rest of its retention period."
+msgstr "সংরক্ষণকালের বাকি সময় অ্যাডমিনিস্ট্রেটররা এখনও সাইট ট্র্যাশ থেকে এগুলো ফিরিয়ে আনতে পারবেন।"
+
+#: assets/js/file-browser.js:2345
+msgid "They will be deleted permanently. This cannot be undone."
+msgstr "এগুলো স্থায়ীভাবে মুছে ফেলা হবে। এটি আর ফেরানো যাবে না।"
+
+#: assets/js/file-browser.js:2347
+msgid "Delete everything"
+msgstr "সবকিছু মুছুন"
+
+#: assets/js/file-browser.js:2353
+msgid "Some items could not be deleted (check permissions)."
+msgstr "কিছু আইটেম মোছা যায়নি (অনুমতি পরীক্ষা করুন)।"
+
+#: includes/class-cloverbrowser-ajax.php:89
+msgid "Too many requests — wait a minute and try again."
+msgstr "অনেক বেশি অনুরোধ — এক মিনিট অপেক্ষা করে আবার চেষ্টা করুন।"
+
+#: includes/class-cloverbrowser-ajax.php:95 includes/class-cloverbrowser-policy.php:539
+msgid "You do not have permission to use the file browser."
+msgstr "ফাইল ব্রাউজার ব্যবহারের অনুমতি আপনার নেই।"
+
+#: includes/class-cloverbrowser-ajax.php:98
+msgid "Bad request method."
+msgstr "অনুরোধের পদ্ধতি অবৈধ।"
+
+#: includes/class-cloverbrowser-ajax.php:101
+msgid "Cross-site request refused."
+msgstr "ক্রস-সাইট অনুরোধ প্রত্যাখ্যান করা হয়েছে।"
+
+#: includes/class-cloverbrowser-ajax.php:105 includes/class-cloverbrowser-ajax.php:586
+msgid "Security check failed — reload the page and try again."
+msgstr "নিরাপত্তা যাচাই ব্যর্থ হয়েছে — পৃষ্ঠাটি আবার লোড করে আবার চেষ্টা করুন।"
+
+#. translators: %s: reason why the file browser is read-only
+#: includes/class-cloverbrowser-ajax.php:111
+msgid "The file browser is in read-only mode: %s"
+msgstr "ফাইল ব্রাউজার শুধু-পঠন মোডে আছে: %s"
+
+#: includes/class-cloverbrowser-ajax.php:176 includes/class-cloverbrowser-ajax.php:185 includes/class-cloverbrowser-ajax.php:607 includes/class-cloverbrowser-ajax.php:611 includes/class-cloverbrowser-ajax.php:666 includes/class-cloverbrowser-ajax.php:788
+msgid "Bad request."
+msgstr "অবৈধ অনুরোধ।"
+
+#: includes/class-cloverbrowser-ajax.php:194 includes/class-cloverbrowser-sandbox.php:238
+msgid "A name is required."
+msgstr "একটি নাম আবশ্যক।"
+
+#: includes/class-cloverbrowser-ajax.php:200
+msgid "Names cannot contain control characters or exceed 255 bytes."
+msgstr "নামে কন্ট্রোল অক্ষর থাকতে পারবে না এবং তা 255 বাইটের বেশি হতে পারবে না।"
+
+#: includes/class-cloverbrowser-ajax.php:203
+msgid "That name contains characters that are not allowed on this server."
+msgstr "এই নামে এমন অক্ষর আছে যা এই সার্ভারে অনুমোদিত নয়।"
+
+#: includes/class-cloverbrowser-ajax.php:216
+msgid "This folder contains Cloverbrowser’s trash storage, so it cannot be moved, deleted or changed recursively."
+msgstr "এই ফোল্ডারে Cloverbrowser-এর ট্র্যাশ স্টোরেজ আছে, তাই এটি সরানো, মোছা বা পুনরাবৃত্তভাবে পরিবর্তন করা যায় না।"
+
+#: includes/class-cloverbrowser-ajax.php:273
+msgid "That path is a folder."
+msgstr "এই পাথটি একটি ফোল্ডার।"
+
+#: includes/class-cloverbrowser-ajax.php:297
+msgid "Content missing from the request (it may exceed PHP post limits)."
+msgstr "অনুরোধে বিষয়বস্তু নেই (এটি PHP-এর POST সীমা ছাড়িয়ে যেতে পারে)।"
+
+#. translators: 1: size increase, 2: allowed size increase
+#: includes/class-cloverbrowser-ajax.php:315
+msgid "This edit would make the file %1$s larger; your role may grow a file by at most %2$s per save."
+msgstr "এই সম্পাদনায় ফাইলটি %1$s বড় হবে; আপনার ভূমিকা প্রতি সংরক্ষণে একটি ফাইল সর্বোচ্চ %2$s বাড়াতে পারে।"
+
+#: includes/class-cloverbrowser-ajax.php:366
+msgid "Original file is missing; draft not saved."
+msgstr "মূল ফাইলটি নেই; খসড়া সংরক্ষণ করা হয়নি।"
+
+#: includes/class-cloverbrowser-ajax.php:370
+msgid "Content missing from the request."
+msgstr "অনুরোধে বিষয়বস্তু নেই।"
+
+#: includes/class-cloverbrowser-ajax.php:398
+msgid "Invalid permission mode (use octal, e.g. 0644)."
+msgstr "অবৈধ অনুমতি মোড (অক্টাল ব্যবহার করুন, যেমন 0644)।"
+
+#: includes/class-cloverbrowser-ajax.php:489
+msgid "Only administrators can delete items without using the trash."
+msgstr "শুধু অ্যাডমিনিস্ট্রেটররাই ট্র্যাশ ব্যবহার না করে আইটেম মুছতে পারেন।"
+
+#: includes/class-cloverbrowser-ajax.php:528
+msgid "Upload target is not a folder."
+msgstr "আপলোডের গন্তব্যটি কোনো ফোল্ডার নয়।"
+
+#: includes/class-cloverbrowser-ajax.php:533
+msgid "No file was uploaded."
+msgstr "কোনো ফাইল আপলোড হয়নি।"
+
+#. translators: 1: file size, 2: maximum upload size
+#: includes/class-cloverbrowser-ajax.php:552
+msgid "This file is %1$s; your role may upload at most %2$s per file."
+msgstr "এই ফাইলের আকার %1$s; আপনার ভূমিকা প্রতি ফাইলে সর্বোচ্চ %2$s আপলোড করতে পারে।"
+
+#: includes/class-cloverbrowser-ajax.php:561
+msgid "This file is too large to be checked for blocked content."
+msgstr "ব্লক করা বিষয়বস্তু পরীক্ষা করার জন্য ফাইলটি খুব বড়।"
+
+#: includes/class-cloverbrowser-ajax.php:582
+msgid "Forbidden."
+msgstr "নিষিদ্ধ।"
+
+#: includes/class-cloverbrowser-ajax.php:658
+msgid "Only administrators can open the site trash."
+msgstr "শুধু অ্যাডমিনিস্ট্রেটররাই সাইট ট্র্যাশ খুলতে পারেন।"
+
+#: includes/class-cloverbrowser-ajax.php:725 includes/class-cloverbrowser-policy.php:604
+msgid "This folder contains protected items, so your role cannot do that to it."
+msgstr "এই ফোল্ডারে সুরক্ষিত আইটেম আছে, তাই আপনার ভূমিকা এটির ক্ষেত্রে তা করতে পারে না।"
+
+#: includes/class-cloverbrowser-ajax.php:729 includes/class-cloverbrowser-files.php:59
+msgid "Could not read the folder."
+msgstr "ফোল্ডারটি পড়া যায়নি।"
+
+#: includes/class-cloverbrowser-ajax.php:760
+msgid "Only administrators can permanently delete items from the trash."
+msgstr "শুধু অ্যাডমিনিস্ট্রেটররাই ট্র্যাশ থেকে আইটেম স্থায়ীভাবে মুছতে পারেন।"
+
+#: includes/class-cloverbrowser-drafts.php:83
+msgid "No draft exists for this file."
+msgstr "এই ফাইলের কোনো খসড়া নেই।"
+
+#: includes/class-cloverbrowser-drafts.php:90
+msgid "Draft is larger than the editor limit; not saved."
+msgstr "খসড়াটি এডিটরের সীমার চেয়ে বড়; সংরক্ষণ করা হয়নি।"
+
+#: includes/class-cloverbrowser-drafts.php:100
+msgid "Could not store the draft in the database."
+msgstr "খসড়াটি ডেটাবেসে সংরক্ষণ করা যায়নি।"
+
+#: includes/class-cloverbrowser-files.php:52 includes/class-cloverbrowser-files.php:504
+msgid "Not a folder."
+msgstr "এটি ফোল্ডার নয়।"
+
+#: includes/class-cloverbrowser-files.php:55
+msgid "This folder is not readable by the PHP process."
+msgstr "PHP প্রসেস এই ফোল্ডারটি পড়তে পারে না।"
+
+#: includes/class-cloverbrowser-files.php:219 includes/class-cloverbrowser-files.php:336
+msgid "Not a file."
+msgstr "এটি ফাইল নয়।"
+
+#: includes/class-cloverbrowser-files.php:222
+msgid "This file is not readable by the PHP process."
+msgstr "PHP প্রসেস এই ফাইলটি পড়তে পারে না।"
+
+#. translators: 1: file size, 2: editor size limit
+#: includes/class-cloverbrowser-files.php:230
+msgid "File is %1$s — above the %2$s editor limit. Use Download instead."
+msgstr "ফাইলটির আকার %1$s — এডিটরের %2$s সীমার বেশি। এর বদলে ডাউনলোড করুন।"
+
+#: includes/class-cloverbrowser-files.php:237
+msgid "This looks like a binary or non-text file. Editing is disabled — use Download instead."
+msgstr "এটি বাইনারি বা টেক্সট নয় এমন ফাইল মনে হচ্ছে। সম্পাদনা নিষ্ক্রিয় — এর বদলে ডাউনলোড করুন।"
+
+#: includes/class-cloverbrowser-files.php:241 includes/class-cloverbrowser-files.php:346
+msgid "Could not read the file."
+msgstr "ফাইলটি পড়া যায়নি।"
+
+#: includes/class-cloverbrowser-files.php:244
+msgid "File contains non-UTF-8 bytes; the editor only handles UTF-8 text. Use Download instead."
+msgstr "ফাইলে UTF-8 নয় এমন বাইট আছে; এডিটর শুধু UTF-8 টেক্সট সামলায়। এর বদলে ডাউনলোড করুন।"
+
+#: includes/class-cloverbrowser-files.php:268
+msgid "Target is not a file."
+msgstr "লক্ষ্যটি ফাইল নয়।"
+
+#: includes/class-cloverbrowser-files.php:271 includes/class-cloverbrowser-files.php:339
+msgid "This file is not writable by the PHP process (check its permissions)."
+msgstr "PHP প্রসেস এই ফাইলে লিখতে পারে না (এর অনুমতি পরীক্ষা করুন)।"
+
+#: includes/class-cloverbrowser-files.php:274
+msgid "Content exceeds the editor size limit."
+msgstr "বিষয়বস্তু এডিটরের আকার সীমা ছাড়িয়ে গেছে।"
+
+#: includes/class-cloverbrowser-files.php:277
+msgid "Refusing to overwrite a non-empty file with empty content. Confirm if this is intentional."
+msgstr "খালি বিষয়বস্তু দিয়ে ভরা ফাইল ওভাররাইট করা হবে না। এটি ইচ্ছাকৃত হলে নিশ্চিত করুন।"
+
+#: includes/class-cloverbrowser-files.php:282
+msgid "This file was changed on disk after you opened it."
+msgstr "আপনি খোলার পর ডিস্কে এই ফাইলটি পরিবর্তিত হয়েছে।"
+
+#: includes/class-cloverbrowser-files.php:310
+msgid "Could not open the file for writing."
+msgstr "লেখার জন্য ফাইলটি খোলা যায়নি।"
+
+#: includes/class-cloverbrowser-files.php:328
+msgid "Write failed or was incomplete (disk full?). The file may be damaged — your content is still in the editor."
+msgstr "লেখা ব্যর্থ বা অসম্পূর্ণ হয়েছে (ডিস্ক পূর্ণ?)। ফাইলটি ক্ষতিগ্রস্ত হতে পারে — আপনার বিষয়বস্তু এখনও এডিটরে আছে।"
+
+#: includes/class-cloverbrowser-files.php:342
+msgid "Line endings can only be converted in text files up to 32 MB."
+msgstr "শুধু 32 MB পর্যন্ত টেক্সট ফাইলের লাইন এন্ডিং রূপান্তর করা যায়।"
+
+#: includes/class-cloverbrowser-files.php:362 includes/class-cloverbrowser-files.php:372
+msgid "Something with that name already exists here."
+msgstr "এই নামে এখানে আগে থেকেই কিছু আছে।"
+
+#: includes/class-cloverbrowser-files.php:365
+msgid "Could not create the folder (is the parent writable?)."
+msgstr "ফোল্ডার তৈরি করা যায়নি (প্যারেন্ট ফোল্ডারে কি লেখা যায়?)।"
+
+#: includes/class-cloverbrowser-files.php:377
+msgid "Could not create the file (is the folder writable?)."
+msgstr "ফাইল তৈরি করা যায়নি (ফোল্ডারে কি লেখা যায়?)।"
+
+#: includes/class-cloverbrowser-files.php:386
+msgid "Source not found."
+msgstr "উৎস পাওয়া যায়নি।"
+
+#: includes/class-cloverbrowser-files.php:389
+msgid "Destination already exists."
+msgstr "গন্তব্য আগে থেকেই আছে।"
+
+#: includes/class-cloverbrowser-files.php:392
+msgid "A folder cannot be moved inside itself."
+msgstr "কোনো ফোল্ডারকে তার নিজের ভেতরে সরানো যায় না।"
+
+#: includes/class-cloverbrowser-files.php:396
+msgid "Rename failed (check permissions, or cross-device move)."
+msgstr "নাম পরিবর্তন ব্যর্থ হয়েছে (অনুমতি পরীক্ষা করুন, অথবা এটি ভিন্ন ডিভাইসে সরানো কি না দেখুন)।"
+
+#. translators: %s: maximum number of items
+#: includes/class-cloverbrowser-files.php:421
+msgid "This folder contains more than %s items; recursive operations are refused for performance reasons. Nothing was changed."
+msgstr "এই ফোল্ডারে %sটির বেশি আইটেম আছে; পারফরম্যান্সের কারণে পুনরাবৃত্ত কাজ করা হয় না। কিছুই পরিবর্তন করা হয়নি।"
+
+#. translators: %s: system error message
+#: includes/class-cloverbrowser-files.php:430
+msgid "A subfolder could not be read: %s Nothing was changed."
+msgstr "একটি সাবফোল্ডার পড়া যায়নি: %s কিছুই পরিবর্তন করা হয়নি।"
+
+#. translators: %s: system error message
+#: includes/class-cloverbrowser-files.php:475 includes/class-cloverbrowser-files.php:536 includes/class-cloverbrowser-policy.php:610
+msgid "A subfolder could not be read: %s"
+msgstr "একটি সাবফোল্ডার পড়া যায়নি: %s"
+
+#: includes/class-cloverbrowser-files.php:493 includes/class-cloverbrowser-trash.php:428
+msgid "Path not found."
+msgstr "পাথ পাওয়া যায়নি।"
+
+#: includes/class-cloverbrowser-files.php:498 includes/class-cloverbrowser-files.php:512
+msgid "Delete failed (check permissions)."
+msgstr "মোছা ব্যর্থ হয়েছে (অনুমতি পরীক্ষা করুন)।"
+
+#: includes/class-cloverbrowser-files.php:509
+msgid "Folder is not empty. Tick “Also delete everything inside it” to delete its contents."
+msgstr "ফোল্ডারটি খালি নয়। এর বিষয়বস্তু মুছতে “এর ভেতরের সবকিছুও মুছুন” টিক দিন।"
+
+#. translators: 1: number of items removed, 2: number of items that could not be deleted
+#: includes/class-cloverbrowser-files.php:546
+msgid "Removed %1$s item but %2$s could not be deleted, so the folder itself remains (check permissions)."
+msgid_plural "Removed %1$s items but %2$s could not be deleted, so the folder itself remains (check permissions)."
+msgstr[0] "%1$sটি আইটেম সরানো হয়েছে, কিন্তু %2$sটি মোছা যায়নি, তাই ফোল্ডারটি রয়ে গেছে (অনুমতি পরীক্ষা করুন)।"
+msgstr[1] "%1$sটি আইটেম সরানো হয়েছে, কিন্তু %2$sটি মোছা যায়নি, তাই ফোল্ডারটি রয়ে গেছে (অনুমতি পরীক্ষা করুন)।"
+
+#: includes/class-cloverbrowser-files.php:568
+msgid "Invalid file name."
+msgstr "অবৈধ ফাইলের নাম।"
+
+#: includes/class-cloverbrowser-files.php:571
+msgid "File name contains characters that are not allowed on this server."
+msgstr "ফাইলের নামে এমন অক্ষর আছে যা এই সার্ভারে অনুমোদিত নয়।"
+
+#: includes/class-cloverbrowser-files.php:583
+msgid "Invalid upload."
+msgstr "অবৈধ আপলোড।"
+
+#. translators: %s: file name
+#: includes/class-cloverbrowser-files.php:595
+msgid "“%s” is a symbolic link here; delete it first if you want to replace it."
+msgstr "এখানে “%s” একটি সিম্বলিক লিংক; প্রতিস্থাপন করতে চাইলে আগে এটি মুছুন।"
+
+#. translators: %s: folder name
+#: includes/class-cloverbrowser-files.php:602
+msgid "A folder named “%s” already exists here."
+msgstr "“%s” নামের একটি ফোল্ডার এখানে আগে থেকেই আছে।"
+
+#. translators: %s: file name
+#: includes/class-cloverbrowser-files.php:609
+msgid "A file named “%s” already exists in this folder."
+msgstr "“%s” নামের একটি ফাইল এই ফোল্ডারে আগে থেকেই আছে।"
+
+#: includes/class-cloverbrowser-files.php:668 includes/class-cloverbrowser-files.php:671
+msgid "Could not move the upload into place (folder writable? name too long?)."
+msgstr "আপলোড করা ফাইলটি জায়গামতো সরানো যায়নি (ফোল্ডারে কি লেখা যায়? নাম কি খুব লম্বা?)।"
+
+#: includes/class-cloverbrowser-files.php:678
+msgid "The upload exceeds the server’s size limit (upload_max_filesize / post_max_size)."
+msgstr "আপলোডটি সার্ভারের আকার সীমা ছাড়িয়ে গেছে (upload_max_filesize / post_max_size)।"
+
+#: includes/class-cloverbrowser-files.php:679
+msgid "The upload was only partially received — retry."
+msgstr "আপলোডের কেবল অংশবিশেষ পাওয়া গেছে — আবার চেষ্টা করুন।"
+
+#: includes/class-cloverbrowser-files.php:680
+msgid "No file was received."
+msgstr "কোনো ফাইল পাওয়া যায়নি।"
+
+#: includes/class-cloverbrowser-files.php:681
+msgid "The server’s temporary upload storage is misconfigured."
+msgstr "সার্ভারের অস্থায়ী আপলোড স্টোরেজ ভুলভাবে কনফিগার করা আছে।"
+
+#: includes/class-cloverbrowser-files.php:682
+msgid "A PHP extension blocked the upload."
+msgstr "একটি PHP এক্সটেনশন আপলোডটি আটকে দিয়েছে।"
+
+#. translators: %d: PHP upload error code
+#: includes/class-cloverbrowser-files.php:684
+msgid "Upload error (code %d)."
+msgstr "আপলোড ত্রুটি (কোড %d)।"
+
+#: includes/class-cloverbrowser-files.php:710
+msgid "File not found or not readable by the PHP process."
+msgstr "ফাইল পাওয়া যায়নি অথবা PHP প্রসেস এটি পড়তে পারে না।"
+
+#: includes/class-cloverbrowser-files.php:714
+msgid "Could not open the file."
+msgstr "ফাইলটি খোলা যায়নি।"
+
+#. translators: 1: folder path, 2: role name
+#: includes/class-cloverbrowser-policy.php:160
+msgid "The folder “%1$s” (%2$s) does not exist; it grants no access until it is created."
+msgstr "“%1$s” (%2$s) ফোল্ডারটি নেই; এটি তৈরি না হওয়া পর্যন্ত কোনো প্রবেশাধিকার দেয় না।"
+
+#: includes/class-cloverbrowser-policy.php:494
+msgid "PHP code"
+msgstr "PHP কোড"
+
+#: includes/class-cloverbrowser-policy.php:495
+msgid "Server configuration"
+msgstr "সার্ভার কনফিগারেশন"
+
+#: includes/class-cloverbrowser-policy.php:496
+msgid "Programs & scripts"
+msgstr "প্রোগ্রাম ও স্ক্রিপ্ট"
+
+#: includes/class-cloverbrowser-policy.php:497
+msgid "Web pages, SVG & JavaScript"
+msgstr "ওয়েব পেজ, SVG ও JavaScript"
+
+#: includes/class-cloverbrowser-policy.php:498
+msgid "Archives"
+msgstr "আর্কাইভ"
+
+#: includes/class-cloverbrowser-policy.php:499
+msgid "Images"
+msgstr "ছবি"
+
+#: includes/class-cloverbrowser-policy.php:500
+msgid "Audio & video"
+msgstr "অডিও ও ভিডিও"
+
+#: includes/class-cloverbrowser-policy.php:501
+msgid "Documents & PDFs"
+msgstr "ডকুমেন্ট ও PDF"
+
+#: includes/class-cloverbrowser-policy.php:502
+msgid "Databases & dumps"
+msgstr "ডেটাবেস ও ডাম্প"
+
+#: includes/class-cloverbrowser-policy.php:503
+msgid "Any other binary file"
+msgstr "অন্য যেকোনো বাইনারি ফাইল"
+
+#. translators: %s: file type name(s), e.g. "PHP code"
+#: includes/class-cloverbrowser-policy.php:515
+msgid "This file type (%s) is blocked for your role."
+msgstr "এই ফাইলের ধরন (%s) আপনার ভূমিকার জন্য ব্লক করা।"
+
+#: includes/class-cloverbrowser-policy.php:543
+msgid "This location is outside the folders your role can access."
+msgstr "এই অবস্থানটি আপনার ভূমিকার প্রবেশাধিকার থাকা ফোল্ডারগুলোর বাইরে।"
+
+#. translators: %s: path
+#: includes/class-cloverbrowser-policy.php:550 includes/class-cloverbrowser-sandbox.php:159 includes/class-cloverbrowser-sandbox.php:222
+msgid "Path not found or not accessible: %s"
+msgstr "পাথ পাওয়া যায়নি বা প্রবেশযোগ্য নয়: %s"
+
+#: includes/class-cloverbrowser-policy.php:559
+msgid "This item is protected: your role can only read it."
+msgstr "এই আইটেমটি সুরক্ষিত: আপনার ভূমিকা শুধু এটি পড়তে পারে।"
+
+#: includes/class-cloverbrowser-policy.php:562
+msgid "The top-level folders your role can access cannot be renamed, deleted or have their permissions changed."
+msgstr "আপনার ভূমিকার প্রবেশাধিকার থাকা শীর্ষ-স্তরের ফোল্ডারগুলোর নাম পরিবর্তন, মোছা বা অনুমতি পরিবর্তন করা যায় না।"
+
+#: includes/class-cloverbrowser-policy.php:570
+msgid "Your role is not allowed to download files."
+msgstr "আপনার ভূমিকার ফাইল ডাউনলোডের অনুমতি নেই।"
+
+#: includes/class-cloverbrowser-policy.php:571
+msgid "Your role is not allowed to edit files."
+msgstr "আপনার ভূমিকার ফাইল সম্পাদনার অনুমতি নেই।"
+
+#: includes/class-cloverbrowser-policy.php:572
+msgid "Your role is not allowed to create files or folders."
+msgstr "আপনার ভূমিকার ফাইল বা ফোল্ডার তৈরির অনুমতি নেই।"
+
+#: includes/class-cloverbrowser-policy.php:573
+msgid "Your role is not allowed to upload files."
+msgstr "আপনার ভূমিকার ফাইল আপলোডের অনুমতি নেই।"
+
+#: includes/class-cloverbrowser-policy.php:574
+msgid "Your role is not allowed to rename or move items."
+msgstr "আপনার ভূমিকার আইটেমের নাম পরিবর্তন বা সরানোর অনুমতি নেই।"
+
+#: includes/class-cloverbrowser-policy.php:575
+msgid "Your role is not allowed to delete items."
+msgstr "আপনার ভূমিকার আইটেম মোছার অনুমতি নেই।"
+
+#: includes/class-cloverbrowser-policy.php:576
+msgid "Your role is not allowed to change permissions."
+msgstr "আপনার ভূমিকার অনুমতি পরিবর্তনের অনুমতি নেই।"
+
+#: includes/class-cloverbrowser-sandbox.php:60
+msgid "CLOVERBROWSER_READ_ONLY is set in wp-config.php."
+msgstr "wp-config.php-এ CLOVERBROWSER_READ_ONLY সেট করা আছে।"
+
+#: includes/class-cloverbrowser-sandbox.php:63
+msgid "DISALLOW_FILE_EDIT / DISALLOW_FILE_MODS is set in wp-config.php. Define CLOVERBROWSER_READ_ONLY as false to override."
+msgstr "wp-config.php-এ DISALLOW_FILE_EDIT / DISALLOW_FILE_MODS সেট করা আছে। এটি ওভাররাইড করতে CLOVERBROWSER_READ_ONLY-কে false হিসেবে সংজ্ঞায়িত করুন।"
+
+#: includes/class-cloverbrowser-sandbox.php:66
+msgid "Your role has read-only access."
+msgstr "আপনার ভূমিকার শুধু-পঠন প্রবেশাধিকার আছে।"
+
+#: includes/class-cloverbrowser-sandbox.php:68
+msgid "Your account does not have the edit_files capability."
+msgstr "আপনার অ্যাকাউন্টে edit_files সক্ষমতা নেই।"
+
+#: includes/class-cloverbrowser-sandbox.php:177 includes/class-cloverbrowser-sandbox.php:180 includes/class-cloverbrowser-trash.php:625
+msgid "Invalid path."
+msgstr "অবৈধ পাথ।"
+
+#: includes/class-cloverbrowser-sandbox.php:194
+msgid "Invalid path segment."
+msgstr "অবৈধ পাথ অংশ।"
+
+#: includes/class-cloverbrowser-sandbox.php:227 includes/class-cloverbrowser-trash.php:668 includes/class-cloverbrowser-trash.php:683
+msgid "Path resolves outside the sandbox."
+msgstr "পাথটি স্যান্ডবক্সের বাইরে চলে যায়।"
+
+#: includes/class-cloverbrowser-sandbox.php:241
+msgid "Invalid name."
+msgstr "অবৈধ নাম।"
+
+#. translators: %s: path
+#: includes/class-cloverbrowser-sandbox.php:248
+msgid "Parent folder not found: %s"
+msgstr "প্যারেন্ট ফোল্ডার পাওয়া যায়নি: %s"
+
+#: includes/class-cloverbrowser-sandbox.php:253
+msgid "Parent folder resolves outside the sandbox."
+msgstr "প্যারেন্ট ফোল্ডারটি স্যান্ডবক্সের বাইরে চলে যায়।"
+
+#: includes/class-cloverbrowser-sandbox.php:276
+msgid "This operation is not allowed on the sandbox root."
+msgstr "স্যান্ডবক্সের রুটে এই কাজটি অনুমোদিত নয়।"
+
+#. translators: %s: path
+#: includes/class-cloverbrowser-sandbox.php:285
+msgid "Path not found: %s"
+msgstr "পাথ পাওয়া যায়নি: %s"
+
+#: includes/class-cloverbrowser-trash.php:166
+msgid "The trash folder could not be created. Check that the uploads folder is writable by PHP."
+msgstr "ট্র্যাশ ফোল্ডার তৈরি করা যায়নি। PHP আপলোড ফোল্ডারে লিখতে পারে কি না তা পরীক্ষা করুন।"
+
+#: includes/class-cloverbrowser-trash.php:421
+msgid "The trash is turned off."
+msgstr "ট্র্যাশ বন্ধ আছে।"
+
+#: includes/class-cloverbrowser-trash.php:453
+msgid "This item could not be moved to the trash (it may be on another disk, or permissions do not allow it). Nothing was deleted."
+msgstr "এই আইটেমটি ট্র্যাশে সরানো যায়নি (এটি হয়তো অন্য ডিস্কে আছে, অথবা অনুমতি নেই)। কিছুই মোছা হয়নি।"
+
+#: includes/class-cloverbrowser-trash.php:464
+msgid "The trash could not record this item, so it was left in place."
+msgstr "ট্র্যাশ এই আইটেমটি নথিভুক্ত করতে পারেনি, তাই এটি যেখানে ছিল সেখানেই রাখা হয়েছে।"
+
+#: includes/class-cloverbrowser-trash.php:574 includes/class-cloverbrowser-trash.php:611 includes/class-cloverbrowser-trash.php:737 includes/class-cloverbrowser-trash.php:785
+msgid "This item is no longer in the trash."
+msgstr "এই আইটেমটি আর ট্র্যাশে নেই।"
+
+#: includes/class-cloverbrowser-trash.php:621
+msgid "The stored copy of this item is missing."
+msgstr "এই আইটেমের সংরক্ষিত কপিটি পাওয়া যাচ্ছে না।"
+
+#. translators: %s: path
+#: includes/class-cloverbrowser-trash.php:646
+msgid "Cannot restore: %s is no longer a folder."
+msgstr "ফিরিয়ে আনা যাবে না: %s আর ফোল্ডার নয়।"
+
+#: includes/class-cloverbrowser-trash.php:663
+msgid "Could not find a free name to restore this item under."
+msgstr "এই আইটেমটি ফিরিয়ে আনার জন্য কোনো খালি নাম পাওয়া যায়নি।"
+
+#. translators: %s: folder path
+#: includes/class-cloverbrowser-trash.php:678
+msgid "Could not recreate the folder %s."
+msgstr "ফোল্ডার %s আবার তৈরি করা যায়নি।"
+
+#: includes/class-cloverbrowser-trash.php:686
+msgid "Restore failed (check permissions on the original folder)."
+msgstr "ফিরিয়ে আনা ব্যর্থ হয়েছে (মূল ফোল্ডারের অনুমতি পরীক্ষা করুন)।"
+
+#: includes/class-cloverbrowser-trash.php:794
+msgid "Some of this item could not be deleted (check permissions)."
+msgstr "এই আইটেমের কিছু অংশ মোছা যায়নি (অনুমতি পরীক্ষা করুন)।"
+
+#. translators: Plugin header
+#: cloverbrowser.php
+msgid "Server file browser & editor for WordPress admins, sandboxed to this site's vhost root, with per-role access rules and a two-level trash. No public exposure."
+msgstr "WordPress অ্যাডমিনদের জন্য সার্ভারের ফাইল ব্রাউজার ও এডিটর, এই সাইটের vhost রুটের মধ্যে সীমাবদ্ধ, প্রতিটি ভূমিকার জন্য আলাদা প্রবেশাধিকারের নিয়ম ও দুই স্তরের ট্র্যাশসহ। সর্বসাধারণের জন্য উন্মুক্ত নয়।"
